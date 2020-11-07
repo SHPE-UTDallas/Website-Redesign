@@ -8,8 +8,11 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "bulma": "^0.9.1",
     "next": "latest",
+    "node-sass": "^4.0.0",
     "react": "^16.12.0",
+    "react-bulma-components": "^3.4.0",
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
