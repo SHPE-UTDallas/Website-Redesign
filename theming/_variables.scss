@@ -5,3 +5,14 @@ $UTD-ORANGE: rgb(232,117,0);
 $UTD-GREEN: rgb(18,71,52);
 
 $primary: $UTD-GREEN;
+$secondary: $UTD-GREEN;
+
+.top-bar {
+    background-color: $UTD-ORANGE;
+    color: $UTD-GREEN;
+    font-weight: bolder;
+}
+.top-bar-icon{
+    background-color: $UTD-GREEN;
+    color: $UTD-GREEN;
+}
