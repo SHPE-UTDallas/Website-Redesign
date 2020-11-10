@@ -15,7 +15,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <header>
-    <nav className="navbar" role="navigation" aria-label="main navigation">
+    <nav className="navbar is-primary" role="navigation" aria-label="main navigation">
   <div className="navbar-brand">
     <a className="navbar-item" href="https://bulma.io">
       <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"/>
@@ -79,6 +79,10 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
 
       <a className="navbar-item" href="/users">
         Users List
+      </a>
+
+      <a className="navbar-item" href="/api/users">
+        Users API
       </a>
     </div>
 
