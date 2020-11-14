@@ -14,6 +14,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <script src="https://kit.fontawesome.com/45266f9559.js" crossOrigin="anonymous"></script>
     </Head>
     <header>
 
@@ -104,7 +105,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
           <a className="button is-primary">
             <strong>Sign up</strong>
           </a>
-          <a className="button is-light">
+          <a className="button is-light" href="/login">
             Log in
           </a>
         </div>
