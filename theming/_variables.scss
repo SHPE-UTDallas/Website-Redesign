@@ -4,8 +4,20 @@
 $UTD-ORANGE: rgb(232,117,0);
 $UTD-GREEN: rgb(18,71,52);
 
-$primary: $UTD-GREEN;
-$secondary: $UTD-GREEN;
+$SHPE-BLUE: #001F5B;
+$SHPE-ORANGE: #FD652F;
+
+$primary: $SHPE-BLUE;
+$secondary: $SHPE-ORANGE;
+
+.navbar-item:hover{
+    color:$SHPE-ORANGE !important;
+}
+
+.navbar{
+    height: 4em;
+}
+
 
 .top-bar {
     background-color: $UTD-ORANGE;
@@ -16,3 +28,15 @@ $secondary: $UTD-GREEN;
     background-color: $UTD-GREEN;
     color: $UTD-GREEN;
 }
+
+//delete everything after this line
+
+.test-big-margin{
+      margin-bottom: 1000px;
+  }
+
+  .affix-top {
+    /* navbar style at top */
+    background:transparent;
+    border-color:transparent;
+  }

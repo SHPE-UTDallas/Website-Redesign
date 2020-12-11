@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import Image from 'next/image'
 
 
 type Props = {
@@ -17,20 +18,11 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
     </Head>
     <header>
 
-  <nav className="level top-bar m-0">
-  <div className="level-item has-text-centered">
-      {
-      //TODO GET ICONS FOR MAIL AND LOCATION HERE 
-      }
-      <p className="m-1">utdshpe@gmail.com</p>
-      <p className="m-1">800 W Campbell Rd, Richardson, TX 75080</p>
-  </div>
-  </nav>
+  <nav className="navbar is-primary is-transparent" role="navigation" aria-label="main navigation">
 
-  <nav className="navbar is-primary" role="navigation" aria-label="main navigation">
-  <div className="navbar-brand">
-    <a className="navbar-item" href="https://bulma.io">
-      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"/>
+  <div className="navbar-brand" style={{minHeight:"4em"}}>
+    <a className="navbar-item" href="/" style={{width: "10em",margin: "4px"}}>
+      <Image src={'/SHPE_logo_horiz_White-Wordmark-RGB.png'} layout="fill" quality="100"/>
     </a>
 
     {
@@ -92,23 +84,10 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       <a className="navbar-item" href="/users">
         Users List
       </a>
-
-      <a className="navbar-item" href="/api/users">
-        Users API
-      </a>
     </div>
 
     <div className="navbar-end">
-      <div className="navbar-item">
-        <div className="buttons">
-          <a className="button is-primary">
-            <strong>Sign up</strong>
-          </a>
-          <a className="button is-light">
-            Log in
-          </a>
-        </div>
-      </div>
+      
     </div>
   </div>
 </nav>
