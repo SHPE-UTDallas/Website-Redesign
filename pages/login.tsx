@@ -1,14 +1,21 @@
+import { GoogleLoginButton, LinkedInLoginButton, MicrosoftLoginButton } from 'react-social-login-buttons'
 import Layout from '../components/Layout'
 
 const LoginPage = () => (
   <Layout title="SHPE UTD">
         <div className="container">
-            <section className="section mt-6">
+            <section className="section mt-4">
                 <div className="columns is-centered is-vcentered">
                     <div className="column is-half">
-                        <p className="title is-1 is-spaced has-text-centered">Login</p>
+                        <figure className="center-image is-flex is-4 image is-256x256">
+                            <img className="is-rounded" src="/imgs/SHPE_Icon.png" />
+                        </figure>
+                        <p className="title is-1 is-spaced has-text-centered mt-4">Login</p>
                         <div className="field">
-                            <label className="label is-medium">Email</label>
+                            <GoogleLoginButton onClick={() => alert('This will log you in through Google eventually')}/>
+                            <LinkedInLoginButton className="mt-4" onClick={() => alert('This will log you in through LinkedIn eventually')} />
+                            <MicrosoftLoginButton className="mt-4" onClick={() => alert("Maybe we can login with our school outlooks?")} />
+                            {/* <label className="label is-medium">Email</label>
                             <p className="control has-icons-left has-icons-right">
                                 <input className="input is-medium" type="email" placeholder="Email" />
                                 <span className="icon is-small is-left">
@@ -31,7 +38,7 @@ const LoginPage = () => (
                                     Login
                                     </button>
                                 </p>
-                            </div>
+                            </div> */}
                             {/* <div className="field">
                             <label className="label">Email</label>
                             <p className="control has-icons-left has-icons-right">

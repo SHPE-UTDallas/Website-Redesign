@@ -3,6 +3,7 @@
 ////////////////////////////////////////////////
 $UTD-ORANGE: rgb(232,117,0);
 $UTD-GREEN: rgb(18,71,52);
+$dimensions: 16 24 32 48 64 96 128 256 !default; //Variable for image size classes ex: is-128x128, etc.: https://bulma.io/documentation/elements/image/
 
 $primary: $UTD-GREEN;
 $secondary: $UTD-GREEN;
@@ -15,4 +16,9 @@ $secondary: $UTD-GREEN;
 .top-bar-icon{
     background-color: $UTD-GREEN;
     color: $UTD-GREEN;
+}
+
+.center-image{
+    margin-left: auto;
+    margin-right: auto;
 }
