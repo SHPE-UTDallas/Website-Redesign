@@ -5,13 +5,14 @@ export default function App() {
     <ChatBot
     floating={true}
     opened={true}
-    botAvatar="/imgs/Macys Dora.PNG"
+    botAvatar="/imgs/Dora.png"
     headerTitle="SHPE UTD Chatbot"
-      steps={[
+    floatingIcon="/imgs/SHPE_Logo.png"
+    steps={[
         {
-          id: "start",
-          message:"Hi! Welcome to the SHPE UTDallas chapter website! In order to better assist you, are you a: ",
-          trigger: "company_or_student"
+            id: "start",
+            message:"Hi! Welcome to the SHPE UTDallas chapter website! In order to better assist you, are you a: ",
+            trigger: "company_or_student"
         },
         {
             id: "company_or_student",
@@ -41,7 +42,7 @@ export default function App() {
         },
         
         
-      ]}
+        ]}
     />
   )
 }
