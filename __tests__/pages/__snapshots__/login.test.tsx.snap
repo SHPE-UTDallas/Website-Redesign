@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<Layout
+  title="SHPE UTD"
+>
+  <div
+    className="container"
+  >
+    <section
+      className="section mt-4"
+    >
+      <div
+        className="columns is-centered is-vcentered"
+      >
+        <div
+          className="column is-half"
+        >
+          <figure
+            className="center-image is-flex is-4 image is-256x256"
+          >
+            <img
+              className="is-rounded"
+              src="/imgs/SHPE_Icon.png"
+            />
+          </figure>
+          <p
+            className="title is-1 is-spaced has-text-centered mt-4"
+          >
+            Login
+          </p>
+          <div
+            className="field"
+          >
+            <Component
+              onClick={[Function]}
+            />
+            <Component
+              className="mt-4"
+              onClick={[Function]}
+            />
+            <Component
+              className="mt-4"
+              onClick={[Function]}
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>
+`;
