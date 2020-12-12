@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import ChatBot from "./Chatbot";
 
 type Props = {
   children?: ReactNode
@@ -35,6 +36,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       <hr />
       <span>I'm here to stay (Footer)</span>
     </footer>
+    <ChatBot />
   </div>
 )
 
