@@ -92,6 +92,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
   </div>
 </nav>
     </header>
+    <div className="content">
     {children}
     <footer>
       <div className="content has-text-centered">
