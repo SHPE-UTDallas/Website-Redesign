@@ -2,7 +2,7 @@ import Layout from '../components/Layout'
 
 const IndexPage = () => (
   <Layout title="SHPE UTD">
-  <section className="section test-big-margin">
+  <section className="section">
     <div className="container">
       <h1 className="title">
         Hello World
