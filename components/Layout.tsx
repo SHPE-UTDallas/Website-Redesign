@@ -104,6 +104,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       </div>
     </footer>
   </div>
+</div>
 )
 
 export default Layout
