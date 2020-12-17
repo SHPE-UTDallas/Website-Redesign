@@ -81,18 +81,10 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
           </a>
         </div>
       </div>
-
-      <a className="navbar-item" href="/users">
-        Users List
-      </a>
     </div>
 
     <div className="navbar-end">
       
-
-      <a className="navbar-item" href="/api/users">
-        Users API
-      </a>
     </div>
 
     <div className="navbar-end">
