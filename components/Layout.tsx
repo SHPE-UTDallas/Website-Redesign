@@ -15,6 +15,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <script src="https://kit.fontawesome.com/45266f9559.js" crossOrigin="anonymous"></script>
     </Head>
     <header>
 
@@ -88,6 +89,23 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
 
     <div className="navbar-end">
       
+
+      <a className="navbar-item" href="/api/users">
+        Users API
+      </a>
+    </div>
+
+    <div className="navbar-end">
+      <div className="navbar-item">
+        <div className="buttons">
+          <a className="button is-primary">
+            <strong>Sign up</strong>
+          </a>
+          <a className="button is-light" href="/login">
+            Log in
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </nav>
