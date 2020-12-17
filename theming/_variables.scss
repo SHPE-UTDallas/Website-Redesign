@@ -34,11 +34,15 @@ $secondary: $SHPE-ORANGE;
     color: $UTD-GREEN;
 }
 
-//delete everything after this line
+.content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
 
-.test-big-margin{
-      margin-bottom: 1000px;
-  }
+footer {
+    margin-top: auto;
+}
 
   .affix-top {
     /* navbar style at top */
