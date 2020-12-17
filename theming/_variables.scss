@@ -5,6 +5,8 @@ $UTD-ORANGE: rgb(232,117,0);
 $UTD-GREEN: rgb(18,71,52);
 
 
+$dimensions: 16 24 32 48 64 96 128 256 !default; //Variable for image size classes ex: is-128x128, etc.: https://bulma.io/documentation/elements/image/
+
 $SHPE-BLUE: #001F5B;
 $SHPE-ORANGE: #FD652F;
 $SHPE-LIGHT-BLUE: #72A9BE;
@@ -24,24 +26,11 @@ $secondary: $SHPE-ORANGE;
     height: 4em;
 }
 
-$dimensions: 16 24 32 48 64 96 128 256 !default; //Variable for image size classes ex: is-128x128, etc.: https://bulma.io/documentation/elements/image/
-
-
-.content{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
 
 footer {
     margin-top: auto;
 }
 
-  .affix-top {
-    /* navbar style at top */
-    background:transparent;
-    border-color:transparent;
-  }
 .center-image{
     margin-left: auto;
     margin-right: auto;
