@@ -9,15 +9,13 @@ type Props = {
 };
 
 const Layout = ({ children, title = "This is the default title" }: Props) => (
-  <div>
+  <div style={{ display: "flex", minHeight: "100vh",
+  flexDirection: "column" }}>
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <script
-        src="https://kit.fontawesome.com/45266f9559.js"
-        crossOrigin="anonymous"
-      ></script>
+      <script src="https://kit.fontawesome.com/45266f9559.js" crossOrigin="anonymous"></script>
     </Head>
     <header>
       <nav
@@ -75,35 +73,26 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
                 <a className="navbar-item">Technology Team</a>
               </div>
             </div>
+
+            <a className="navbar-item" href="/users">
+              Users List
+            </a>
           </div>
 
           <div className="navbar-end"></div>
-
-          <div className="navbar-end">
-            <div className="navbar-item">
-              <div className="buttons">
-                <a className="button is-primary">
-                  <strong>Sign up</strong>
-                </a>
-                <a className="button is-light" href="/login">
-                  Log in
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
       </nav>
     </header>
-    <div className="">
-      {children}
-      <footer>
-        <div className="content has-text-centered">
-          <hr />
-          <span>
-            I'm here to stay (Footer) Maybe add some of the contact info here?
-          </span>
-        </div>
-      </footer>
+    <div className="content">
+    {children}
+    <footer>
+      <div className="content has-text-centered">
+        <hr />
+        <span>
+          I'm here to stay (Footer) Maybe add some of the contact info here?
+        </span>
+      </div>
+    </footer>
     </div>
   </div>
 );
