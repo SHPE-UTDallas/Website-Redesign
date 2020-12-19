@@ -20,53 +20,28 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
       ></script>
     </Head>
     <header>
-
-  <nav className="navbar is-primary is-transparent" role="navigation" aria-label="main navigation">
-
-  <div className="navbar-brand" style={{minHeight:"4em"}}>
-    <a className="navbar-item" href="/" style={{width: "10em",margin: "4px"}}>
-      <Image src={'/SHPE_logo_horiz_White-Wordmark-RGB.png'} layout="fill" quality="100"/>
-    </a>
-
-    {
-    //TODO ADD HAMBURGER HERE 
-    }
-  </div>
-
-  <div id="navbar" className="navbar-menu">
-    <div className="navbar-start">
-      <a className="navbar-item" href="/">
-        Home
-      </a>
-
-      <a className="navbar-item" href="/about">
-        About
-      </a>
-
-      <div className="navbar-item has-dropdown is-hoverable">
-        <a className="navbar-link">
-          Events
-        </a>
-
-        <div className="navbar-dropdown">
-          <a className="navbar-item">
-            Calendar
-          </a>
-          <hr className="navbar-divider"/>
-          <a className="navbar-item">
-            General Meetings
+      <nav
+        className="navbar is-primary is-transparent"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div className="navbar-brand" style={{ minHeight: "4em" }}>
+          <a
+            className="navbar-item"
+            href="/"
+            style={{ width: "10em", margin: "4px" }}
+          >
+            <Image
+              src={"/SHPE_logo_horiz_White-Wordmark-RGB.png"}
+              layout="fill"
+              quality="100"
+            />
           </a>
 
           {
             //TODO ADD HAMBURGER HERE
           }
         </div>
-      </div>
-    </div>
-
-    <div className="navbar-end">
-      
-    </div>
 
         <div id="navbar" className="navbar-menu">
           <div className="navbar-start">
@@ -116,7 +91,6 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
               </div>
             </div>
           </div>
-        </div>
         </div>
       </nav>
     </header>
