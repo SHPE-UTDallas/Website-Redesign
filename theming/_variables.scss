@@ -26,13 +26,23 @@ $secondary: $SHPE-ORANGE;
     height: 4em;
 }
 
+.content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
 
 footer {
     margin-top: auto;
+}
+
+#parentDiv {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column
 }
 
 .center-image{
     margin-left: auto;
     margin-right: auto;
 }
-
