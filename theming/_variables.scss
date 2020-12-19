@@ -1,3 +1,38 @@
 ////////////////////////////////////////////////
 // DEFAULT
 ////////////////////////////////////////////////
+$UTD-ORANGE: rgb(232,117,0);
+$UTD-GREEN: rgb(18,71,52);
+
+
+$dimensions: 16 24 32 48 64 96 128 256 !default; //Variable for image size classes ex: is-128x128, etc.: https://bulma.io/documentation/elements/image/
+
+$SHPE-BLUE: #001F5B;
+$SHPE-ORANGE: #FD652F;
+$SHPE-LIGHT-BLUE: #72A9BE;
+
+$primary: $SHPE-BLUE;
+$secondary: $SHPE-ORANGE;
+
+.navbar-item:hover{
+    color:$SHPE-ORANGE !important;
+}
+
+.navbar-link:hover{
+    color:$SHPE-ORANGE !important;
+}
+
+.navbar{
+    height: 4em;
+}
+
+
+footer {
+    margin-top: auto;
+}
+
+.center-image{
+    margin-left: auto;
+    margin-right: auto;
+}
+
