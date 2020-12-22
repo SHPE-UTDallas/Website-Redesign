@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 const IndexPage = () => (
   <Layout title="SHPE UTD">
   <section className="section tile level gradient-background">
-    <div className="container has-text-centered">
+    <div className="container has-text-centered" style={{paddingRight:"20em"}}>
     <div className="welcome-text" style={{marginLeft: "2em"}}>
       <h1 className="welcome-text" style={{color: "rgba(0, 0, 0, 0.32)"}}>
         Welcome to
@@ -17,17 +17,14 @@ const IndexPage = () => (
       </p>
     </div>
 
-      <button className="button is-primary" style={{marginRight: "1em"}}>Subscribe to our Newsletter</button>
-      <button className="button is-primary">Become a sponsor</button>
+      <button className="button is-primary" style={{margin: "1em"}}>Subscribe to our Newsletter</button>
+      <button className="button is-primary" style={{margin: "1em"}}>Become a sponsor</button>
     </div>
 
-    <div className="container">
-      <h1 className="title">
-        Hello World
-      </h1>
-      <p className="subtitle">
-        My first website with <strong>Bulma</strong>!
-      </p>
+    <div className="container" style={{paddingRight:"10em"}}>
+      <div className="homepage-tile tile">
+        
+      </div>
     </div>
   </section>
   </Layout>

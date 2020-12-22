@@ -11,7 +11,7 @@ $SHPE-BLUE: #001F5B;
 $SHPE-ORANGE: #FD652F;
 $SHPE-LIGHT-BLUE: #72A9BE;
 
-$primary: $SHPE-BLUE;
+$primary: #0070C0;
 $secondary: $SHPE-ORANGE;
 
 .navbar-item:hover{
@@ -60,4 +60,14 @@ footer {
     text-align: left;
 }
 
+.homepage-tile {
+    width: 534px;
+    height: 567px;
+    left: 853px;
+    top: 364px;
+
+    background: #FFFFFF;
+    border-radius: 22px;
+    filter: drop-shadow(-3px 11px 44px rgba(0, 0, 0, 0.2));
+}
 ///////
