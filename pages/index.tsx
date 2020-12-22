@@ -22,8 +22,8 @@ const IndexPage = () => (
     </div>
 
     <div className="container" style={{paddingRight:"10em"}}>
-      <div className="homepage-tile tile">
-        
+      <div className=" tile is-ancestor">
+        <div className="homepage-tile tile"></div>
       </div>
     </div>
   </section>
