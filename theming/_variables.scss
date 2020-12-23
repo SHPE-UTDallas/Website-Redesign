@@ -92,6 +92,15 @@ footer {
     }
   }
 
+  .homepage-tile{}
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="homepage-tile"] {
+      margin-bottom: 150px !important;
+    }
+  }
+
   .temoc:hover {
     filter: drop-shadow(-3px 7px 20px rgba(0, 0, 0, 0.3));
   }

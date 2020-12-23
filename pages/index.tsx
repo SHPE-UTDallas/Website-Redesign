@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 
 const IndexPage = () => (
   <Layout title="SHPE UTD">
-  <section className="section tile level gradient-background" style={{marginBottom:"100px"}}>
+  <section className="section tile level gradient-background">
     <div className="intro container has-text-centered">
     <div className="welcome-text" style={{marginLeft: "2em"}}>
       <h1 className="welcome-text" style={{color: "rgba(0, 0, 0, 0.32)"}}>
@@ -24,7 +24,7 @@ const IndexPage = () => (
     </div>
     </div>
 
-    <div className="container" style={{paddingRight:"10m"}}>
+    <div className="container homepage-tile" style={{paddingRight:"10m"}}>
       <div className="tile is-ancestor">
         <div className="tile is-parent">
         <div className="homepage-tile is-child tile" style={{marginLeft:"2em"}}></div>
