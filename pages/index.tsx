@@ -3,9 +3,10 @@ import Layout from '../components/Layout'
 
 const IndexPage = () => (
   <Layout title="SHPE UTD">
-  <section className="section tile level gradient-background">
-    <div className="intro container has-text-centered">
-    <div className="welcome-text" style={{marginLeft: "2em"}}>
+  <section className="section gradient-background">
+    <div className="columns" style={{marginLeft: "5%", marginRight: "5%"}}>
+    <div className="intro column has-text-centered">
+    <div className="welcome-text">
       <h1 className="welcome-text" style={{color: "rgba(0, 0, 0, 0.32)"}}>
         Welcome to
       </h1>
@@ -24,13 +25,7 @@ const IndexPage = () => (
     </div>
     </div>
 
-    <div className="container homepage-tile" style={{paddingRight:"10m"}}>
-      <div className="tile is-ancestor">
-        <div className="tile is-parent">
-        <div className="homepage-tile is-child tile" style={{marginLeft:"2em"}}></div>
-        </div>
-      </div>
-
+    <div className="homepage-tile column"></div>
     </div>
   </section>
 
@@ -39,7 +34,7 @@ const IndexPage = () => (
         <hr style={{height: .5, borderWidth: 10, display:"block", border: "1px solid rgba(0, 0, 0, 0.17)"}}></hr>
       
         <div className="container" style={{position: "relative", width: "10%", minWidth:"200px", margin:"0 auto", top: "-200px"}}>
-          <img className="temoc" src="/imgs/Temoc_BW.svg" alt="Temoc icon" ></img>
+          <img  src="/imgs/Temoc_BW.svg" alt="Temoc icon" ></img>
       </div>
       </div>
 
