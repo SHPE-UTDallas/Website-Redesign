@@ -1,8 +1,9 @@
+import { relative } from 'path'
 import Layout from '../components/Layout'
 
 const IndexPage = () => (
   <Layout title="SHPE UTD">
-  <section className="section tile level gradient-background">
+  <section className="section tile level gradient-background" style={{marginBottom:"100px"}}>
     <div className="intro container has-text-centered">
     <div className="welcome-text" style={{marginLeft: "2em"}}>
       <h1 className="welcome-text" style={{color: "rgba(0, 0, 0, 0.32)"}}>
@@ -23,11 +24,25 @@ const IndexPage = () => (
     </div>
     </div>
 
-    <div className="container" style={{paddingRight:"10em"}}>
-      <div className=" tile is-ancestor" style={{marginLeft:"2em"}}>
-        <div className="homepage-tile tile"></div>
+    <div className="container" style={{paddingRight:"10m"}}>
+      <div className="tile is-ancestor">
+        <div className="tile is-parent">
+        <div className="homepage-tile is-child tile" style={{marginLeft:"2em"}}></div>
+        </div>
       </div>
+
     </div>
+  </section>
+
+  <section className="section level">
+      <div className="" style={{position: "relative", width:"100%", margin:"4%"}}> 
+        <hr style={{height: .5, borderWidth: 10, display:"block", border: "1px solid rgba(0, 0, 0, 0.17)"}}></hr>
+      
+        <div className="container" style={{position: "relative", width: "10%", minWidth:"200px", margin:"0 auto", top: "-200px"}}>
+          <img src="/imgs/Temoc_BW.svg" alt="Temoc icon" ></img>
+      </div>
+      </div>
+
   </section>
   </Layout>
 )
