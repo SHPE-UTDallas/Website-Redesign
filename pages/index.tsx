@@ -39,7 +39,7 @@ const IndexPage = () => (
         <hr style={{height: .5, borderWidth: 10, display:"block", border: "1px solid rgba(0, 0, 0, 0.17)"}}></hr>
       
         <div className="container" style={{position: "relative", width: "10%", minWidth:"200px", margin:"0 auto", top: "-200px"}}>
-          <img src="/imgs/Temoc_BW.svg" alt="Temoc icon" ></img>
+          <img className="temoc" src="/imgs/Temoc_BW.svg" alt="Temoc icon" ></img>
       </div>
       </div>
 
