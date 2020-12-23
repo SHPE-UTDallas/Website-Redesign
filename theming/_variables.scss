@@ -63,7 +63,6 @@ footer {
 .homepage-tile {
     width: 534px;
     height: 567px;
-   
 
     background: #FFFFFF;
     border-radius: 22px;
@@ -101,4 +100,26 @@ footer {
     }
   }
 
+  .benefits-text{
+      color: #0070C0;
+
+      font-weight: 500;
+      font-size:calc(4px + 1.5vw);
+  }
+
+  .temoc-level{
+      margin-bottom: 0 !important;
+      margin-left: 4%;
+      margin-right: 4%;
+
+      margin-bottom: 2vw !important;
+  }
+
+  @media only screen and (max-width: 1400px) {
+    /* For mobile phones: */
+    [class*="temoc-level"] {
+      margin-bottom: 40px !important;
+      margin-top: 50px !important;
+    }
+  }
 ///////
