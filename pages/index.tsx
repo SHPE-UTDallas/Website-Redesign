@@ -15,7 +15,7 @@ const IndexPage = () => (
         SHPE UTD
       </h1>
 
-      <p className="subtitle" style={{marginTop: ".75em", marginBottom: "2em"}}>
+      <p className="subtitle is-4" style={{marginTop: ".75em", marginBottom: "2em"}}>
       Value proposition Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
       </p>
 
@@ -40,7 +40,7 @@ const IndexPage = () => (
   <section className="section">
   <div className="temoc-level">
       <div style={{position: "relative", width:"100%", paddingLeft:"2%", paddingRight: "2%", height: 10}}> 
-        <hr style={{height: .5, borderWidth: 10, display:"block", border: "1px solid rgba(0, 0, 0, 0.17)"}}></hr>
+        <hr style={{height: .5, borderWidth: 10, border: "1px solid rgba(0, 0, 0, 0.17)"}}></hr>
       
         <div className="container" style={{position: "relative", width: "10%", minWidth:"200px", margin:"0 auto", top: "-200px"}}>
           <img  src="/imgs/Temoc_BW.svg" alt="Temoc icon" ></img>
@@ -52,6 +52,18 @@ const IndexPage = () => (
       <div className="column"><h1 className="benefits-text" style={{textAlign: 'left'}}>Community</h1></div>
       <div className="column"><h1 className="benefits-text" style={{textAlign: 'center'}}>Networking</h1></div>
       <div className="column"><h1 className="benefits-text" style={{textAlign: 'right'}}>Career Development</h1></div>
+  </div>
+
+  <p className="is-size-4 benefits-p">Benefits Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+  <div className="temoc-level">
+      <div style={{position: "relative", width:"100%", paddingLeft:"2%", paddingRight: "2%", height: 10, paddingTop: "4%"}}> 
+        <hr style={{height: .5, borderWidth: 10, border: "1px solid rgba(0, 0, 0, 0.17)"}}></hr>
+      
+        <div className="container" style={{position: "relative", width: "10%", minWidth:"200px", margin:"0 auto", top: "-200px"}}>
+        
+      </div>
+      </div>
   </div>
 
   </section>
