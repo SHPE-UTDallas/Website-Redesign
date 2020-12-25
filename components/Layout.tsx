@@ -100,25 +100,32 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
         <div className="">
           <hr />
           <div className="container">
-          <div className="columns has-text-left">
-            <div className="column">
-              <h1 className="title is-uppercase">Contact</h1>
-              <p className="footer-text">
-                800 W Campbell Rd. <br></br>Richardson, TX 75080 <br></br>United
-                States of America <br></br>
-
-                <br></br>
-                <a href="mailto:utdshpe@gmail.com">utdshpe@gmail.com</a>
-              </p>
-
+            <div className="columns has-text-left">
+              <div className="column">
+                <h1 className="title is-uppercase">Contact</h1>
+                <p className="footer-text">
+                  800 W Campbell Rd. <br></br>Richardson, TX 75080 <br></br>
+                  United States of America <br></br>
+                  <br></br>
+                  <a href="mailto:utdshpe@gmail.com">utdshpe@gmail.com</a>
+                </p>
+              </div>
+              <div className="column">
+                <h1 className="title is-uppercase">Navigation</h1>
+                <p className="footer-text">
+                  <a href="/">Home</a><br></br>
+                  <a href="/about">About</a><br></br>
+                  <a href="/events">Events</a><br></br>
+                  <a href="/membership">Membership</a><br></br>
+                  <a href="/getInvolved">Get Involved</a><br></br>
+                  <a href="https://docs.google.com/document/d/1S8wOE2FgdFuP_aYYOY3IAjjr81RvK2TfYMYzC9vDMQY/edit">Bylaws</a><br></br>
+                  
+                </p>
+              </div>
+              <div className="column">
+                <h1 className="title is-uppercase">Follow Us</h1>
+              </div>
             </div>
-            <div className="column">
-              <h1 className="title is-uppercase">Navigation</h1>
-            </div>
-            <div className="column">
-              <h1 className="title is-uppercase">Follow Us</h1>
-            </div>
-          </div>
           </div>
         </div>
       </footer>
