@@ -103,47 +103,75 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
             <div className="columns">
               <div id="contact" className="column">
                 <div className="centered-div">
-                <h1 className="footer-title is-uppercase">Contact</h1>
-                <p className="footer-text">
-                  800 W Campbell Rd. <br></br>Richardson, TX 75080 <br></br>
-                  United States of America <br></br>
-                  <br></br>
-                  <a href="mailto:utdshpe@gmail.com">utdshpe@gmail.com</a>
-                </p>
-              </div>
+                  <h1 className="footer-title is-uppercase">Contact</h1>
+                  <p className="footer-text">
+                    800 W Campbell Rd. <br></br>Richardson, TX 75080 <br></br>
+                    United States of America <br></br>
+                    <br></br>
+                    <a href="mailto:utdshpe@gmail.com">utdshpe@gmail.com</a>
+                  </p>
+                </div>
               </div>
               <div id="navigation" className="column">
                 <div className="centered-div">
-                <h1 className="footer-title is-uppercase">
-                  Navigation
-                </h1>
-                <p className="footer-text">
-                  <a href="/">Home</a>
-                  <br></br>
-                  <a href="/about">About</a>
-                  <br></br>
-                  <a href="/events">Events</a>
-                  <br></br>
-                  <a href="/membership">Membership</a>
-                  <br></br>
-                  <a href="/getInvolved">Get Involved</a>
-                  <br></br>
-                  <a href="https://docs.google.com/document/d/1S8wOE2FgdFuP_aYYOY3IAjjr81RvK2TfYMYzC9vDMQY/edit">
-                    Bylaws
-                  </a>
-                  <br></br>
-                </p>
+                  <h1 className="footer-title is-uppercase">Navigation</h1>
+                  <p className="footer-text">
+                    <a href="/">Home</a>
+                    <br></br>
+                    <a href="/about">About</a>
+                    <br></br>
+                    <a href="/events">Events</a>
+                    <br></br>
+                    <a href="/membership">Membership</a>
+                    <br></br>
+                    <a href="/getInvolved">Get Involved</a>
+                    <br></br>
+                    <a href="https://docs.google.com/document/d/1S8wOE2FgdFuP_aYYOY3IAjjr81RvK2TfYMYzC9vDMQY/edit">
+                      Bylaws
+                    </a>
+                    <br></br>
+                  </p>
                 </div>
               </div>
               <div id="follow" className="column">
                 <div className="centered-div">
-                <h1 className="footer-title is-uppercase">Follow Us</h1>
-                <p className="footer-text">
-                  800 W Campbell Rd. <br></br>Richardson, TX 75080 <br></br>
-                  United States of America <br></br>
-                  <br></br>
-                  <a href="mailto:utdshpe@gmail.com">utdshpe@gmail.com</a>
-                </p>
+                  <h1 className="footer-title is-uppercase">Follow Us</h1>
+                  
+
+                  <div className="columns">
+                    <div className="column">
+                      <a href="https://www.facebook.com/SHPEUTD/">
+                        <img
+                          src="/imgs/social-media-logos/facebook-logo.webp"
+                          alt="logo"
+                        />
+                      </a>
+                    </div>
+                    <div className="column">
+                      <a href="https://www.instagram.com/shpeutd/">
+                      <img
+                        src="/imgs/social-media-logos/instagram-app-icon.png"
+                        alt="logo"
+                      />
+                      </a>
+                    </div>
+                    <div className="column">
+                      <a href="https://www.linkedin.com/company/shpe-utd/">
+                      <img
+                        src="/imgs/social-media-logos/linkedin-in-logo.webp"
+                        alt="logo"
+                      />
+                      </a>
+                    </div>
+                    <div className="column">
+                      <a href="https://twitter.com/shpeutd">
+                      <img
+                        src="/imgs/social-media-logos/twitter.png"
+                        alt="logo"
+                      />
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
