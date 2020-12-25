@@ -175,4 +175,14 @@ footer {
     margin: 0 auto;
   }
 
+  .social-media-icon{
+    width: 24px;
+    height: auto;
+    transition: .2s ease;
+  }
+
+  .social-media-icon:hover{
+    filter: drop-shadow(-3vw 11vw 44vw rgba(0, 0, 0, 1));
+    opacity: .4;
+  }
   /////////////////////////////////////////////
