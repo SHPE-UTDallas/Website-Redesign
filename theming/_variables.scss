@@ -138,11 +138,16 @@ footer {
   .footer-text{
     color: rgba(0, 0, 0, 0.6);
     margin-bottom: 16px;
+    // text-align: left;
+    // text-indent: inherit;
+    // display: inline-block;
   }
 
   .footer-title{
     color: $primary;
     margin-bottom: 24px !important;
+    // text-align: justify;
+    // float: center;
   }
 
   a {
@@ -166,5 +171,9 @@ footer {
     }
   }
 
+  .centered-div{
+    width: 50%;
+    margin: 0 auto;
+  }
 
   /////////////////////////////////////////////

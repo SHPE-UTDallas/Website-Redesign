@@ -101,7 +101,8 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
           <hr />
           <div className="container">
             <div className="columns">
-              <div className="column has-text-left">
+              <div id="contact" className="column">
+                <div className="centered-div">
                 <h1 className="footer-title is-uppercase">Contact</h1>
                 <p className="footer-text">
                   800 W Campbell Rd. <br></br>Richardson, TX 75080 <br></br>
@@ -110,11 +111,13 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
                   <a href="mailto:utdshpe@gmail.com">utdshpe@gmail.com</a>
                 </p>
               </div>
-              <div className="column has-text-centered">
+              </div>
+              <div id="navigation" className="column">
+                <div className="centered-div">
                 <h1 className="footer-title is-uppercase">
                   Navigation
                 </h1>
-                <p className="footer-text has-text-left">
+                <p className="footer-text">
                   <a href="/">Home</a>
                   <br></br>
                   <a href="/about">About</a>
@@ -130,9 +133,18 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
                   </a>
                   <br></br>
                 </p>
+                </div>
               </div>
-              <div className="column has-text-right">
+              <div id="follow" className="column">
+                <div className="centered-div">
                 <h1 className="footer-title is-uppercase">Follow Us</h1>
+                <p className="footer-text">
+                  800 W Campbell Rd. <br></br>Richardson, TX 75080 <br></br>
+                  United States of America <br></br>
+                  <br></br>
+                  <a href="mailto:utdshpe@gmail.com">utdshpe@gmail.com</a>
+                </p>
+                </div>
               </div>
             </div>
           </div>
