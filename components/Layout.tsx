@@ -111,15 +111,24 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
                 </p>
               </div>
               <div className="column has-text-centered">
-                <h1 className="footer-title is-uppercase">Navigation</h1>
+                <h1 className="footer-title is-uppercase">
+                  Navigation
+                </h1>
                 <p className="footer-text has-text-left">
-                  <a href="/">Home</a><br></br>
-                  <a href="/about">About</a><br></br>
-                  <a href="/events">Events</a><br></br>
-                  <a href="/membership">Membership</a><br></br>
-                  <a href="/getInvolved">Get Involved</a><br></br>
-                  <a href="https://docs.google.com/document/d/1S8wOE2FgdFuP_aYYOY3IAjjr81RvK2TfYMYzC9vDMQY/edit">Bylaws</a><br></br>
-                  
+                  <a href="/">Home</a>
+                  <br></br>
+                  <a href="/about">About</a>
+                  <br></br>
+                  <a href="/events">Events</a>
+                  <br></br>
+                  <a href="/membership">Membership</a>
+                  <br></br>
+                  <a href="/getInvolved">Get Involved</a>
+                  <br></br>
+                  <a href="https://docs.google.com/document/d/1S8wOE2FgdFuP_aYYOY3IAjjr81RvK2TfYMYzC9vDMQY/edit">
+                    Bylaws
+                  </a>
+                  <br></br>
                 </p>
               </div>
               <div className="column has-text-right">

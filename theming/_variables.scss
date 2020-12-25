@@ -142,9 +142,6 @@ footer {
 
   .footer-title{
     color: $primary;
-    // font-weight: 500;
-    // font-size: calc(14px + .5vw);
-    // text-decoration: underline;
     margin-bottom: 24px !important;
   }
 
@@ -159,6 +156,14 @@ footer {
     color:$primary !important;
     background-color: transparent;
     text-decoration: underline;
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class|="footer"] {
+      text-align: center !important;
+      color: red !important;
+    }
   }
 
 
