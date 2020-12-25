@@ -136,7 +136,6 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
               <div id="follow" className="column">
                 <div className="centered-div">
                   <h1 className="footer-title is-uppercase">Follow Us</h1>
-                  
 
                   <div className="columns">
                     <div className="column">
@@ -149,26 +148,26 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
                     </div>
                     <div className="column">
                       <a href="https://www.instagram.com/shpeutd/">
-                      <img
-                        src="/imgs/social-media-logos/instagram-app-icon.png"
-                        alt="logo"
-                      />
+                        <img
+                          src="/imgs/social-media-logos/instagram-app-icon.png"
+                          alt="logo"
+                        />
                       </a>
                     </div>
                     <div className="column">
                       <a href="https://www.linkedin.com/company/shpe-utd/">
-                      <img
-                        src="/imgs/social-media-logos/linkedin-in-logo.webp"
-                        alt="logo"
-                      />
+                        <img
+                          src="/imgs/social-media-logos/linkedin-in-logo.webp"
+                          alt="logo"
+                        />
                       </a>
                     </div>
                     <div className="column">
                       <a href="https://twitter.com/shpeutd">
-                      <img
-                        src="/imgs/social-media-logos/twitter.png"
-                        alt="logo"
-                      />
+                        <img
+                          src="/imgs/social-media-logos/twitter.png"
+                          alt="logo"
+                        />
                       </a>
                     </div>
                   </div>
