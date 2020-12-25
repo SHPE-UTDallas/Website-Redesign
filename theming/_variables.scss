@@ -132,7 +132,34 @@ footer {
     padding-right: 10vw;
   }
 
+/////////////////////////////////////////////////////
+
+//////////////////Footer//////////////////////
   .footer-text{
     color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 16px;
   }
-///////
+
+  .footer-title{
+    color: $primary;
+    // font-weight: 500;
+    // font-size: calc(14px + .5vw);
+    // text-decoration: underline;
+    margin-bottom: 24px !important;
+  }
+
+  a {
+    color: rgba(0, 0, 0, 0.6) !important;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+
+  a:hover {
+    color:$primary !important;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+
+  /////////////////////////////////////////////

@@ -100,9 +100,9 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
         <div className="">
           <hr />
           <div className="container">
-            <div className="columns has-text-left">
-              <div className="column">
-                <h1 className="title is-uppercase">Contact</h1>
+            <div className="columns">
+              <div className="column has-text-left">
+                <h1 className="footer-title is-uppercase">Contact</h1>
                 <p className="footer-text">
                   800 W Campbell Rd. <br></br>Richardson, TX 75080 <br></br>
                   United States of America <br></br>
@@ -110,9 +110,9 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
                   <a href="mailto:utdshpe@gmail.com">utdshpe@gmail.com</a>
                 </p>
               </div>
-              <div className="column">
-                <h1 className="title is-uppercase">Navigation</h1>
-                <p className="footer-text">
+              <div className="column has-text-centered">
+                <h1 className="footer-title is-uppercase">Navigation</h1>
+                <p className="footer-text has-text-left">
                   <a href="/">Home</a><br></br>
                   <a href="/about">About</a><br></br>
                   <a href="/events">Events</a><br></br>
@@ -122,8 +122,8 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
                   
                 </p>
               </div>
-              <div className="column">
-                <h1 className="title is-uppercase">Follow Us</h1>
+              <div className="column has-text-right">
+                <h1 className="footer-title is-uppercase">Follow Us</h1>
               </div>
             </div>
           </div>
