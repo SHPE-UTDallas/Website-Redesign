@@ -97,9 +97,10 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
       {children}
 
       <footer>
-        <div className="has-text-left">
+        <div className="">
           <hr />
-          <div className="columns">
+          <div className="container">
+          <div className="columns has-text-left">
             <div className="column">
               <h1 className="title is-uppercase">Contact</h1>
               <p className="footer-text">
@@ -117,6 +118,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
             <div className="column">
               <h1 className="title is-uppercase">Follow Us</h1>
             </div>
+          </div>
           </div>
         </div>
       </footer>
