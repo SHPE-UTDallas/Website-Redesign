@@ -95,12 +95,29 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
     </header>
     <div className="_content">
       {children}
+
       <footer>
-        <div className="has-text-centered">
+        <div className="has-text-left">
           <hr />
-          <span>
-            I'm here to stay (Footer) Maybe add some of the contact info here?
-          </span>
+          <div className="columns">
+            <div className="column">
+              <h1 className="title is-uppercase">Contact</h1>
+              <p className="footer-text">
+                800 W Campbell Rd. <br></br>Richardson, TX 75080 <br></br>United
+                States of America <br></br>
+
+                <br></br>
+                <a href="mailto:utdshpe@gmail.com">utdshpe@gmail.com</a>
+              </p>
+
+            </div>
+            <div className="column">
+              <h1 className="title is-uppercase">Navigation</h1>
+            </div>
+            <div className="column">
+              <h1 className="title is-uppercase">Follow Us</h1>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
