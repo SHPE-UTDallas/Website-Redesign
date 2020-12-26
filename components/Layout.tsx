@@ -116,17 +116,30 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
                 <div className="centered-div">
                   <h1 className="footer-title is-uppercase">Navigation</h1>
                   <p className="footer-text">
-                    <a href="/">Home</a>
+                    <a className="footer-link" href="/">
+                      Home
+                    </a>
                     <br></br>
-                    <a href="/about">About</a>
+                    <a className="footer-link" href="/about">
+                      About
+                    </a>
                     <br></br>
-                    <a href="/events">Events</a>
+                    <a className="footer-link" href="/events">
+                      Events
+                    </a>
                     <br></br>
-                    <a href="/membership">Membership</a>
+                    <a className="footer-link" href="/membership">
+                      Membership
+                    </a>
                     <br></br>
-                    <a href="/getInvolved">Get Involved</a>
+                    <a className="footer-link" href="/getInvolved">
+                      Get Involved
+                    </a>
                     <br></br>
-                    <a href="https://docs.google.com/document/d/1S8wOE2FgdFuP_aYYOY3IAjjr81RvK2TfYMYzC9vDMQY/edit">
+                    <a
+                      className="footer-link"
+                      href="https://docs.google.com/document/d/1S8wOE2FgdFuP_aYYOY3IAjjr81RvK2TfYMYzC9vDMQY/edit"
+                    >
                       Bylaws
                     </a>
                     <br></br>
@@ -137,26 +150,41 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
                 <div className="centered-div">
                   <h1 className="footer-title is-uppercase">Follow Us</h1>
 
-                  <div className="columns is-mobile" style={{verticalAlign: "bottom"}}>
+                  <div
+                    className="columns is-mobile"
+                    style={{ verticalAlign: "bottom" }}
+                  >
                     <div className="column">
-                      <a href="https://www.facebook.com/SHPEUTD/" target="_blank">
-                        <img className="social-media-icon"
+                      <a
+                        href="https://www.facebook.com/SHPEUTD/"
+                        target="_blank"
+                      >
+                        <img
+                          className="social-media-icon"
                           src="/imgs/social-media-logos/facebook-logo.webp"
                           alt="logo"
                         />
                       </a>
                     </div>
                     <div className="column">
-                      <a href="https://www.instagram.com/shpeutd/" target="_blank">
-                        <img className="social-media-icon"
+                      <a
+                        href="https://www.instagram.com/shpeutd/"
+                        target="_blank"
+                      >
+                        <img
+                          className="social-media-icon"
                           src="/imgs/social-media-logos/instagram-app-icon.png"
                           alt="logo"
                         />
                       </a>
                     </div>
                     <div className="column">
-                      <a href="https://www.linkedin.com/company/shpe-utd/" target="_blank">
-                        <img className="social-media-icon"
+                      <a
+                        href="https://www.linkedin.com/company/shpe-utd/"
+                        target="_blank"
+                      >
+                        <img
+                          className="social-media-icon"
                           src="/imgs/social-media-logos/linkedin-in-logo.webp"
                           alt="logo"
                         />
@@ -164,7 +192,8 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
                     </div>
                     <div className="column">
                       <a href="https://twitter.com/shpeutd" target="_blank">
-                        <img className="social-media-icon"
+                        <img
+                          className="social-media-icon"
                           src="/imgs/social-media-logos/twitter.png"
                           alt="logo"
                         />
