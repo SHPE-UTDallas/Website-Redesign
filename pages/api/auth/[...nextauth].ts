@@ -1,7 +1,9 @@
-import NextAuth, { InitOptions, User } from "next-auth";
+
 import type { NextApiRequest, NextApiResponse } from "next";
-import { GenericObject } from "next-auth/_utils";
-import Providers from "next-auth/providers";
+import NextAuth, { InitOptions, User } from "../../../types/next-auth";
+import Providers from "../../../types/next-auth/providers";
+import { GenericObject, SessionBase } from "../../../types/next-auth/_utils";
+import createUserAccount from "../../../utils/api/createUserAccount";
 
 interface ProviderLinkedInOptions {
   clientId: string;
@@ -37,13 +39,22 @@ const options: InitOptions = {
         resolve(true);
       });
     },
+    session: async (session: SessionBase, user: User) => {
+      if(!session.user.id){
+        const id = await createUserAccount(session.user)
+        session.user.id = id;
+      }
+      return Promise.resolve(session);
+    }
   },
   /**
    * @todo: Make a flow for new users to go through
-   * pages: {
-   *   newUser: '/user/onboard'
-   *  },
    */
+  pages: {
+    signIn: "/auth/login",
+    signOut: "/auth/logout",
+    newUser: "/user/onboard",
+  },
   providers: [
     Providers.Google({
       clientId: process.env.GOOGLE_CLIENT_ID!,
