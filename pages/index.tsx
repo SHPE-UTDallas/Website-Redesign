@@ -50,11 +50,8 @@ const IndexPage = () => (
           </div>
         </div>
 
-        <div className="column">
-          <div
-            className="homepage-tile"
-            style={{ marginLeft: "auto", marginRight: "0" }}
-          ></div>
+        <div className="column homepage-tile" style={{overflowX: "hidden"}}>
+          
         </div>
       </div>
     </section>
