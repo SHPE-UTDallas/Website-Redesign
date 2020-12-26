@@ -137,9 +137,9 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
                 <div className="centered-div">
                   <h1 className="footer-title is-uppercase">Follow Us</h1>
 
-                  <div className="columns is-mobile">
+                  <div className="columns is-mobile" style={{verticalAlign: "bottom"}}>
                     <div className="column">
-                      <a href="https://www.facebook.com/SHPEUTD/">
+                      <a href="https://www.facebook.com/SHPEUTD/" target="_blank">
                         <img className="social-media-icon"
                           src="/imgs/social-media-logos/facebook-logo.webp"
                           alt="logo"
@@ -147,7 +147,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
                       </a>
                     </div>
                     <div className="column">
-                      <a href="https://www.instagram.com/shpeutd/">
+                      <a href="https://www.instagram.com/shpeutd/" target="_blank">
                         <img className="social-media-icon"
                           src="/imgs/social-media-logos/instagram-app-icon.png"
                           alt="logo"
@@ -155,7 +155,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
                       </a>
                     </div>
                     <div className="column">
-                      <a href="https://www.linkedin.com/company/shpe-utd/">
+                      <a href="https://www.linkedin.com/company/shpe-utd/" target="_blank">
                         <img className="social-media-icon"
                           src="/imgs/social-media-logos/linkedin-in-logo.webp"
                           alt="logo"
@@ -163,7 +163,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
                       </a>
                     </div>
                     <div className="column">
-                      <a href="https://twitter.com/shpeutd">
+                      <a href="https://twitter.com/shpeutd" target="_blank">
                         <img className="social-media-icon"
                           src="/imgs/social-media-logos/twitter.png"
                           alt="logo"

@@ -91,7 +91,8 @@ footer {
     }
   }
 
-  .homepage-tile{}
+  .homepage-tile{
+  }
 
   @media only screen and (max-width: 768px) {
     /* For mobile phones: */
@@ -176,9 +177,9 @@ footer {
   }
 
   .social-media-icon{
-    width: 24px;
-    height: auto;
+  
     transition: .2s ease;
+    image-rendering: crisp-edges;
   }
 
   .social-media-icon:hover{
