@@ -139,6 +139,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
                     <a
                       className="footer-link"
                       href="https://docs.google.com/document/d/1S8wOE2FgdFuP_aYYOY3IAjjr81RvK2TfYMYzC9vDMQY/edit"
+                      target="_blank"
                     >
                       Bylaws
                     </a>
