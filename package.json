@@ -5,7 +5,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "sync-dotenv-slack": "envbot",
+    "sync-env": "envbot",
     "type-check": "tsc"
   },
   "envbot": {
@@ -22,10 +22,10 @@
     "react": "^16.12.0",
     "react-bulma-components": "^3.4.0",
     "react-dom": "^16.12.0",
-    "react-social-login-buttons": "^3.1.0",
-    "sync-dotenv-slack": "git+https://github.com/SHPE-UTDallas/sync-dotenv-slack.git"
+    "react-social-login-buttons": "^3.1.0"
   },
   "devDependencies": {
+    "@shpe-utdallas/sync-dotenv-slack": "^0.1.0",
     "@types/node": "^12.12.21",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
