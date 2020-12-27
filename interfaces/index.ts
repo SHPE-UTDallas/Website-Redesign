@@ -9,3 +9,5 @@
 //   name: string
 // }
 
+export {}
+
