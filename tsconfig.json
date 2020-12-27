@@ -19,7 +19,8 @@
     "target": "esnext",
     "typeRoots": [
       "./node_modules/@types",
-      "./types/"
+      "./types/",
+      "./interfaces/"
     ]
   },
   "exclude": ["node_modules"],

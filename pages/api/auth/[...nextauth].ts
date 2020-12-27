@@ -1,6 +1,6 @@
 
 import type { NextApiRequest, NextApiResponse } from "next";
-import NextAuth, { InitOptions, User } from "next-auth";
+import NextAuth, { InitOptions, User} from "next-auth";
 import Providers from "next-auth/providers";
 import { GenericObject, SessionBase } from "next-auth/_utils";
 import createUserAccount from "../../../utils/api/createUserAccount";
@@ -39,7 +39,7 @@ const options: InitOptions = {
         resolve(true);
       });
     },
-    session: async (session: SessionBase, user: User) => {
+    session: async (session: SessionBase, _user: User) => {
       if(!session.user.id){
         const id = await createUserAccount(session.user)
         session.user.id = id;

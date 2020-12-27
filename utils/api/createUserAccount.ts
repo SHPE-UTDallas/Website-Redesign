@@ -1,5 +1,4 @@
-
-import { User } from "../../types/next-auth";
+import { User } from "next-auth";
 import getDatabase from "./firebaseConfig";
 
 export default async (user: User) : Promise<string> => {
