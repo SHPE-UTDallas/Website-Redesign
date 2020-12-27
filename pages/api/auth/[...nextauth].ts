@@ -1,8 +1,8 @@
 
 import type { NextApiRequest, NextApiResponse } from "next";
-import NextAuth, { InitOptions, User } from "../../../types/next-auth";
-import Providers from "../../../types/next-auth/providers";
-import { GenericObject, SessionBase } from "../../../types/next-auth/_utils";
+import NextAuth, { InitOptions, User } from "next-auth";
+import Providers from "next-auth/providers";
+import { GenericObject, SessionBase } from "next-auth/_utils";
 import createUserAccount from "../../../utils/api/createUserAccount";
 
 interface ProviderLinkedInOptions {
@@ -13,7 +13,7 @@ interface ProviderLinkedInOptions {
 }
 
 /**
- * Credit to @TimNZ for the prototype of how to get an email address from LinkedIn
+ * Credit to @TimNZ for the exanple of how to get an email address from LinkedIn
  * Post: https://github.com/nextauthjs/next-auth/discussions/976
  */
 const options: InitOptions = {

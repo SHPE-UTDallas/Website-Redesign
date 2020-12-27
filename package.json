@@ -20,6 +20,7 @@
     "react-social-login-buttons": "^3.1.0"
   },
   "devDependencies": {
+    "@types/next-auth": "./types/next-auth",
     "@types/node": "^12.12.21",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
