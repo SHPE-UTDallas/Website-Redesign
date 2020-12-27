@@ -53,7 +53,7 @@ const options: InitOptions = {
   pages: {
     signIn: "/auth/login",
     signOut: "/auth/logout",
-    newUser: "/user/onboard",
+    // newUser: "/user/onboard",
   },
   providers: [
     Providers.Google({
