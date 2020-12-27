@@ -81,34 +81,28 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                   </a>
                 </div>
               </div>
-
-              <div className="navbar-end"></div>
-
-              <div className="navbar-end">
-                <div className="navbar-item">
-                  <div className="buttons">
-                    {session && (
-                      <>
-                        <a
-                          className="button is-primary"
-                          href={`/users/${session.user.id}`}
-                        >
-                          <strong>View Profile</strong>
-                        </a>
-                        <a
-                          className="button is-light"
-                          onClick={() => signOut()}
-                        >
-                          Logout
-                        </a>
-                      </>
-                    )}
-                    {!session && (
-                      <a className="button is-light" onClick={() => signIn()}>
-                        Login
+            </div>
+            <div className="navbar-end">
+              <div className="navbar-item">
+                <div className="buttons">
+                  {session && (
+                    <>
+                      <a
+                        className="button is-primary"
+                        href={`/users/${session.user.id}`}
+                      >
+                        <strong>View Profile</strong>
                       </a>
-                    )}
-                  </div>
+                      <a className="button is-light" onClick={() => signOut()}>
+                        Logout
+                      </a>
+                    </>
+                  )}
+                  {!session && (
+                    <a className="button is-light" onClick={() => signIn()}>
+                      Login
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
