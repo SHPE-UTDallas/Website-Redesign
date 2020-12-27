@@ -76,30 +76,39 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                   <a className="navbar-item">Mentor Program</a>
                   <a className="navbar-item">SHPE Jr.</a>
                   <a className="navbar-item">Technology Team</a>
+                  <a className="navbar-item" href="/newsletter">
+                    Newsletter
+                  </a>
                 </div>
               </div>
-            </div>
 
-            <div className="navbar-end"></div>
+              <div className="navbar-end"></div>
 
-            <div className="navbar-end">
-              <div className="navbar-item">
-                <div className="buttons">
-                  {session && (
-                    <>
-                      <a className="button is-primary" href={`/users/${session.user.id}`}>
-                        <strong>View Profile</strong>
+              <div className="navbar-end">
+                <div className="navbar-item">
+                  <div className="buttons">
+                    {session && (
+                      <>
+                        <a
+                          className="button is-primary"
+                          href={`/users/${session.user.id}`}
+                        >
+                          <strong>View Profile</strong>
+                        </a>
+                        <a
+                          className="button is-light"
+                          onClick={() => signOut()}
+                        >
+                          Logout
+                        </a>
+                      </>
+                    )}
+                    {!session && (
+                      <a className="button is-light" onClick={() => signIn()}>
+                        Login
                       </a>
-                      <a className="button is-light" onClick={() => signOut()}>
-                        Logout
-                      </a>
-                    </>
-                  )}
-                  {!session && (
-                    <a className="button is-light" onClick={() => signIn()}>
-                      Login
-                    </a>
-                  )}
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
