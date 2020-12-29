@@ -3,6 +3,8 @@ import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
 
+import SocialMediaButton from '../components/SocialMediaButton'
+
 type Props = {
   children?: ReactNode;
   title?: string;
@@ -97,12 +99,27 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
     </header>
     <div className="">
       {children}
-      <footer>
+      {/*ADDING GRID FOR NOW*/}
+      <footer style={{
+        display: "grid",
+        gridTemplateColumns: "33% 33% 33%",
+        padding: "10px",
+      }}>
+        <div></div> {/*EMPTY DIV TO KEEP THE TEXT CENTERD*/}
         <div className="content has-text-centered">
           <hr />
           <span>
             I'm here to stay (Footer) Maybe add some of the contact info here?
           </span>
+        </div>
+        <div style={{
+          textAlign: "center",
+          }}>
+          {/*MAKE TAG INVISIBLE FOR SPACING*/}
+          <hr style={{
+            backgroundColor: "#ffffff" 
+          }}/>
+          <SocialMediaButton></SocialMediaButton>
         </div>
       </footer>
     </div>
