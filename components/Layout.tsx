@@ -57,7 +57,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
               <a className="navbar-link">Events</a>
 
               <div className="navbar-dropdown">
-                <a className="navbar-item">Calendar</a>
+                <a className="navbar-item" href = '/calendar'> Calendar</a>
                 <hr className="navbar-divider" />
                 <a className="navbar-item">General Meetings</a>
                 <a className="navbar-item">Conferences</a>

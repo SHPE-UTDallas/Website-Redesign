@@ -8,8 +8,20 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-react": "^7.12.10",
+    "@babel/preset-typescript": "^7.12.7",
+    "@fullcalendar/common": "^5.5.0",
+    "@fullcalendar/core": "^5.5.0",
+    "@fullcalendar/daygrid": "^5.5.0",
+    "@fullcalendar/interaction": "^5.5.0",
+    "@fullcalendar/react": "^5.5.0",
+    "@fullcalendar/timegrid": "^5.5.0",
+    "@zeit/next-css": "^1.0.1",
+    "babel-plugin-transform-require-ignore": "^0.1.1",
     "bulma": "^0.9.1",
     "next": "latest",
+    "next-transpile-modules": "^4.1.0",
     "node-sass": "^4.0.0",
     "react": "^16.12.0",
     "react-bulma-components": "^3.4.0",
@@ -17,10 +29,22 @@
     "react-social-login-buttons": "^3.1.0"
   },
   "devDependencies": {
-    "@types/node": "^12.12.21",
-    "@types/react": "^16.9.16",
-    "@types/react-dom": "^16.9.4",
-    "typescript": "^4.0"
+    "@types/node": "^12.19.11",
+    "@types/react": "^16.14.2",
+    "@types/react-dom": "^16.9.10",
+    "typescript": "^4.1.3"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "description": "This is a really simple project that shows the usage of Next.js with TypeScript.",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SHPE-UTDallas/Website-Redesign.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/SHPE-UTDallas/Website-Redesign/issues"
+  },
+  "homepage": "https://github.com/SHPE-UTDallas/Website-Redesign#readme"
 }
