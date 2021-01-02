@@ -1,0 +1,67 @@
+[
+    {
+        "name": "Joselyn Narvaez",
+        "position": "President",
+        "image": "/imgs/officers/president.JPG"
+    },
+    {
+        "name": "Lizbeth Zamora",
+        "position": "Vice-President",
+        "image": "/imgs/officers/vice-president.JPG"
+    },
+    {
+        "name": "Yuliana Hernandez",
+        "position": "Secretary",
+        "image": "/imgs/officers/secretary.JPG"
+    },
+    {
+        "name": "Reyna Garcia",
+        "position": "Treasurer",
+        "image": "/imgs/officers/treasurer.JPG"
+    },
+    {
+        "name": "Jacob Reyna",
+        "position": "SHPE Jr. Chair",
+        "image": "/imgs/officers/shpe_jr.JPG"
+    },
+    {
+        "name": "Maria Flores",
+        "position": "Academic Chair",
+        "image": "/imgs/officers/academic.JPG"
+    },
+    {
+        "name": "Christopher Flynn",
+        "position": "Corporate Liason",
+        "image": "/imgs/officers/corporate.JPG"
+    },
+    {
+        "name": "Gabriel Flynn",
+        "position": "Technology Chair",
+        "image": "/imgs/officers/technology.JPG"
+    },
+    {
+        "name": "Jesus Saenz",
+        "position": "Recruitment and Retention",
+        "image": "/imgs/officers/recruitment_retention.JPG"
+    },
+    {
+        "name": "Allen Hernandez",
+        "position": "Community Service Chair",
+        "image": "/imgs/officers/community.JPG"
+    },
+    {
+        "name": "Mariana Lucio",
+        "position": "Alumni Liason",
+        "image": "/imgs/officers/alumni.JPG"
+    },
+    {
+        "name": "Eddie Villarreal",
+        "position": "School Affairs",
+        "image": "/imgs/officers/school_affairs.JPG"
+    },
+    {
+        "name": "Connie Bardalez",
+        "position": "Public Relations",
+        "image": "/imgs/officers/public.JPG"
+    }
+]
