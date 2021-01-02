@@ -95,116 +95,12 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
     </header>
     <div className="_content">
       {children}
-
       <footer>
-        <div className="">
+        <div className="has-text-centered">
           <hr />
-          <div className="container">
-            <div className="columns">
-              <div id="contact" className="column">
-                <div className="centered-div">
-                  <h1 className="footer-title is-uppercase">Contact</h1>
-                  <p className="footer-text">
-                    800 W Campbell Rd. <br></br>Richardson, TX 75080 <br></br>
-                    United States of America <br></br>
-                    <br></br>
-                    <a href="mailto:utdshpe@gmail.com">utdshpe@gmail.com</a>
-                  </p>
-                </div>
-              </div>
-              <div id="navigation" className="column">
-                <div className="centered-div">
-                  <h1 className="footer-title is-uppercase">Navigation</h1>
-                  <p className="footer-text">
-                    <a className="footer-link" href="/">
-                      Home
-                    </a>
-                    <br></br>
-                    <a className="footer-link" href="/about">
-                      About
-                    </a>
-                    <br></br>
-                    <a className="footer-link" href="/events">
-                      Events
-                    </a>
-                    <br></br>
-                    <a className="footer-link" href="/membership">
-                      Membership
-                    </a>
-                    <br></br>
-                    <a className="footer-link" href="/getInvolved">
-                      Get Involved
-                    </a>
-                    <br></br>
-                    <a
-                      className="footer-link"
-                      href="https://docs.google.com/document/d/1S8wOE2FgdFuP_aYYOY3IAjjr81RvK2TfYMYzC9vDMQY/edit"
-                      target="_blank"
-                    >
-                      Bylaws
-                    </a>
-                    <br></br>
-                  </p>
-                </div>
-              </div>
-              <div id="follow" className="column">
-                <div className="centered-div">
-                  <h1 className="footer-title is-uppercase">Follow Us</h1>
-
-                  <div
-                    className="columns is-mobile"
-                    style={{ verticalAlign: "bottom" }}
-                  >
-                    <div className="column">
-                      <a
-                        href="https://www.facebook.com/SHPEUTD/"
-                        target="_blank"
-                      >
-                        <img
-                          className="social-media-icon"
-                          src="/imgs/social-media-logos/facebook-logo.webp"
-                          alt="logo"
-                        />
-                      </a>
-                    </div>
-                    <div className="column">
-                      <a
-                        href="https://www.instagram.com/shpeutd/"
-                        target="_blank"
-                      >
-                        <img
-                          className="social-media-icon"
-                          src="/imgs/social-media-logos/instagram-app-icon.png"
-                          alt="logo"
-                        />
-                      </a>
-                    </div>
-                    <div className="column">
-                      <a
-                        href="https://www.linkedin.com/company/shpe-utd/"
-                        target="_blank"
-                      >
-                        <img
-                          className="social-media-icon"
-                          src="/imgs/social-media-logos/linkedin-in-logo.webp"
-                          alt="logo"
-                        />
-                      </a>
-                    </div>
-                    <div className="column">
-                      <a href="https://twitter.com/shpeutd" target="_blank">
-                        <img
-                          className="social-media-icon"
-                          src="/imgs/social-media-logos/twitter.png"
-                          alt="logo"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <span>
+            I'm here to stay (Footer) Maybe add some of the contact info here?
+          </span>
         </div>
       </footer>
     </div>
