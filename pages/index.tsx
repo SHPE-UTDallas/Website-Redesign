@@ -1,5 +1,6 @@
 import { relative } from "path";
 import Layout from "../components/Layout";
+import Newsletter from "../components/Newsletter"
 
 const IndexPage = () => (
   <Layout title="SHPE UTD">
@@ -53,7 +54,12 @@ const IndexPage = () => (
         <div
           className="column homepage-tile"
           style={{ overflowX: "hidden" }}
-        ></div>
+        >
+
+          <Newsletter/>
+
+            
+        </div>
       </div>
     </section>
 
