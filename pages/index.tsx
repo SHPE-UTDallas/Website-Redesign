@@ -53,7 +53,7 @@ const IndexPage = () => (
 
         <div
           className="column homepage-tile"
-          style={{ overflowX: "hidden" }}
+          style={{  }}
         >
 
           <Newsletter/>
