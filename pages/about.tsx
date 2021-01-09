@@ -11,6 +11,7 @@ const Line = ({}) => (
       height: 2.5,
       width: "70%",
       marginLeft: "auto",
+      marginTop: "5px",
       marginRight: "auto"
     }}
   />
@@ -25,16 +26,11 @@ const AboutPage = () => (
     <div className="is-flex columns" style={{flexWrap: "wrap", justifyContent: "space-between"}}>
       {
         OfficerJson.map(obj => {
-          const {name, position, image} = obj
+          const {name, position, image, email} = obj
           return (
-            <div className="column is-flex is-one-half-mobile is-one-third-tablet is-one-third-desktop">
-              <OfficerIcon name={name} position={position} imgPath={image} />
+            <div key={position} className="column is-flex is-one-half-mobile is-one-third-tablet is-one-third-desktop">
+              <OfficerIcon name={name} position={position} imgPath={image} email={email}/>
             </div>
-            /*
-            <div className="column is-flex is-one-half-mobile is-one-third-tablet is-one-third-desktop is-one-quarter-widescreen">
-              <OfficerIcon name={name} position={position} imgPath={image} />
-            </div>
-            */
           )
         })
       }
