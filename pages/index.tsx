@@ -64,6 +64,18 @@ const IndexPage = () => (
     </section>
 
     <section className="section">
+    <div
+          className="homepage-tile"
+          style={{  }}
+        >
+
+          <Newsletter/>
+
+            
+        </div>
+    </section>
+
+    <section className="section">
       <div className="temoc-level">
         <div
           style={{

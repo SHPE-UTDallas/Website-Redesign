@@ -6,7 +6,7 @@ const Newsletter = () => (
             <section className="section mt-4">
                 <div className="columns is-centered is-vcentered">
                     <div className="column is-half">
-                        <p className="title is-1 is-spaced has-text-centered mt-4">Join our Newsletter</p>
+                        <h1 className="title is-1 is-spaced has-text-centered mt-4" ><span style={{whiteSpace: "nowrap"}}>Join our </span> <span style={{whiteSpace: "nowrap"}}>Newsletter</span></h1>
                         <div className="field">
                             <label className="label">First name</label>
                             <div className="control">
