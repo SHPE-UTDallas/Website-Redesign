@@ -1,7 +1,21 @@
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
 import ChatBot from "react-simple-chatbot";
+
+const theme = {
+    background: '#f5f8fb',
+    headerBgColor: '#0070c0',
+    headerFontColor: '#fff',
+    headerFontSize: '15px',
+    botBubbleColor: '#0070c0',
+    botFontColor: '#fff',
+    userBubbleColor: '#fff',
+    userFontColor: '#4a4a4a',
+  };
+
 export default function App() {
   return (
+    <ThemeProvider theme={theme}>
     <ChatBot
         floating={true}
         opened={true}
@@ -45,5 +59,6 @@ export default function App() {
             
             ]}
     />
+  </ThemeProvider>
   )
 }
