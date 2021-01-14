@@ -52,7 +52,7 @@ const IndexPage = () => (
         </div>
 
         <div
-          className="column homepage-tile"
+          className="big-res-newsletter-form column homepage-tile"
           style={{  }}
         >
 
@@ -63,10 +63,10 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section className="section">
+    <section className="section small-res-newsletter-form">
     <div
           className="homepage-tile"
-          style={{  }}
+          style={{ }}
         >
 
           <Newsletter/>
