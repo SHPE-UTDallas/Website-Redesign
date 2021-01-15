@@ -8,8 +8,8 @@ const Line = ({}) => (
     style= {{
       //color: "#b8b8b8",
       //backgroundColor: "#b8b8b8",
-      height: 2.5,
-      width: "70%",
+      //height: 1,
+      width: "66.66%",
       marginLeft: "auto",
       marginTop: "5px",
       marginRight: "auto"
@@ -34,7 +34,25 @@ const AboutPage = () => (
           )
         })
       }
+      <div className ="column">
+        <span className="has-text-link-dark is-size-1 has-text-weight-bold">
+          Want to become an officer?
+        <hr style = {{
+          width: "85%",
+          marginTop: "5px",
+          marginBottom: "10px"}}></hr>
+        </span>
+        <span className="is-size-5">
+            Join the Freshmen RoundTable to make an impact alongside an officer mentor.
+        </span>
+        <div>
+          <a className="button is-rounded is-link" style = {{marginTop: "50px"}} href={`mailto:jvn170000@utdallas.edu`}>
+            Contact Joselyn Narvaez
+          </a>
+        </div>
+      </div>
     </div>
+    
 
     <p>
       <Link href="/">
