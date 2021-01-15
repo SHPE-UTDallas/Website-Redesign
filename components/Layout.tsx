@@ -1,5 +1,4 @@
 import React, { ReactNode } from "react";
-import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
 import { signIn, signOut, useSession } from "next-auth/client";
@@ -12,7 +11,7 @@ type Props = {
 const Layout = ({ children, title = "This is the default title" }: Props) => {
   const [session, loading] = useSession();
   return (
-    <div>
+    <div id="parentDiv">
       <Head>
         <title>{title}</title>
         <meta charSet="utf-8" />
@@ -109,10 +108,10 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
           </div>
         </nav>
       </header>
-      <div className="">
+      <div className="_content">
         {children}
         <footer>
-          <div className="content has-text-centered">
+          <div className="has-text-centered">
             <hr />
             <span>
               I'm here to stay (Footer) Maybe add some of the contact info here?
