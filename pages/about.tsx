@@ -23,32 +23,36 @@ const AboutPage = () => (
       Meet the Officers
     </div>
     <Line/>
-    <div className="is-flex columns" style={{flexWrap: "wrap", justifyContent: "space-between"}}>
+    <div className="is-flex columns is-flex-wrap-wrap">
       {
         OfficerJson.map(obj => {
           const {name, position, image, email} = obj
           return (
-            <div key={position} className="column is-flex is-one-half-mobile is-one-third-tablet is-one-third-desktop">
+            <div key={position} className="column is-flex is-one-half-mobile is-one-third-tablet is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd">
               <OfficerIcon name={name} position={position} imgPath={image} email={email}/>
             </div>
           )
         })
       }
-      <div className ="column">
-        <span className="has-text-link-dark is-size-1 has-text-weight-bold">
-          Want to become an officer?
-        <hr style = {{
-          width: "85%",
-          marginTop: "5px",
-          marginBottom: "10px"}}></hr>
-        </span>
-        <span className="is-size-5">
-            Join the Freshmen RoundTable to make an impact alongside an officer mentor.
-        </span>
-        <div>
-          <a className="button is-rounded is-link" style = {{marginTop: "50px"}} href={`mailto:jvn170000@utdallas.edu`}>
-            Contact Joselyn Narvaez
-          </a>
+      <div className ="column is-full-mobile is-two-thirds-tablet is-two-thirds-desktop is-two-quarters-widescreen is-two-fifths-fullhd">
+        <div className="become-officer has-text-centered">
+          <span className="has-text-link-dark has-text-weight-bold is-size-2-mobile is-size-1">
+            Want to become an officer?
+            <hr style = {{
+              width: "45rem",
+              maxWidth: "85%",
+              margin: "5px auto 10px"
+              }}
+            />
+            </span>
+          <span className="is-size-5">
+              Join the Freshmen RoundTable to make an impact alongside an officer mentor.
+          </span>
+          <div>
+            <a className="button is-rounded is-link" style = {{marginTop: "25px"}} href={`mailto:jvn170000@utdallas.edu`}>
+              Contact Joselyn Narvaez
+            </a>
+          </div>
         </div>
       </div>
     </div>
