@@ -6,9 +6,6 @@ import OfficerJson from '../components/Officer.json'
 const Line = ({}) => (
   <hr
     style= {{
-      //color: "#b8b8b8",
-      //backgroundColor: "#b8b8b8",
-      //height: 1,
       width: "66.66%",
       marginLeft: "auto",
       marginTop: "5px",
