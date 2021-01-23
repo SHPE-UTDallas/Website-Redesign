@@ -2,10 +2,20 @@ import Layout from '../components/Layout'
 import OfficerIcon from '../components/OfficerIcon'
 import OfficerJson from '../data/Officer.json'
 
-var presEmail = "";
-var presName = "";
+type Props = {
+  presName: string;
+  presEmail: string;
+  OfficerJson: Officer[];
+};
 
-const AboutPage = () => (
+interface Officer {
+  name: string;
+  position: string;
+  image: string;
+  email: string;
+}
+
+const AboutPage = ({ presEmail, presName, OfficerJson }: Props) => (
   <Layout title="SHPE UTD">
     <div className="has-text-link-dark has-text-centered is-size-1 has-text-weight-bold">
       Meet the Officers
@@ -21,10 +31,6 @@ const AboutPage = () => (
       {
         OfficerJson.map(obj => {
           const {name, position, image, email} = obj
-          if (position == "President") {
-            presEmail = email;
-            presName = name;
-          }
           return (
             <div key={position} className="column is-flex is-one-half-mobile is-one-third-tablet is-one-third-desktop">
               <OfficerIcon name={name} position={position} imgPath={image} email={email}/>
@@ -52,5 +58,24 @@ const AboutPage = () => (
     </div>
   </Layout>
 )
+
+export async function getStaticProps() {
+  let presEmail = "";
+  let presName = "";
+  OfficerJson.map(obj => {
+    const {name, position, email} = obj
+    if (position === "President") {
+      presEmail = email;
+      presName = name;
+    }
+  })
+  return {
+    props: {
+      presEmail,
+      presName,
+      OfficerJson,
+    },
+  }
+}
 
 export default AboutPage
