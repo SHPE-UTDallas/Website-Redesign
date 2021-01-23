@@ -1,12 +1,8 @@
-<<<<<<< HEAD
 import { relative } from "path";
 import Layout from "../components/Layout";
-import Newsletter from "../components/Newsletter"
-import Calendar from "../components/Calendar"
-=======
-import Layout from '../components/Layout'
-import InstagramFeed from '../components/InstagramFeed'
->>>>>>> instagram-feed
+import Newsletter from "../components/Newsletter";
+import Calendar from "../components/Calendar";
+import InstagramFeed from "../components/InstagramFeed";
 
 const IndexPage = () => (
   <Layout title="SHPE UTD">
@@ -58,30 +54,22 @@ const IndexPage = () => (
         </div>
 
         <div
-          className="big-res-newsletter-form column homepage-tile"
-          style={{  }}
+          className="big-res-newsletter-form"
+          style={{paddingRight: 0}}
         >
-
-          <Newsletter/>
-
-            
+          <InstagramFeed />
         </div>
       </div>
     </section>
 
-    <section className="section small-res-newsletter-form">
-    <div
-          className="homepage-tile"
-          style={{ }}
-        >
-
-          <Newsletter/>
-
-            
-        </div>
+    <section className="section small-res-newsletter-form container">
+      <div
+      >
+        <InstagramFeed />
+      </div>
     </section>
 
-    <section className="section">
+    <section className="section" style={{paddingTop: "150px"}}>
       <div className="temoc-level">
         <div
           style={{
@@ -180,7 +168,7 @@ const IndexPage = () => (
     </section>
 
     <section className="section" style={{ minHeight: "2vw" }}>
-      <Calendar/>
+      <Calendar />
     </section>
   </Layout>
 );

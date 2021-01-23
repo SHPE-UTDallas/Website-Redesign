@@ -1,7 +1,7 @@
 import React from 'react'
 
 const InstagramFeed = () => (
-   <div id="parent" style={{paddingTop: "10px", maxWidth: "300px",}}>
+   <div id="parent" style={{paddingTop: "10px", maxWidth: "300px",}} className="social-media-component">
       <blockquote 
          className="instagram-media" 
          data-instgrm-permalink="https://www.instagram.com/p/CJbyNi5DmH-/?utm_source=ig_embed&amp;utm_campaign=loading" 
