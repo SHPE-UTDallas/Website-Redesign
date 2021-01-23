@@ -31,10 +31,6 @@ $secondary: $SHPE-ORANGE;
   flex: 1;
 }
 
-footer {
-  margin-top: auto;
-}
-
 #parentDiv {
   display: flex;
   min-height: 100vh;
@@ -146,6 +142,17 @@ footer {
 /////////////////////////////////////////////////////
 
 //////////////////Footer//////////////////////
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class|="footer"] {
+    text-align: center !important;
+  }
+}
+
+footer {
+  margin-top: auto;
+}
+
 .footer-text {
   color: rgba(0, 0, 0, 0.6);
   margin-bottom: 16px;
@@ -156,23 +163,16 @@ footer {
   margin-bottom: 24px !important;
 }
 
-a {
-  color: rgba(0, 0, 0, 0.6) !important;
-  background-color: transparent;
-  text-decoration: none;
-}
-
 .footer-link:hover {
   color: $primary !important;
   background-color: transparent;
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class|="footer"] {
-    text-align: center !important;
-  }
+a {
+  color: rgba(0, 0, 0, 0.6) !important;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 .centered-div {
