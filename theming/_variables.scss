@@ -83,6 +83,7 @@ footer {
 .intro {
   margin-right: 320px !important;
 
+  /* For mobile phones: */
   @media only screen and (max-width: 768px) {
     margin-right: 0 !important;
   }
@@ -93,6 +94,7 @@ footer {
   min-width: 300px;
   overflow-x: hidden;
 
+  /* For mobile phones: */
   @media only screen and (max-width: 768px) {
     margin-bottom: 150px !important;
   }
@@ -106,7 +108,6 @@ footer {
 }
 
 .temoc-level {
-  margin-bottom: 0 !important;
   margin-left: 4%;
   margin-right: 4%;
 
