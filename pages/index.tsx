@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 import { relative } from "path";
 import Layout from "../components/Layout";
 import Newsletter from "../components/Newsletter"
 import Calendar from "../components/Calendar"
+=======
+import Layout from '../components/Layout'
+import InstagramFeed from '../components/InstagramFeed'
+>>>>>>> instagram-feed
 
 const IndexPage = () => (
   <Layout title="SHPE UTD">
