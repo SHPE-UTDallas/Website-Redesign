@@ -41,7 +41,7 @@ const IndexPage = () => (
             <div className="columns" style={{ marginTop: "100px" }}>
               <div className="column is-half">
                 <button className="button is-primary center">
-                  Subscribe to our Newsletter
+                  Become a member
                 </button>
               </div>
               <div className="column is-half">
