@@ -13,6 +13,8 @@ $SHPE-LIGHT-BLUE: #72a9be;
 $primary: #0070c0;
 $secondary: $SHPE-ORANGE;
 
+$column-gap: 5px;
+
 .navbar-item:hover {
   color: $SHPE-ORANGE !important;
 }
@@ -74,7 +76,7 @@ $secondary: $SHPE-ORANGE;
   transform: translate(-50%, -50%);
 }
 .intro {
-  margin-right: 320px !important;
+  margin-right: 25% !important;
 
   /* For mobile phones: */
   @media only screen and (max-width: 768px) {
@@ -120,19 +122,19 @@ $secondary: $SHPE-ORANGE;
   padding-right: 10vw;
 }
 
-.small-res-newsletter-form {
+.small-res-social-media-component {
   display: none;
   margin-bottom: 35px !important;
 
-  @media only screen and (max-width: 1400px) {
+  @media only screen and (max-width: 1045px) {
     display: initial;
   }
 }
 
-.big-res-newsletter-form {
+.big-res-social-media-component {
   display: initial;
 
-  @media only screen and (max-width: 1400px) {
+  @media only screen and (max-width: 1045px) {
     display: none !important;
   }
 }

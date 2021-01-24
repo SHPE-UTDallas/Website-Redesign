@@ -7,7 +7,7 @@ import InstagramFeed from "../components/InstagramFeed";
 const IndexPage = () => (
   <Layout title="SHPE UTD">
     <section className="section gradient-background">
-      <div className="columns" style={{ marginLeft: "5%", marginRight: "5%" }}>
+      <div className="columns is-mobile" style={{ marginLeft: "5%", marginRight: "5%" }}>
         <div className="intro column has-text-centered">
           <div className="welcome-text">
             <h1
@@ -54,15 +54,15 @@ const IndexPage = () => (
         </div>
 
         <div
-          className="big-res-newsletter-form"
-          style={{paddingRight: 0}}
+          className="big-res-social-media-component"
+          style={{paddingRight: "7%"}}
         >
           <InstagramFeed />
         </div>
       </div>
     </section>
 
-    <section className="section small-res-newsletter-form container">
+    <section className="section small-res-social-media-component container">
       <div
       >
         <InstagramFeed />
