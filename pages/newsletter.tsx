@@ -8,7 +8,6 @@ const Newsletter = () => {
         const [email, updateEmail] = useState("");
         return (
         <Layout title="SHPE UTD">
-            <div className="container">
                 <section className="section mt-4">
                     <div className="columns is-centered is-vcentered">
                         <div className="column is-half">
@@ -57,7 +56,6 @@ const Newsletter = () => {
                         </div>
                     </div>
                 </section>
-            </div>
         </Layout>
     )
 };
