@@ -4,7 +4,7 @@
 $UTD-ORANGE: rgb(232, 117, 0);
 $UTD-GREEN: rgb(18, 71, 52);
 
-$dimensions: 16 24 32 48 64 96 128 256 !default; //Variable for image size classes ex: is-128x128, etc.: https://bulma.io/documentation/elements/image/
+$dimensions: 16 24 32 48 64 96 128 215 256 !default; //Variable for image size classes ex: is-128x128, etc.: https://bulma.io/documentation/elements/image/
 
 $SHPE-BLUE: #001f5b;
 $SHPE-ORANGE: #fd652f;
@@ -189,3 +189,20 @@ a {
   opacity: 0.4;
 }
 /////////////////////////////////////////////
+.officer:hover{
+    margin: 0;
+    transform: scale(1.08);
+}
+
+.officer {
+    margin: 20px 0;
+    transition: transform 450ms;
+}
+
+.email {
+    display:none;
+}
+ 
+div .officer:hover span .email {
+    display: block;
+}
