@@ -22,7 +22,7 @@ const AboutPage = ({ presEmail, presName, OfficerJson }: Props) => (
     </div>
     <hr
       style={{
-        width: "66.66%",
+        width: "80%",
         marginLeft: "auto",
         marginTop: "5px",
         marginRight: "auto",
