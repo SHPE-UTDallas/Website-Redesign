@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
+import OfficerJson from "../data/Officer.json";
 
 /*
   Heading: How to Join
@@ -20,8 +21,12 @@ import Layout from "../components/Layout";
   whenever you run "git commit -m "Message here" " -> it'll take a snapshot/add the files that are in green
   origin
 */
+type Props = {
+  TreasurerEmail: string;
+  TreasurerName: string;
+};
 
-const MembershipPage = () => (
+const MembershipPage = ({ TreasurerEmail, TreasurerName }: Props) => (
   <Layout title="SHPE UTD">
     <div>
       <div className="columns is-centered membership-container">
@@ -258,5 +263,21 @@ const MembershipPage = () => (
             </tr>
           </tbody>
         </table>*/
-
+export async function getStaticProps() {
+  let TreasurerEmail = "";
+  let TreasurerName = "";
+  OfficerJson.map((obj) => {
+    const { name, position, email } = obj;
+    if (position === "Treasurer") {
+      TreasurerEmail = email;
+      TreasurerName = name;
+    }
+  });
+  return {
+    props: {
+      TreasurerEmail,
+      TreasurerName,
+    },
+  };
+}
 export default MembershipPage;
