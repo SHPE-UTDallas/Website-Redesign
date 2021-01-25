@@ -1,8 +1,8 @@
 ////////////////////////////////////////////////
 // DEFAULT
 ////////////////////////////////////////////////
-$UTD-ORANGE: rgb(232,117,0);
-$UTD-GREEN: rgb(18,71,52);
+$UTD-ORANGE: rgb(232, 117, 0);
+$UTD-GREEN: rgb(18, 71, 52);
 
 
 $dimensions: 16 24 32 48 64 96 128 256 !default; //Variable for image size classes ex: is-128x128, etc.: https://bulma.io/documentation/elements/image/
@@ -14,15 +14,15 @@ $SHPE-LIGHT-BLUE: #72A9BE;
 $primary: $SHPE-BLUE;
 $secondary: $SHPE-ORANGE;
 
-.navbar-item:hover{
-    color:$SHPE-ORANGE !important;
+.navbar-item:hover {
+    color: $SHPE-ORANGE !important;
 }
 
-.navbar-link:hover{
-    color:$SHPE-ORANGE !important;
+.navbar-link:hover {
+    color: $SHPE-ORANGE !important;
 }
 
-.navbar{
+.navbar {
     height: 4em;
 }
 
@@ -31,11 +31,149 @@ footer {
     margin-top: auto;
 }
 
-.center-image{
+.center-image {
     margin-left: auto;
     margin-right: auto;
 }
 
 .add-ul-bold {
     list-style-type: disc;
+    list-style-position: inside;
 }
+
+table ul,
+table ol {
+    list-style-position: inside;
+    margin: 4px;
+}
+
+.join {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        border-bottom: 1px solid gray;
+        letter-spacing: 15px;
+        color: $SHPE-BLUE;
+
+        span {
+            letter-spacing: 0px;
+        }
+    }
+}
+
+.membership {
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid gray;
+    color: #001F5B;
+    letter-spacing: 40px;
+}
+
+
+.main-container {
+    display: flex;
+    min-height: 50vh;
+    width: 100%;
+}
+
+.box {
+
+    .h2-utd {
+        height: 20%;
+        background: linear-gradient(to right, #72A9BE, #001F5B);
+    }
+
+    .h2-local {
+        height: 20%;
+        background: linear-gradient(to left, #72A9BE, #001F5B);
+    }
+
+    h2 {
+        color: white;
+        text-transform: uppercase;
+        font-size: 250%;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 100%;
+    }
+}
+
+.box1 {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.box2 {
+    right: 0%;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.add-ul-bold ol {
+    font-weight: none;
+}
+
+li {
+    font-weight: normal;
+}
+
+table {
+    width: 100%;
+    height: 39vh;
+}
+
+.table-border-top {
+    height: 1%;
+    text-transform: uppercase;
+    font-size: large;
+    border-bottom: 1px solid gray;
+}
+
+.has-text-centered {
+    color: #001F5B;
+    border-bottom: 1px solid gray;
+}
+
+
+.none {
+    padding-left: 20px;
+    list-style: none;
+}
+
+.border-right {
+    border-right: 1px solid gray;
+}
+
+// tr,
+// th,
+// td {
+//     width: 50%;
+// }
+.width-50 {
+    width: 50%
+}
+
+.pl-4 span {
+    text-decoration: underline;
+}
+
+.has-hover:hover {
+    cursor: pointer;
+    color: #72A9BE;
+}
+
+
+
+// Still need to work on table and adjust the bullet point
+// and adjust the numerical points
+// Make sure links are attached
