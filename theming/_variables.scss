@@ -4,154 +4,320 @@
 $UTD-ORANGE: rgb(232, 117, 0);
 $UTD-GREEN: rgb(18, 71, 52);
 
+$dimensions: 16 24 32 48 64 96 128 215 256 !default; //Variable for image size classes ex: is-128x128, etc.: https://bulma.io/documentation/elements/image/
 
-$dimensions: 16 24 32 48 64 96 128 256 !default; //Variable for image size classes ex: is-128x128, etc.: https://bulma.io/documentation/elements/image/
+$SHPE-BLUE: #001f5b;
+$SHPE-ORANGE: #fd652f;
+$SHPE-LIGHT-BLUE: #72a9be;
 
-$SHPE-BLUE: #001F5B;
-$SHPE-ORANGE: #FD652F;
-$SHPE-LIGHT-BLUE: #72A9BE;
-
-$primary: $SHPE-BLUE;
+$primary: #0070c0;
 $secondary: $SHPE-ORANGE;
 
+$column-gap: 5px;
+
 .navbar-item:hover {
-    color: $SHPE-ORANGE !important;
+  color: $SHPE-ORANGE !important;
 }
 
 .navbar-link:hover {
-    color: $SHPE-ORANGE !important;
+  color: $SHPE-ORANGE !important;
 }
 
 .navbar {
-    height: 4em;
+  height: 4em;
 }
 
+._content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 
-footer {
-    margin-top: auto;
+#parentDiv {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .center-image {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+//// Homepage //////
+.gradient-background {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 112, 192, 0.07) 58.33%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.welcome-text {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: left;
+}
+
+.social-media-component {
+}
+
+.social-media-component:hover {
+  filter: drop-shadow(-3px 11px 44px rgba(0, 0, 0, 0.3));
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.intro {
+  margin-right: 25% !important;
+
+  /* For mobile phones: */
+  @media only screen and (max-width: 768px) {
+    margin-right: 0 !important;
+  }
+}
+
+.homepage-tile {
+  width: 100%;
+  min-width: 300px;
+  overflow-x: hidden;
+
+  /* For mobile phones: */
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 150px !important;
+  }
+}
+
+.benefits-text {
+  color: #0070c0;
+
+  font-weight: 500;
+  font-size: calc(4px + 1.5vw);
+}
+
+.temoc-level {
+  margin-left: 4%;
+  margin-right: 4%;
+
+  margin-bottom: 2vw !important;
+
+  @media only screen and (max-width: 1400px) {
+    margin-bottom: 40px !important;
+    margin-top: 50px !important;
+  }
+}
+
+.benefits-p {
+  color: rgba(0, 0, 0, 0.54);
+
+  padding-top: 3vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.small-res-social-media-component {
+  display: none;
+  margin-bottom: 35px !important;
+
+  @media only screen and (max-width: 1045px) {
+    display: initial;
+  }
+}
+
+.big-res-social-media-component {
+  display: initial;
+
+  @media only screen and (max-width: 1045px) {
+    display: none !important;
+  }
+}
+/////////////////////////////////////////////////////
+
+//////////////////Footer//////////////////////
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class|="footer"] {
+    text-align: center !important;
+  }
+}
+
+footer {
+  margin-top: auto;
+}
+
+.footer-text {
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 16px;
+}
+
+.footer-title {
+  color: $primary;
+  margin-bottom: 24px !important;
+}
+
+.footer-link:hover {
+  color: $primary !important;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a {
+  color: rgba(0, 0, 0, 0.6) !important;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.centered-div {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.social-media-icon {
+  transition: 0.2s ease;
+  image-rendering: crisp-edges;
+}
+
+.social-media-icon:hover {
+  filter: drop-shadow(-3vw 11vw 44vw rgba(0, 0, 0, 1));
+  opacity: 0.4;
+}
+/////////////////////////////////////////////
+.officer:hover {
+  margin: 0;
+  transform: scale(1.08);
+}
+
+.officer {
+  margin: 20px 0;
+  transition: transform 450ms;
+}
+
+.email {
+  display: none;
+}
+
+div .officer:hover span .email {
+  display: block;
+}
+///////////////Membership page//////////////////////////////
 .add-ul-bold {
-    list-style-type: disc;
-    list-style-position: inside;
+  list-style-type: disc;
+  list-style-position: inside;
 }
 
 table ul,
 table ol {
-    list-style-position: inside;
-    margin: 4px;
+  list-style-position: inside;
+  margin: 4px;
 }
 
 .join {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    h1 {
-        text-align: center;
-        text-transform: uppercase;
-        border-bottom: 1px solid gray;
-        letter-spacing: 15px;
-        color: $SHPE-BLUE;
-
-        span {
-            letter-spacing: 0px;
-        }
-    }
-}
-
-.membership {
+  h1 {
     text-align: center;
     text-transform: uppercase;
     border-bottom: 1px solid gray;
-    color: #001F5B;
-    letter-spacing: 40px;
+    letter-spacing: 15px;
+    color: $SHPE-BLUE;
+
+    span {
+      letter-spacing: 0px;
+    }
+  }
 }
 
+.membership {
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid gray;
+  color: #001f5b;
+  letter-spacing: 40px;
+}
 
 .main-container {
-    display: flex;
-    min-height: 50vh;
-    width: 100%;
+  display: flex;
+  min-height: 50vh;
+  width: 100%;
 }
 
 .box {
+  .h2-utd {
+    height: 20%;
+    background: linear-gradient(to right, #72a9be, #001f5b);
+  }
 
-    .h2-utd {
-        height: 20%;
-        background: linear-gradient(to right, #72A9BE, #001F5B);
-    }
+  .h2-local {
+    height: 20%;
+    background: linear-gradient(to left, #72a9be, #001f5b);
+  }
 
-    .h2-local {
-        height: 20%;
-        background: linear-gradient(to left, #72A9BE, #001F5B);
-    }
-
-    h2 {
-        color: white;
-        text-transform: uppercase;
-        font-size: 250%;
-        font-weight: bold;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        height: 100%;
-    }
+  h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 250%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+  }
 }
 
 .box1 {
-    flex-grow: 1;
-    width: 100%;
-    height: 100%;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
 }
 
 .box2 {
-    right: 0%;
-    flex-grow: 1;
-    width: 100%;
-    height: 100%;
+  right: 0%;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
 }
 
-
-
 .add-ul-bold ol {
-    font-weight: none;
+  font-weight: none;
 }
 
 li {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 table {
-    width: 100%;
-    height: 39vh;
+  width: 100%;
+  height: 39vh;
 }
 
 .table-border-top {
-    height: 1%;
-    text-transform: uppercase;
-    font-size: large;
-    border-bottom: 1px solid gray;
+  height: 1%;
+  text-transform: uppercase;
+  font-size: large;
+  border-bottom: 1px solid gray;
 }
 
 .has-text-centered {
-    color: #001F5B;
-    border-bottom: 1px solid gray;
+  color: #001f5b;
+  border-bottom: 1px solid gray;
 }
 
-
 .none {
-    padding-left: 20px;
-    list-style: none;
+  padding-left: 20px;
+  list-style: none;
 }
 
 .border-right {
-    border-right: 1px solid gray;
+  border-right: 1px solid gray;
 }
 
 // tr,
@@ -160,20 +326,14 @@ table {
 //     width: 50%;
 // }
 .width-50 {
-    width: 50%
+  width: 50%;
 }
 
 .pl-4 span {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .has-hover:hover {
-    cursor: pointer;
-    color: #72A9BE;
+  cursor: pointer;
+  color: #72a9be;
 }
-
-
-
-// Still need to work on table and adjust the bullet point
-// and adjust the numerical points
-// Make sure links are attached
