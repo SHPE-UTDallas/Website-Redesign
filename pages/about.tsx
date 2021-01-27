@@ -32,7 +32,8 @@ const AboutPage = ({ presEmail, presName, OfficerJson }: Props) => (
     <div className="is-flex columns is-flex-wrap-wrap">
       {OfficerJson.map((obj) => {
         const { name, position, image, email } = obj;
-        return (
+        return //render and inject to the page 
+        (
           <div
             key={position}
             className="column is-flex is-one-half-mobile is-one-third-tablet is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd"

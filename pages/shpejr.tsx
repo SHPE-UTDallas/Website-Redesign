@@ -1,7 +1,17 @@
 import Layout from "../components/Layout";
 import Link from 'next/link'
-const SHPEJR = () => (
-<Layout title="SHPEjr | Next.js + TypeScript Example">
+import OfficerJson from "../data/Officer.json";
+
+
+type Props = {
+  jrName: string;
+  jrEmail: string;
+ 
+};
+
+
+const SHPEJR = ({jrName,jrEmail}:Props) => ( 
+<Layout title="SHPEjr">
     <h1 
         className="title is-3"
      style={{marginLeft: "2%",marginBottom:"2%",marginTop:'2%'}}
@@ -62,6 +72,22 @@ const SHPEJR = () => (
       </Link>
     </p>
   </Layout>
-)
-
+)}
+export async function getStaticProps() {
+  let jrEmail = "";
+  let jrName = "";
+  OfficerJson.map((obj) => {
+    const { name, position, email } = obj;
+    if (position === "SHPE Jr. Chair") {
+      jrEmail = email;
+      jrName = name;
+    }
+  });
+  return {
+    props: {
+      jrEmail,
+      jrName,
+    },
+  };
+}
 export default SHPEJR
