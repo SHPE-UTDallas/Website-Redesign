@@ -59,20 +59,30 @@ const SHPEJR = ({jrName,jrEmail}:Props) => (
          </a>
             </li>
       </ul>
-    
+   
     <p
     style={{marginTop:"10px"}}
     >
       You can also contact the SHPE Jr. Officers
     </p>
-
+   
+    <div
+       style={{marginRight:"80%", marginLeft:"1em"}}
+    >
+    <button 
+       className="button is-round, is-link" 
+      onClick={()=> {navigator.clipboard.writeText(jrEmail)}}> 
+      Contact {jrName} -copied
+    </button>
+    </div>
       <p>
+    
       <Link href="/">
         <a>Go home</a>
       </Link>
     </p>
   </Layout>
-)}
+)
 export async function getStaticProps() {
   let jrEmail = "";
   let jrName = "";
