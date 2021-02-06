@@ -1,0 +1,13 @@
+[
+    {
+        "name": "ResumeBook",
+        "description": "A catalog of Resume from all of our members. Used by sponsors for recruitment",
+        "image": "/imgs/officers/president.jpg"
+    },
+    {
+        "name": "Website-Redeseign",
+        "description": "Redesign of the chapter's website (you're in it right now!)",
+        "image": "/imgs/officers/president.jpg"
+    }
+   
+]

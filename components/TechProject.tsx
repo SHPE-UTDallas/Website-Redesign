@@ -2,9 +2,10 @@
 type Props = {
     name: string;
     description: string;
+    image: string; 
   };
 
-const TechProject = ({ name, description }: Props) => {
+const TechProject = ({ name, description, image }: Props) => {
     return (
         <div>
             <h1>{name}</h1>
