@@ -22,7 +22,7 @@ const TeachTeamPage = ({ techOfficerEmail, techOfficerName, imgPath }: Props) =>
     </section>
 
     <section className="section">
-      <div className="container">
+      <div className="container" style={{textAlign:"center"}}>
         Value proposition Lorem ipsum dolor sit amet, consectetur
         adipiscing elit, sed do eiusmod tempor incididunt ut labore et
         dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -32,7 +32,16 @@ const TeachTeamPage = ({ techOfficerEmail, techOfficerName, imgPath }: Props) =>
         occaecat cupidatat non proident, sunt in culpa qui officia
         deserunt mollit anim id est laborum
       </div>
+
+     {
+      <div className="container" style={{marginTop: "40px", textAlign: "center"}}>
+        <a className="button" href="https://www.google.com/" target="_blank">Join the team</a>
+      </div>
+     }
     </section>
+    {
+    // <a className="button" href="https://www.google.com/" target="_blank">Join the team</a>
+    }
 
     <section className="section projects">
       <div className="container">
@@ -42,17 +51,17 @@ const TeachTeamPage = ({ techOfficerEmail, techOfficerName, imgPath }: Props) =>
 
         <div className="columns">
           {ProjectsJson.map((obj) => {
-            const { name, description, image, repo} = obj;
+            const { name, description, image, repo } = obj;
             return (
               <div
-              key = {name}
-              className="column"
+                key={name}
+                className="column"
               >
                 <TechProject
-                  name = {name}
-                  description = {description}
-                  image = {image}
-                  repo = {repo}
+                  name={name}
+                  description={description}
+                  image={image}
+                  repo={repo}
                 />
               </div>
             );
