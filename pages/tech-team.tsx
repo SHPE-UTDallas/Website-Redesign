@@ -22,26 +22,19 @@ const TeachTeamPage = ({ techOfficerEmail, techOfficerName, imgPath }: Props) =>
     </section>
 
     <section className="section">
-      <div className="container" style={{textAlign:"center"}}>
-        Value proposition Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum
+      <div className="container" style={{ textAlign: "center" }}>
+        The technology team is in charge of implementing and maintaining software solutions for the club (including the club website).
+        Members get the opportunity to work in a team setting with industry standard technologies. Very little previous experience is required
+        in order join as working with the team is meant to be a learning experience. Outside of our weekly meetings (Saturdays 3:00pm-4:00pm CST), we require
+        very little time commitment from our members, everyone can work as much or as little as they want.   
       </div>
 
-     {
-      <div className="container" style={{marginTop: "40px", textAlign: "center"}}>
+
+      <div className="container" style={{ marginTop: "40px", textAlign: "center" }}>
         <a className="button" href="https://www.google.com/" target="_blank">Join the team</a>
       </div>
-     }
+
     </section>
-    {
-    // <a className="button" href="https://www.google.com/" target="_blank">Join the team</a>
-    }
 
     <section className="section projects">
       <div className="container">
