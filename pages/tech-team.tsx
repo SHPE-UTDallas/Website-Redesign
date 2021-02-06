@@ -42,7 +42,7 @@ const TeachTeamPage = ({ techOfficerEmail, techOfficerName, imgPath }: Props) =>
 
         <div className="columns">
           {ProjectsJson.map((obj) => {
-            const { name, description, image} = obj;
+            const { name, description, image, repo} = obj;
             return (
               <div
               key = {name}
@@ -52,6 +52,7 @@ const TeachTeamPage = ({ techOfficerEmail, techOfficerName, imgPath }: Props) =>
                   name = {name}
                   description = {description}
                   image = {image}
+                  repo = {repo}
                 />
               </div>
             );

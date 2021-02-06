@@ -212,7 +212,16 @@ div .officer:hover span .email {
 
 ///////////Technology Team page//////////////
 
-.projects{}
+.project{
+  margin: 20px 0;
+  transition: transform 700ms;
+}
+
+.project:hover{
+  margin: 0;
+  transform: scale(1.08);
+  filter: drop-shadow(-3px 11px 44px rgba(0, 0, 0, 0.3));
+}
 
 .projects-title{
   color: $primary !important;
