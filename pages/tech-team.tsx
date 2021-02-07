@@ -56,13 +56,14 @@ const TeachTeamPage = ({ techOfficerEmail, techOfficerName, imgPath }: Props) =>
           Projects
         </h1>
 
-        <div className="columns">
+        <div className=" is-flex columns is-flex-wrap-wrap">
           {ProjectsJson.map((obj) => {
             const { name, description, image, repo } = obj;
             return (
               <div
                 key={name}
-                className="column"
+                className="column is-flex is-half"
+                style={{marginBottom: "20px"}}
               >
                 <TechProject
                   name={name}
