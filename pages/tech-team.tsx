@@ -28,7 +28,7 @@ const TeachTeamPage = ({ techOfficerEmail, techOfficerName, imgPath }: Props) =>
       <div className="container" style={{ textAlign: "center" }}>
         The technology team is in charge of implementing and maintaining software solutions for the club (including the club website).
         Members get the opportunity to <strong>work in a team setting with industry standard technologies</strong>. Very little previous experience is required
-        in order join as working with the team is meant to be a learning experience. Outside of our weekly meetings <strong>(Saturdays 3:00pm-4:00pm CST)</strong>, we require
+        in order join, as the team is meant to be a learning experience. Outside of our weekly meetings <strong>(Saturdays 2:00pm-3:00pm CST)</strong>, we require
         very little time commitment from our members, everyone can work as much or as little as they want.
       </div>
 
