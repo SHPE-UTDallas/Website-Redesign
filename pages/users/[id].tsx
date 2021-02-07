@@ -36,7 +36,7 @@ const StaticPropsDetail = ({ user, errors }: Props) => {
             </header>
             <div className="columns pt-3 mb-0">
               <div
-                className="column is-one-quarter"
+                className="column is-one-third"
                 style={{ borderRight: "2px solid whitesmoke" }}
               >
                 <figure className="image is-square">
@@ -57,12 +57,12 @@ const StaticPropsDetail = ({ user, errors }: Props) => {
               </div>
             </div>
             <div className="columns">
-              <div className="column is-one-quarter p-0 mt-3">
+              <div className="column is-one-third p-0 mt-3">
                 <hr className="m-0 p-0" />
               </div>
             </div>
             <div className="columns">
-              <div className="column is-one-quarter p-0">
+              <div className="column is-one-third p-0 is-flex is-flex-wrap-wrap">
                 <UserCardPanel user={user} />
               </div>
             </div>
@@ -75,7 +75,6 @@ const StaticPropsDetail = ({ user, errors }: Props) => {
           </div>
         </div>
       </div>
-      {user && <ListDetail item={user} />}
     </Layout>
   );
 };

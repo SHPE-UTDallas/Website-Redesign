@@ -7,5 +7,8 @@ declare module "next-auth" {
         paidMember?: boolean;
         joinDate?: Date;
         standing?: string;
+        major?: string;
+        standing?: string;
+        points?: string;
     }
 }

@@ -13,30 +13,33 @@ export const UserCardPanel = ({ user }: CardPanelProps) => (
       <a>Private</a>
     </p>
     <a className="panel-block is-active">
-      <span className="panel-icon">
-        <i className="fas fa-book" aria-hidden="true"></i>
-      </span>
-      bulma
+      <span className="panel-icon"></span>
+      <b>Name:</b>&nbsp; {user.name}
     </a>
     <a className="panel-block">
-      <span className="panel-icon">
-        <i className="fas fa-book" aria-hidden="true"></i>
-      </span>
-      marksheet
+      <span className="panel-icon"></span>
+      <b>Email:</b>&nbsp; {user.email}
     </a>
     <a className="panel-block">
-      <span className="panel-icon">
-        <i className="fas fa-book" aria-hidden="true"></i>
-      </span>
-      minireset.css
+      <span className="panel-icon"></span>
+      <b>Major:</b>&nbsp; {user.major}
     </a>
     <a className="panel-block">
-      <span className="panel-icon">
-        <i className="fas fa-book" aria-hidden="true"></i>
-      </span>
-      <span className="tag is-success">
-        {user.paidMember === true ? "PAID" : "UNPAID"}
-      </span>
+      <span className="panel-icon"></span>
+      <b>Standing:</b>&nbsp; {user.standing}
+    </a>
+    <a className="panel-block">
+      <span className="panel-icon"></span>
+      <b>Dues status:</b>&nbsp;
+      {user.paidMember === true ? (
+        <span className="tag is-success">PAID</span>
+      ) : (
+        <span className="tag is-danger">UNPAID</span>
+      )}
+    </a>
+    <a className="panel-block">
+      <span className="panel-icon"></span>
+      <b>Points:</b>&nbsp; {user.points}
     </a>
   </article>
 );
