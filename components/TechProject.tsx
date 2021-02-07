@@ -12,7 +12,7 @@ const TechProject = ({ name, description, image, repo }: Props) => {
     return (
         <div className="project card">
             <div className="card-image">
-                <figure className="image is-4by3">
+                <figure className="image">
                     <img src={image} alt="Placeholder image" />
                 </figure>
             </div>

@@ -2,7 +2,7 @@
     {
         "name": "ResumeBook",
         "description": "A catalog of Resume from all of our members. Used by sponsors for recruitment",
-        "image": "/imgs/officers/president.jpg",
+        "image": "https://camo.githubusercontent.com/fbe78104549bb3ea516ae1f261a04f4316cbcfc2b0bee9068e194c2aafe71837/68747470733a2f2f692e696d6775722e636f6d2f524c37726439582e676966",
         "repo": "https://github.com/SHPE-UTDallas/ResumeBook.git"
     },
     {
