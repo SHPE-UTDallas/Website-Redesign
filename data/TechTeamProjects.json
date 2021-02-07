@@ -3,12 +3,12 @@
         "name": "ResumeBook",
         "description": "A catalog of Resume from all of our members. Used by sponsors for recruitment",
         "image": "https://camo.githubusercontent.com/fbe78104549bb3ea516ae1f261a04f4316cbcfc2b0bee9068e194c2aafe71837/68747470733a2f2f692e696d6775722e636f6d2f524c37726439582e676966",
-        "repo": "https://github.com/SHPE-UTDallas/ResumeBook.git"
+        "repo": "https://github.com/SHPE-UTDallas/ResumeBook"
     },
     {
         "name": "Website-Redeseign",
         "description": "Redesign of the chapter's website (you're in it right now!)",
         "image": "/imgs/projects/WebsiteHomepage.PNG",
-        "repo": "https://github.com/SHPE-UTDallas/Website-Redesign.git"
+        "repo": "https://github.com/SHPE-UTDallas/Website-Redesign"
     }
 ]
