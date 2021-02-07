@@ -43,16 +43,21 @@ const TeachTeamPage = ({ techOfficerEmail, techOfficerName, imgPath }: Props) =>
           </span>
           <span>GitHub</span>
         </a>
-
-
-
       </div>
-
     </section>
+
+    {
+      /*
+      text-align: center;
+  font-size: 40px !important;
+  text-decoration: underline !important;
+  margin-bottom: 40px !important;
+      */
+    }
 
     <section className="section projects">
       <div className="container">
-        <h1 className="projects-title title">
+        <h1 className="projects-title title" style={{textAlign: "center", fontSize: "40px", textDecoration: "underline", marginBottom: "40px"}}>
           Projects
         </h1>
 
@@ -63,7 +68,7 @@ const TeachTeamPage = ({ techOfficerEmail, techOfficerName, imgPath }: Props) =>
               <div
                 key={name}
                 className="column is-flex is-half"
-                style={{marginBottom: "20px"}}
+                style={{ marginBottom: "20px" }}
               >
                 <TechProject
                   name={name}
