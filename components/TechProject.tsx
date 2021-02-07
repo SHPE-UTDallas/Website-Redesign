@@ -1,3 +1,5 @@
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 type Props = {
     name: string;
@@ -16,15 +18,24 @@ const TechProject = ({ name, description, image, repo }: Props) => {
             </div>
 
             <div className="content" style={{ margin: "20px 20px" }}>
-                <h1 className="projects-title title" style={{marginBottom: "0"}}>
-                    {name + "  "}
-                </h1>
-                <div>
-                    <a href={repo}  target="_blank" style={{textDecoration: "underline"}}>
-                        Repository
-                    </a>
+                <div className="level">
+                    <div className="level-left">
+                        <h1 className="projects-title title" style={{ marginBottom: "0" }}>
+                            {name}
+                        </h1>
+                    </div>
+
+                    <div className="level-right">
+                        <a className="button" href={repo} target="_blank">
+                            <span className="icon">
+                                <FontAwesomeIcon icon={faGithub} />
+                            </span>
+                      
+                        </a>
+                    </div>
                 </div>
-                <div style={{marginTop: "20px"}}>
+
+                <div style={{ marginTop: "20px" }}>
                     {description}
                 </div>
             </div>

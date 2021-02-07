@@ -4,10 +4,8 @@ import OfficerIcon from "../components/OfficerIcon";
 import TechProject from "../components/TechProject";
 import ProjectsJson from "../data/TechTeamProjects.json";
 
-import {
-  faGithub
-} from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 type Props = {
   techOfficerName: string;
