@@ -30,7 +30,7 @@ const TechProject = ({ name, description, image, repo }: Props) => {
                             <span className="icon">
                                 <FontAwesomeIcon icon={faGithub} />
                             </span>
-                      
+                            <span>Repository</span>
                         </a>
                     </div>
                 </div>
