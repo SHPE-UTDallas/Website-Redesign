@@ -46,18 +46,9 @@ const TeachTeamPage = ({ techOfficerEmail, techOfficerName, imgPath }: Props) =>
       </div>
     </section>
 
-    {
-      /*
-      text-align: center;
-  font-size: 40px !important;
-  text-decoration: underline !important;
-  margin-bottom: 40px !important;
-      */
-    }
-
     <section className="section projects">
       <div className="container">
-        <h1 className="projects-title title" style={{textAlign: "center", fontSize: "40px", textDecoration: "underline", marginBottom: "40px"}}>
+        <h1 className="projects-title title" style={{ textAlign: "center", fontSize: "40px", textDecoration: "underline", marginBottom: "40px" }}>
           Projects
         </h1>
 
