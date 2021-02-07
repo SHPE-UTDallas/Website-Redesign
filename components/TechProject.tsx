@@ -10,7 +10,7 @@ type Props = {
 
 const TechProject = ({ name, description, image, repo }: Props) => {
     return (
-        <div className="project card">
+        <div className="project card" style={{height: "100%", marginBottom: "auto"}}>
             <div className="card-image">
                 <figure className="image">
                     <img src={image} alt="Placeholder image" />
