@@ -4,6 +4,11 @@ import OfficerIcon from "../components/OfficerIcon";
 import TechProject from "../components/TechProject";
 import ProjectsJson from "../data/TechTeamProjects.json";
 
+import {
+  faGithub
+} from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 type Props = {
   techOfficerName: string;
   techOfficerEmail: string;
@@ -26,12 +31,23 @@ const TeachTeamPage = ({ techOfficerEmail, techOfficerName, imgPath }: Props) =>
         The technology team is in charge of implementing and maintaining software solutions for the club (including the club website).
         Members get the opportunity to work in a team setting with industry standard technologies. Very little previous experience is required
         in order join as working with the team is meant to be a learning experience. Outside of our weekly meetings (Saturdays 3:00pm-4:00pm CST), we require
-        very little time commitment from our members, everyone can work as much or as little as they want.   
+        very little time commitment from our members, everyone can work as much or as little as they want.
       </div>
 
 
-      <div className="container" style={{ marginTop: "40px", textAlign: "center" }}>
-        <a className="button" href="https://www.google.com/" target="_blank">Join the team</a>
+      <div className="container buttons is-centered" style={{ marginTop: "40px", textAlign: "center" }}>
+        <a className="button" href="https://www.google.com/" target="_blank">
+          <span>Join the team</span>
+        </a>
+        <a className="button" href="https://github.com/SHPE-UTDallas" target="_blank">
+          <span className="icon">
+            <FontAwesomeIcon icon={faGithub} />
+          </span>
+          <span>GitHub</span>
+        </a>
+
+
+
       </div>
 
     </section>
