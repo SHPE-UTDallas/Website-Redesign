@@ -70,11 +70,10 @@ const TeachTeamPage = ({
           style={{
             textAlign: "center",
             fontSize: "40px",
-            textDecoration: "underline",
             marginBottom: "40px",
           }}
         >
-          Projects
+          PROJECTS
         </h1>
 
         <div className=" is-flex columns is-flex-wrap-wrap">
