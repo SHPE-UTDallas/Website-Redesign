@@ -13,7 +13,7 @@ type Props = {
   imgPath: string;
 };
 
-const TeachTeamPage = ({
+const TechTeamPage = ({
   techOfficerEmail,
   techOfficerName,
   imgPath,
