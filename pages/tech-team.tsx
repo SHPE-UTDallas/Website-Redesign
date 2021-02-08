@@ -22,7 +22,7 @@ const TechTeamPage = ({
     <section className="section">
       <OfficerIcon
         name={techOfficerName}
-        position={"Technology Chair"}
+        position="Technology Chair"
         imgPath={imgPath}
         email={techOfficerEmail}
       />
