@@ -18,7 +18,7 @@ const TechTeamPage = ({
   techOfficerName,
   imgPath,
 }: Props) => (
-  <Layout title="Tech team page">
+  <Layout title="SHPE UTD">
     <section className="section">
       <OfficerIcon
         name={techOfficerName}
