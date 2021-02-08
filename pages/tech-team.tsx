@@ -47,7 +47,7 @@ const TechTeamPage = ({
         className="container buttons is-centered"
         style={{ marginTop: "40px", textAlign: "center" }}
       >
-        <a className="button" href="https://www.google.com/" target="_blank">
+        <a className="button" href="https://forms.gle/ZGv5Jvk7YYWcgWH76" target="_blank">
           <span>Join the team</span>
         </a>
         <a
