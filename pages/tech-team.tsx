@@ -121,4 +121,4 @@ export async function getStaticProps() {
   };
 }
 
-export default TeachTeamPage;
+export default TechTeamPage;
