@@ -33,7 +33,12 @@ const SHPEJR = ({jrName,jrEmail}:Props) => (
               border: "1px solid rgba(0, 0, 0, 0.17)",
             }}
           ></hr>
-
+  <div
+    className='columns'
+  >
+    <div
+      className='column'
+    >
   <div
     style={{marginLeft:".5%", marginBottom:"2em"}}
   >
@@ -74,13 +79,37 @@ const SHPEJR = ({jrName,jrEmail}:Props) => (
       onClick={()=> {navigator.clipboard.writeText(jrEmail)}}> 
       Contact {jrName} -copied
     </button>
+     </div>
     </div>
+      
+   <div
+    className='column'
+    style={{marginRight:"10%",fontSize:"120%"}}
+   >
+     <p
+     // style ={{marginLeft:'80%'}}
+     >
+     At SHPE UTD, SHPE Jr is our high school outreach program, 
+     where we work with local SHPE Jr chapters to organize engineering projects, 
+     provide academic/professional guidance, and help students foster a successful future in STEM. 
+     The Noche de Ciencias is our premier event, where a whole evening is dedicated to both 
+     the high schoolers and their parents. For the students, 
+     we have sessions with professional engineers and engineering workshops.
+      At the same time, events are held for the parents, 
+     answering their questions and discussing the benefits and 
+     easability of their children going into higher education and STEM.
+     </p>
+
+   </div>
+  </div>
+    
       <p>
     
       <Link href="/">
         <a>Go home</a>
       </Link>
     </p>
+
   </Layout>
 )
 export async function getStaticProps() {
