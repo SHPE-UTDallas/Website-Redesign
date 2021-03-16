@@ -74,13 +74,15 @@ const SHPEJR = ({jrName,jrEmail}:Props) => (
     <div
        style={{marginRight:"80%", marginLeft:"1em"}}
     >
-    <button 
-       className="button is-round, is-link" 
-      onClick={()=> {navigator.clipboard.writeText(jrEmail)}}> 
-      Contact {jrName} -copied
-    </button>
-     </div>
+      <a
+          className="button is-rounded is-link"
+          href={`mailto:${jrEmail}`}
+          >
+             Contact {jrName}
+
+      </a>    
     </div>
+  </div>
       
    <div
     className='column'
