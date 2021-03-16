@@ -1,6 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import ChatBot from "react-simple-chatbot";
+import Link from "next/link";
 
 const theme = {
   background: "#f5f8fb",
@@ -14,6 +15,22 @@ const theme = {
 };
 
 export default function App() {
+  const button = (label: string, link: string, newTab = false) => {
+    return (
+      <div>
+        {newTab ? (
+          <a href={link} target="_blank">
+            <button className="button is-primary center">{label}</button>
+          </a>
+        ) : (
+          <Link href={link}>
+            <button className="button is-primary center">{label}</button>
+          </Link>
+        )}
+      </div>
+    );
+  };
+
   return (
     <ThemeProvider theme={theme}>
       <ChatBot
@@ -47,12 +64,12 @@ export default function App() {
             options: [
               {
                 value: "Getting involved",
-                label: "getting_involved",
+                label: "Getting involved",
                 trigger: "grade_level_question_getting_involved",
               },
               {
                 value: "Paying membership fees",
-                label: "paying_membership_fees",
+                label: "Paying membership fees",
                 trigger: "paying_membership_fees",
               },
             ],
@@ -71,24 +88,67 @@ export default function App() {
                 label: "Freshman",
                 trigger: "freshman_getting_involved",
               },
-              { value: "Sophomore", label: "Sophomore" },
-              { value: "Junior", label: "Junior" },
-              { value: "Senior", label: "Senior" },
-              { value: "Graduate Student", label: "Graduate Student" },
+              {
+                value: "Sophomore",
+                label: "Sophomore",
+                trigger: "sophomore_getting_involved",
+              },
+              {
+                value: "Junior",
+                label: "Junior",
+                trigger: "junior_getting_involved",
+              },
+              {
+                value: "Senior",
+                label: "Senior",
+                trigger: "senior_getting_involved",
+              },
+              {
+                value: "Graduate Student",
+                label: "Graduate Student",
+                trigger: "graduate_getting_involved",
+              },
             ],
           },
           {
             id: "freshman_getting_involved",
             message:
-              "Welcome to UT Dallas! We'd love to have you join our Freshman round table! You get to participate in officer meetings and pitch in. Links are sent in our newsletter",
+              "Welcome to UT Dallas! We'd love to have you join our Freshman round table! You get to participate in officer meetings and pitch in. Links are sent in our newsletter. Clink the button below to join: ",
             trigger: "newsletter_signup",
           },
           {
-            id: "newsletter_signup",
-            message:
-              "Make sure to sign up for the newsletter! (Link is in the homepage)",
+              id: "sophomore_getting_involved",
+              message: "sophomore"
           },
-          { id: "paying_membership_fees", message: "To pay membership fees follow this link: https://docs.google.com/forms/d/e/1FAIpQLScZIFOctfh9P_OKbf4t1OBrv4eZnqnpNoQ0ppXPWEgKTqZAKA/viewform", },
+          {
+              id: "junior_getting_involved",
+              message: "junior"
+          },
+          {
+              id: "senior_getting_involved",
+              message: "senior"
+          },
+          {
+              id: "graduate_getting_involved",
+              message: "graduate"
+          },
+          {
+            id: "newsletter_signup",
+            component: button("Join Newsletter", "/newsletter"),
+          },
+          {
+            id: "paying_membership_fees",
+            message: "Click the button below to pay membership fees:",
+            trigger: "pay_fees_button",
+          },
+          {
+            id: "pay_fees_button",
+            component: button(
+              "Pay Fees",
+              "https://docs.google.com/forms/d/e/1FAIpQLScZIFOctfh9P_OKbf4t1OBrv4eZnqnpNoQ0ppXPWEgKTqZAKA/viewform",
+              true
+            ),
+          },
         ]}
       />
     </ThemeProvider>
