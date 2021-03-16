@@ -9,4 +9,4 @@ const SponsorPage = () => (
 );
 
 
-export default AboutPage;
+export default SponsorPage;
