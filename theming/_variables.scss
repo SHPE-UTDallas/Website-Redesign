@@ -189,6 +189,8 @@ a {
   opacity: 0.4;
 }
 /////////////////////////////////////////////
+
+////////////////////Officer Page/////////////
 .officer:hover{
     margin: 0;
     transform: scale(1.08);
@@ -206,3 +208,28 @@ a {
 div .officer:hover span .email {
     display: block;
 }
+/////////////////////////////////////////////
+
+///////////Technology Team page//////////////
+
+.project{
+  margin: 20px 0;
+  transition: transform 1000ms;
+}
+
+.project:hover{
+  margin: 0;
+  transform: scale(1.08);
+  filter: drop-shadow(-3px 11px 44px rgba(0, 0, 0, 0.3));
+  z-index: 1;
+}
+
+.projects-title{
+  color: $primary !important
+}
+
+strong{
+  color: $primary !important;
+}
+
+/////////////////////////////////////////////
