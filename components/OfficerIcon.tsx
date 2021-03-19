@@ -15,7 +15,7 @@ const OfficerIcon = ({ imgPath, name, position, email}: Props) => {
             <span className="has-text-centered">
                 <p className="is-size-5 has-text-weight-semibold">{name}</p>
                 <p>{position}</p> 
-                <span className="email is-size-7" style={{fontSize: "0.9rem"}}>Email: <a href={`mailto:${email}`}>{email}</a></span>
+                <span className="email is-size-7" style={{fontSize: "0.9rem"}}>Email: <a className="aboutPage" href={`mailto:${email}`}>{email}</a></span>
             </span>
         </div>
         
