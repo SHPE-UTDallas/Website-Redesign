@@ -2,6 +2,8 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 import ChatBot from "react-simple-chatbot";
 import Link from "next/link";
+import OfficerJson from "../data/Officer.json";
+import { triggerAsyncId } from "node:async_hooks";
 
 const theme = {
   background: "#f5f8fb",
@@ -31,6 +33,14 @@ export default function App() {
     );
   };
 
+  const officerIcon = (title: string) => {
+    return (
+      <div>
+        <p>{title}</p>
+      </div>
+    );
+  };
+
   return (
     <ThemeProvider theme={theme}>
       <ChatBot
@@ -51,7 +61,9 @@ export default function App() {
             id: "company_or_student",
             options: [
               { value: "Student", label: "Student", trigger: "student" },
-              { value: "Company", label: "Professional/Recruiter/Company" },
+              { value: "Professional", label: "Professional", trigger: "professional" },
+              { value: "Recruiter", label: "Recruiter", trigger: "recruiter" },
+              { value: "Company", label: "Company", trigger: "company" },
             ],
           },
           {
@@ -65,7 +77,7 @@ export default function App() {
               {
                 value: "Getting involved",
                 label: "Getting involved",
-                trigger: "grade_level_question_getting_involved",
+                trigger: "get_involved",
               },
               {
                 value: "Paying membership fees",
@@ -77,7 +89,7 @@ export default function App() {
           {
             id: "get_involved",
             message:
-              "Thats awesome! Are you a Freshman, Sophomore, Junior, Senior, or Graduate Student?",
+              "Thats awesome! The best way to stay involved is to subscribe to our newletter. Attend enough events and you could get sponsored for the SHPE National Convention. Are you a Freshman, Sophomore, Junior, Senior, or Graduate Student?",
             trigger: "grade_level_question_getting_involved",
           },
           {
@@ -113,24 +125,32 @@ export default function App() {
           {
             id: "freshman_getting_involved",
             message:
-              "Welcome to UT Dallas! We'd love to have you join our Freshman round table! You get to participate in officer meetings and pitch in. Links are sent in our newsletter. Clink the button below to join: ",
+              "Welcome to UT Dallas! We'd love to have you join our Freshman round table! You get to participate in officer meetings and pitch in. Links are sent in our newsletter. You can also apply to become a mentee. Clink the button below to join: ",
             trigger: "newsletter_signup",
           },
           {
-              id: "sophomore_getting_involved",
-              message: "sophomore"
+            id: "sophomore_getting_involved",
+            message:
+              "Consider applying to become a mentee. We have mentors with great experience that can help you in your professional, academic, or personal life. There is more information in our newsletter, click the link below to join: ",
+            trigger: "newsletter_signup",
           },
           {
-              id: "junior_getting_involved",
-              message: "junior"
+            id: "junior_getting_involved",
+            message:
+              "Consier becoming a mentor and helping out our younger members. There is more information in our newsletter, click the link below to join: ",
+            trigger: "newsletter_signup",
           },
           {
-              id: "senior_getting_involved",
-              message: "senior"
+            id: "senior_getting_involved",
+            message:
+              "We host a variety of events targeted at helping our members find jobs. Checkout our newsletter for more detailed information: ",
+            trigger: "newsletter_signup",
           },
           {
-              id: "graduate_getting_involved",
-              message: "graduate"
+            id: "graduate_getting_involved",
+            message:
+              "We host a variety of events targeted specifically for our Graduate members. There is more information in our newsletter, click the link below to join: ",
+            trigger: "newsletter_signup",
           },
           {
             id: "newsletter_signup",
@@ -148,6 +168,35 @@ export default function App() {
               "https://docs.google.com/forms/d/e/1FAIpQLScZIFOctfh9P_OKbf4t1OBrv4eZnqnpNoQ0ppXPWEgKTqZAKA/viewform",
               true
             ),
+          },
+          {
+            id: "professional",
+            message: "Thank you for visiting our website! We welcome professionals to come and talk to our members as well as attend our events. Contact our corporate liaison for more information:",
+            trigger: "corporate_liaison"
+          },
+          {
+            id: "recruiter",
+            message: "Thank you for visiting our website! Sponsor companies have access to our ResumeBook website, a collection of all of our member's resumes. Checkout this demo of our ResumeBook website. For full access to our real database of members, please contact our corporate liaison.",
+            trigger: "resume_book_link",
+          },
+          {
+            id: "company",
+            message: "Thank you for visiting our website! We offer a variety of services for our sponsors, including access to our ResumeBook website. Please contact our corporate liaison for more information about the benefits of being a sponsor as well as on how to become one: ",
+            trigger: "resume_book_link",
+          },
+          {
+            id: "corporate_liaison",
+            component: officerIcon("Corporate Liason"),
+          },
+          {
+            id: "resume_book_demo",
+            message: "Checkout this demo of our ResumeBook website. For full access to our real database of members, please contact our corporate liaison: ",
+            trigger: "resume_book_link"
+          },
+          {
+            id: "resume_book_link",
+            component: button("ResumeBook Demo", "https://shpe-utdallas.github.io/ResumeBook/", true),
+            trigger: "corporate_liaison"
           },
         ]}
       />
