@@ -1,6 +1,8 @@
 ////////////////////////////////////////////////
 // DEFAULT
 ////////////////////////////////////////////////
+
+//////////////////////////////// GLOBALS ///////////////////////
 $UTD-ORANGE: rgb(232, 117, 0);
 $UTD-GREEN: rgb(18, 71, 52);
 
@@ -14,6 +16,11 @@ $primary: #0070c0;
 $secondary: $SHPE-ORANGE;
 
 $column-gap: 5px;
+
+strong{
+  color: $primary !important;
+}
+//////////////////////////////////////////////////////////
 
 .navbar-item:hover {
   color: $SHPE-ORANGE !important;
@@ -226,10 +233,6 @@ div .officer:hover span .email {
 
 .projects-title{
   color: $primary !important
-}
-
-strong{
-  color: $primary !important;
 }
 
 /////////////////////////////////////////////
