@@ -51,9 +51,14 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                 Home
               </a>
 
-              <a className="navbar-item" href="/about">
-                About
-              </a>
+              <div className="navbar-item has-dropdown is-hoverable">
+                <a className="navbar-link">About</a>
+
+                <div className="navbar-dropdown">
+                  <a className="navbar-item" href="/about">Our Officers</a>
+                  <a className="navbar-item" href="/aboutUs">SHPE</a>
+                </div>
+              </div>
 
               <div className="navbar-item has-dropdown is-hoverable">
                 <a className="navbar-link">Events</a>
@@ -75,9 +80,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                   <a className="navbar-item">Mentor Program</a>
                   <a className="navbar-item">SHPE Jr.</a>
                   <a className="navbar-item">Technology Team</a>
-                  <a className="navbar-item" href="/newsletter">
-                    Newsletter
-                  </a>
+                  <a className="navbar-item" href="/newsletter">Newsletter</a>
                 </div>
               </div>
             </div>
