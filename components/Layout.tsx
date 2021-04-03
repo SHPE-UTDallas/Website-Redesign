@@ -128,7 +128,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                     800 W Campbell Rd. <br></br>Richardson, TX 75080 <br></br>
                     United States of America <br></br>
                     <br></br>
-                    <a href="mailto:utdshpe@gmail.com">utdshpe@gmail.com</a>
+                    <a className="footerLinks footer-link" href="mailto:utdshpe@gmail.com">utdshpe@gmail.com</a>
                   </p>
                 </div>
               </div>
@@ -136,28 +136,28 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                 <div className="centered-div">
                   <h1 className="footer-title is-uppercase">Navigation</h1>
                   <p className="footer-text">
-                    <a className="footer-link" href="/">
+                    <a className="footerLinks footer-link" href="/">
                       Home
                     </a>
                     <br></br>
-                    <a className="footer-link" href="/about">
+                    <a className="footerLinks footer-link" href="/about">
                       About
                     </a>
                     <br></br>
-                    <a className="footer-link" href="/events">
+                    <a className="footerLinks footer-link" href="/events">
                       Events
                     </a>
                     <br></br>
-                    <a className="footer-link" href="/membership">
+                    <a className="footerLinks footer-link" href="/membership">
                       Membership
                     </a>
                     <br></br>
-                    <a className="footer-link" href="/getInvolved">
+                    <a className="footerLinks footer-link" href="/getInvolved">
                       Get Involved
                     </a>
                     <br></br>
                     <a
-                      className="footer-link"
+                      className="footerLinks footer-link"
                       href="https://docs.google.com/document/d/1S8wOE2FgdFuP_aYYOY3IAjjr81RvK2TfYMYzC9vDMQY/edit"
                       target="_blank"
                     >
