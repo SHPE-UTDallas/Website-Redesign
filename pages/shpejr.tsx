@@ -65,7 +65,7 @@ const SHPEJR = ({jrName,jrEmail}:Props) => (
       <a
           href={`mailto:${jrEmail}`}
         >
-        ,<button
+        <button
          className="button is-primary is-rounded"
          >
                     Contact {jrName}
