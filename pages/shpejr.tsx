@@ -20,7 +20,7 @@ const SHPEJR = ({jrName,jrEmail}:Props) => (
   className="container"
 >     
      <p
-      style ={{textAlign:"center", marginBottom:".5em", marginLeft:"20%",marginRight:"20%",fontSize:"18px"}}
+      style ={{textAlign:"justified", marginBottom:".5em", marginLeft:"20%",marginRight:"20%",fontSize:"18px"}}
      >
      At SHPE UTD, SHPE Jr is our high school outreach program, where we work with local SHPE Jr chapters 
    	 to organize engineering projects, provide academic/professional guidance, and help students foster 
