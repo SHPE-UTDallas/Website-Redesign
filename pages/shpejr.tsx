@@ -10,7 +10,7 @@ type Props = {
 
 
 const SHPEJR = ({jrName,jrEmail}:Props) => ( 
-<Layout title="SHPEjr">
+<Layout title="SHPE Jr.">
     <div className="has-text-link-dark has-text-centered is-size-1 has-text-weight-bold"
       style={{marginBottom:".7em"}}
     >
