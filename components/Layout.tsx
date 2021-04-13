@@ -81,7 +81,9 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                   <a className="navbar-item">Mentor Program</a>
                   <a className="navbar-item">SHPE Jr.</a>
                   <a className="navbar-item" href="/tech-team">Technology Team</a>
-                  <a className="navbar-item" href="/newsletter">Newsletter</a>
+                  <a className="navbar-item" href="/newsletter">
+                    Newsletter
+                  </a>
                 </div>
               </div>
             </div>
