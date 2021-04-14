@@ -22,12 +22,12 @@ const SHPEJR = ({jrName,jrEmail}:Props) => (
      <p
       style ={{textAlign:"justified", marginBottom:".5em", marginLeft:"20%",marginRight:"20%",fontSize:"18px"}}
      >
-     At SHPE UTD, SHPE Jr is our high school outreach program, where we work with local SHPE Jr chapters 
+     &emsp;&emsp;At SHPE UTD, SHPE Jr is our high school outreach program, where we work with local SHPE Jr chapters 
    	 to organize engineering projects, provide academic/professional guidance, and help students foster 
-	   a successful future in STEM.The Noche de Ciencias is our premier event, where a whole evening is 
-	   dedicated to both the high schoolers and their parents. For the students,we have sessions with 
-	   professional engineers and engineering workshops.At the same time, events are held for the parents, 
-     answering their questions and discussing the benefits and easability of their children going into higher education and STEM.
+	   a successful future in STEM. The Noche de Ciencias is our premier event, where a whole evening is 
+	   dedicated to both the high schoolers and their parents. For the students, we have sessions with 
+	   professional engineers and engineering workshops. At the same time, events are held for the parents, 
+     answering their questions and discussing the benefits and feasability of their children going into higher education and STEM.
      </p>
      </div>
    <header 
