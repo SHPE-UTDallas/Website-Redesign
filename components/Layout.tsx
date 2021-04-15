@@ -129,7 +129,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                     800 W Campbell Rd. <br></br>Richardson, TX 75080 <br></br>
                     United States of America <br></br>
                     <br></br>
-                    <a href="mailto:utdshpe@gmail.com">utdshpe@gmail.com</a>
+                    <a className="footer-link" href="mailto:utdshpe@gmail.com">utdshpe@gmail.com</a>
                   </p>
                 </div>
               </div>
