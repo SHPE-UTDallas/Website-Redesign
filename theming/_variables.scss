@@ -245,6 +245,14 @@ div .officer:hover span .email {
 
 .itemCard {
   width: 100vw !important;
+  transition: transform 1000ms;
+}
+
+.itemCard:hover {
+  margin: 0;
+  transform: scale(1.08);
+  filter: drop-shadow(-3px 11px 44px rgba(0, 0, 0, 0.3));
+  z-index: 1;
 }
 
 /////////////////////////////////////////////

@@ -22,7 +22,7 @@ const getInvolved = () => {
 
   const SHPEJr = (
     <div>
-      <p className="title is-4">SHPEJR</p>
+      <p className="title is-4">SHPE JR</p>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -69,7 +69,7 @@ const getInvolved = () => {
 
   const imageLeft = (template: any, img: string) => {
     return (
-      <div className="card">
+      <div className="card itemCard">
         <div className="columns">
           <div className="column">
             <figure className="image ">
