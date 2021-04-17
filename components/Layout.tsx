@@ -75,7 +75,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
               <a className="navbar-item">Membership</a>
 
               <div className="navbar-item has-dropdown is-hoverable">
-                <a className="navbar-link">Get Involved</a>
+                <a className="navbar-link" href="getInvolved">Get Involved</a>
 
                 <div className="navbar-dropdown">
                   <a className="navbar-item">Mentor Program</a>
