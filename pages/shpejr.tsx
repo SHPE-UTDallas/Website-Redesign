@@ -11,16 +11,16 @@ type Props = {
 
 const SHPEJR = ({jrName,jrEmail}:Props) => ( 
 <Layout title="SHPE Jr.">
-    <div className="has-text-link-dark has-text-centered is-size-1 has-text-weight-bold"
+    <div className="has-text-link-dark has-text-centered title is-1 has-text-weight-bold"
       style={{marginBottom:".7em"}}
     >
-      SHPEjr
+      SHPE Jr.
     </div>
 <div
   className="container"
 >     
      <p
-      style ={{textAlign:"justified", marginBottom:".5em", marginLeft:"20%",marginRight:"20%",fontSize:"18px"}}
+      style ={{textAlign:"justify", marginBottom:".5em", marginLeft:"20%",marginRight:"20%",fontSize:"20px"}}
      >
      &emsp;&emsp;At SHPE UTD, SHPE Jr is our high school outreach program, where we work with local SHPE Jr chapters 
    	 to organize engineering projects, provide academic/professional guidance, and help students foster 
@@ -32,14 +32,14 @@ const SHPEJR = ({jrName,jrEmail}:Props) => (
      </div>
    <header 
       className = "is-size-4"
-      style={{color:"blue",marginLeft:"42%",marginBottom:"1em"}}
+      style={{color:"blue",marginLeft:"45.2%",marginBottom:"1em"}}
     >
-        Promote STEM in your HIgh School!
+       Help promote STEM in local HIgh School!
    </header>
 
    <div
     className="level"
-    style={{marginLeft:"42% ", marginRight:"30%"}}
+    style={{marginLeft:"45.2% ", marginRight:"32%"}}
    > 
     <ul className=" level-left"
       //style={{marginRight:"10%"}}
