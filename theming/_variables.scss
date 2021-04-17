@@ -15,6 +15,12 @@ $SHPE-LIGHT-BLUE: #72a9be;
 $primary: #0070c0;
 $secondary: $SHPE-ORANGE;
 
+strong{
+  color: $primary !important;
+}
+
+/////////////////////////////////////////////////////////
+
 $column-gap: 5px;
 
 strong{
@@ -176,6 +182,12 @@ footer {
 }
 
 a {
+  color: rgb(0, 68, 170) !important;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.footer-link {
   color: rgba(0, 0, 0, 0.6) !important;
   background-color: transparent;
   text-decoration: none;
@@ -234,5 +246,4 @@ div .officer:hover span .email {
 .projects-title{
   color: $primary !important
 }
-
 /////////////////////////////////////////////
