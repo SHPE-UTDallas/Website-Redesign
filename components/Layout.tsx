@@ -232,7 +232,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                   >
                     <div className="column">
                       <a
-                        href="https://www.facebook.com/SHPEUTD/"
+                        href="https://join.slack.com/t/shpeutd/shared_invite/zt-72qn18hd-SeFnXdMicmdb2vlj9RL5IA"
                         target="_blank"
                       >
                         <img
@@ -244,7 +244,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                     </div>
                     <div className="column">
                       <a
-                        href="https://www.instagram.com/shpeutd/"
+                        href="https://discord.gg/ZsY8hJHa"
                         target="_blank"
                       >
                         <img
