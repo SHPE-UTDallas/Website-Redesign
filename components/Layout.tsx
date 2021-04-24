@@ -223,6 +223,43 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                     </div>
                   </div>
                 </div>
+                <div className="centered-div">
+                  <h1 className="footer-title is-uppercase">Connect With Us</h1>
+
+                  <div
+                    className="columns is-mobile"
+                    style={{ verticalAlign: "bottom" }}
+                  >
+                    <div className="column">
+                      <a
+                        href="https://www.facebook.com/SHPEUTD/"
+                        target="_blank"
+                      >
+                        <img
+                          className="social-media-icon"
+                          src="/imgs/social-media-logos/slack-logo.png"
+                          alt="logo"
+                        />
+                      </a>
+                    </div>
+                    <div className="column">
+                      <a
+                        href="https://www.instagram.com/shpeutd/"
+                        target="_blank"
+                      >
+                        <img
+                          className="social-media-icon"
+                          src="/imgs/social-media-logos/discord-logo.png"
+                          alt="logo"
+                        />
+                      </a>
+                    </div>
+                    <div className="column">
+                    </div>
+                    <div className="column">
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
