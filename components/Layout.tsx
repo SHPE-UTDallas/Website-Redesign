@@ -223,14 +223,14 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                     </div>
                   </div>
                 </div>
-                <div className="centered-div">
+                <div className="centered-div" style={{ marginTop: 16 }}>
                   <h1 className="footer-title is-uppercase">Connect With Us</h1>
 
                   <div
                     className="columns is-mobile"
                     style={{ verticalAlign: "bottom" }}
                   >
-                    <div className="column">
+                    <div className="column is-one-quarter">
                       <a
                         href="https://join.slack.com/t/shpeutd/shared_invite/zt-72qn18hd-SeFnXdMicmdb2vlj9RL5IA"
                         target="_blank"
@@ -242,7 +242,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                         />
                       </a>
                     </div>
-                    <div className="column">
+                    <div className="column is-one-quarter">
                       <a
                         href="https://discord.gg/ZsY8hJHa"
                         target="_blank"
@@ -253,10 +253,6 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                           alt="logo"
                         />
                       </a>
-                    </div>
-                    <div className="column">
-                    </div>
-                    <div className="column">
                     </div>
                   </div>
                 </div>
