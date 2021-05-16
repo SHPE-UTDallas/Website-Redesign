@@ -20,6 +20,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
           src="https://kit.fontawesome.com/45266f9559.js"
           crossOrigin="anonymous"
         ></script>
+        <link rel="icon" href="/imgs/SHPE_Icon_200x200.png" />
       </Head>
       <header>
         <nav
