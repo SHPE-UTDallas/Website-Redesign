@@ -1,4 +1,6 @@
+import React from "react";
 import Layout from "../components/Layout";
+import Link from "next/link";
 
 const getInvolved = () => {
   const mentorProgramImg = "/imgs/SHPE_Icon.png";
@@ -50,12 +52,21 @@ const getInvolved = () => {
     </div>
   );
 
-  const imageRight = (template: any, img: string) => {
+  const imageRight = (template: any, img: string, pageLink?: string | null) => {
     return (
       <div className="card itemCard">
         <div className="columns">
           <div className="column is-two-thirds">
             <div className="section">{template}</div>
+            <div style={{width:"15%", margin:"auto"}}>
+              {pageLink ? (
+                <Link href={pageLink}>
+                  <div className="button">More Info</div>
+                </Link>
+              ) : (
+                <React.Fragment />
+              )}
+            </div>
           </div>
           <div className="column">
             <figure className="image ">
@@ -67,7 +78,7 @@ const getInvolved = () => {
     );
   };
 
-  const imageLeft = (template: any, img: string) => {
+  const imageLeft = (template: any, img: string, pageLink?: string | null) => {
     return (
       <div className="card itemCard">
         <div className="columns">
@@ -78,6 +89,15 @@ const getInvolved = () => {
           </div>
           <div className="column is-two-thirds">
             <div className="section">{template}</div>
+            <div style={{width:"15%", margin:"auto"}}>
+              {pageLink ? (
+                <Link href={pageLink}>
+                  <div className="button">More Info</div>
+                </Link>
+              ) : (
+                <React.Fragment />
+              )}
+            </div>
           </div>
         </div>
       </div>
@@ -89,7 +109,7 @@ const getInvolved = () => {
       <div className="container section">
         {imageRight(MentorProgram, mentorProgramImg)}
         {imageLeft(SHPEJr, SHPEJrImg)}
-        {imageRight(TechnologyTeam, TechnologyTeamImg)}
+        {imageRight(TechnologyTeam, TechnologyTeamImg, "/tech-team")}
       </div>
     </Layout>
   );
