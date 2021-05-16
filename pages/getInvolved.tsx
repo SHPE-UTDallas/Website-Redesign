@@ -52,34 +52,37 @@ const getInvolved = () => {
     </div>
   );
 
-  const imageRight = (template: any, img: string, pageLink?: string | null) => {
+  const imageRight = (template: any, img: string, pageLink?: string) => {
     return (
-      <div className="card itemCard">
-        <div className="columns">
-          <div className="column is-two-thirds">
-            <div className="section">{template}</div>
-            <div style={{width:"15%", margin:"auto"}}>
-              {pageLink ? (
-                <Link href={pageLink}>
-                  <div className="button">More Info</div>
-                </Link>
-              ) : (
-                <React.Fragment />
-              )}
+      <Link href={pageLink || "/getInvolved"} scroll={false}>
+        <div className="card itemCard">
+          <div className="columns">
+            <div className="column is-two-thirds">
+              <div className="section">{template}</div>
+              <div style={{ width: "15%", margin: "auto" }}>
+                {pageLink ? (
+                  <Link href={pageLink}>
+                    <div className="button">More Info</div>
+                  </Link>
+                ) : (
+                  <React.Fragment />
+                )}
+              </div>
+            </div>
+            <div className="column">
+              <figure className="image ">
+                <img src={img} />
+              </figure>
             </div>
           </div>
-          <div className="column">
-            <figure className="image ">
-              <img src={img} />
-            </figure>
-          </div>
         </div>
-      </div>
+      </Link>
     );
   };
 
-  const imageLeft = (template: any, img: string, pageLink?: string | null) => {
+  const imageLeft = (template: any, img: string, pageLink?: string) => {
     return (
+      <Link href={pageLink || "/getInvolved"} scroll={false}>
       <div className="card itemCard">
         <div className="columns">
           <div className="column">
@@ -89,7 +92,7 @@ const getInvolved = () => {
           </div>
           <div className="column is-two-thirds">
             <div className="section">{template}</div>
-            <div style={{width:"15%", margin:"auto"}}>
+            <div style={{ width: "15%", margin: "auto" }}>
               {pageLink ? (
                 <Link href={pageLink}>
                   <div className="button">More Info</div>
@@ -101,6 +104,7 @@ const getInvolved = () => {
           </div>
         </div>
       </div>
+      </Link>
     );
   };
 
