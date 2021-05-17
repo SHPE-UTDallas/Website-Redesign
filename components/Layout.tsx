@@ -20,6 +20,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
           src="https://kit.fontawesome.com/45266f9559.js"
           crossOrigin="anonymous"
         ></script>
+        <link rel="icon" href="/imgs/SHPE_Icon_200x200.png" />
       </Head>
       <header>
         <nav
@@ -51,9 +52,15 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                 Home
               </a>
 
-              <a className="navbar-item" href="/about">
-                About
-              </a>
+              <div className="navbar-item has-dropdown is-hoverable">
+                <a className="navbar-link">About</a>
+
+                <div className="navbar-dropdown">
+                  <a className="navbar-item" href="/aboutUs">SHPE</a>
+                  <a className="navbar-item" href="/sponsor">Sponsors</a>
+                  <a className="navbar-item" href="/officer">Officers</a>
+                </div>
+              </div>
 
               <div className="navbar-item has-dropdown is-hoverable">
                 <a className="navbar-link">Events</a>
@@ -69,7 +76,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
               <a className="navbar-item">Membership</a>
 
               <div className="navbar-item has-dropdown is-hoverable">
-                <a className="navbar-link">Get Involved</a>
+                <a className="navbar-link" href="getInvolved">Get Involved</a>
 
                 <div className="navbar-dropdown">
                   <a className="navbar-item">Mentor Program</a>
@@ -125,7 +132,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                     800 W Campbell Rd. <br></br>Richardson, TX 75080 <br></br>
                     United States of America <br></br>
                     <br></br>
-                    <a href="mailto:utdshpe@gmail.com">utdshpe@gmail.com</a>
+                    <a className="footer-link" href="mailto:utdshpe@gmail.com">utdshpe@gmail.com</a>
                   </p>
                 </div>
               </div>
@@ -213,6 +220,39 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                         <img
                           className="social-media-icon"
                           src="/imgs/social-media-logos/twitter.png"
+                          alt="logo"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="centered-div" style={{ marginTop: 16 }}>
+                  <h1 className="footer-title is-uppercase">Connect With Us</h1>
+
+                  <div
+                    className="columns is-mobile"
+                    style={{ verticalAlign: "bottom" }}
+                  >
+                    <div className="column is-one-quarter">
+                      <a
+                        href="https://join.slack.com/t/shpeutd/shared_invite/zt-72qn18hd-SeFnXdMicmdb2vlj9RL5IA"
+                        target="_blank"
+                      >
+                        <img
+                          className="social-media-icon"
+                          src="/imgs/social-media-logos/slack-logo.png"
+                          alt="logo"
+                        />
+                      </a>
+                    </div>
+                    <div className="column is-one-quarter">
+                      <a
+                        href="https://discord.gg/ZsY8hJHa"
+                        target="_blank"
+                      >
+                        <img
+                          className="social-media-icon"
+                          src="/imgs/social-media-logos/discord-logo.png"
                           alt="logo"
                         />
                       </a>
