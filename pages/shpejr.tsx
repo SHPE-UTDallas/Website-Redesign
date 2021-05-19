@@ -18,7 +18,7 @@ const SHPEJR = ({ jrName, jrEmail }: Props) => (
     </div>
 
     <div
-      style={{ marginLeft:"35%", marginBottom:"2em"}}
+      style={{ marginLeft:"26%",marginRight:"22%", marginBottom:"2em"}}
       >
       <img 
        className="image is-20by9"
@@ -30,7 +30,7 @@ const SHPEJR = ({ jrName, jrEmail }: Props) => (
     >
 
       <p
-        style={{ textAlign: "center", marginBottom: ".5em", marginLeft: "30%", marginRight: "20%", fontSize: "20px" }}
+        style={{ textAlign: "center", marginBottom: ".5em", marginLeft: "20%", marginRight: "20%", fontSize: "20px" }}
       >
         &emsp;&emsp;At SHPE UTD, SHPE Jr is our high school outreach program, where we work with local SHPE Jr chapters
         to organize engineering projects, provide academic/professional guidance, and help students foster
