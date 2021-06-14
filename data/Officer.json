@@ -1,0 +1,80 @@
+[
+    {
+        "name": "Joselyn Narvaez",
+        "position": "President",
+        "image": "/imgs/officers/president.jpg",
+        "email": "jvn170000@utdallas.edu"
+    },
+    {
+        "name": "Lizbeth Zamora",
+        "position": "Vice-President",
+        "image": "/imgs/officers/vice-president.jpg",
+        "email": "Lizbeth.Zamora@utdallas.edu"
+    },
+    {
+        "name": "Yuliana Hernandez",
+        "position": "Secretary",
+        "image": "/imgs/officers/secretary.jpg",
+        "email": "Yuliana.Hernandez@utdallas.edu"
+    },
+    {
+        "name": "Reyna Garcia",
+        "position": "Treasurer",
+        "image": "/imgs/officers/treasurer.jpg",
+        "email": "Reyna.Garcia@utdallas.edu"
+    },
+    {
+        "name": "Jacob Reyna",
+        "position": "SHPE Jr. Chair",
+        "image": "/imgs/officers/shpe_jr.jpg",
+        "email": "jcr170001@utdallas.edu"
+    },
+    {
+        "name": "Maria Flores",
+        "position": "Academic Chair",
+        "image": "/imgs/officers/academic.jpg",
+        "email": "Maria.Flores@utdallas.edu"
+    },
+    {
+        "name": "Christopher Flynn",
+        "position": "Corporate Liason",
+        "image": "/imgs/officers/corporate.jpg",
+        "email": "Christopher.Flynn@utdallas.edu"
+    },
+    {
+        "name": "Gabriel Flynn",
+        "position": "Technology Chair",
+        "image": "/imgs/officers/technology.jpg",
+        "email": "Gabriel.Flynn@utdallas.edu"
+    },
+    {
+        "name": "Jesus Saenz",
+        "position": "Recruitment and Retention",
+        "image": "/imgs/officers/recruitment_retention.jpg",
+        "email": "jas170001@utdallas.edu"
+    },
+    {
+        "name": "Allen Hernandez",
+        "position": "Community Service Chair",
+        "image": "/imgs/officers/community.jpg",
+        "email": "Allen.Hernandez@utdallas.edu"
+    },
+    {
+        "name": "Mariana Lucio",
+        "position": "Alumni Liason",
+        "image": "/imgs/officers/alumni.jpg",
+        "email": "Mariana.Lucio@UTDallas.edu"
+    },
+    {
+        "name": "Eddie Villarreal",
+        "position": "School Affairs",
+        "image": "/imgs/officers/school_affairs.jpg",
+        "email": "Eddie.Villarreal@UTDallas.edu"
+    },
+    {
+        "name": "Connie Bardalez",
+        "position": "Public Relations",
+        "image": "/imgs/officers/public.jpg",
+        "email": "cnb170001@utdallas.edu"
+    }
+]
