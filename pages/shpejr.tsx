@@ -18,7 +18,7 @@ const SHPEJR = ({ jrName, jrEmail }: Props) => (
     </div>
 
     <div
-      style={{ marginLeft:"26%",marginRight:"22%", marginBottom:"2em"}}
+      style={{ marginLeft:"auto",marginRight:"auto", marginBottom:"2em"}}
       >
       <img 
        className="image is-20by9"
@@ -59,7 +59,7 @@ const SHPEJR = ({ jrName, jrEmail }: Props) => (
 
         <div
           className="level"
-          style={{ marginLeft:"35%", marginRight:"35%" }}
+          style={{ marginLeft:"36.96%", marginRight:"35.5%"}}
         >
           <ul className=" level-left"
           //style={{marginRight:"10%"}}
