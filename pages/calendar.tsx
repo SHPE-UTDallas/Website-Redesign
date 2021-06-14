@@ -1,15 +1,17 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
-import FullCalendar from '../components/Calendar'
 import React from 'react'
-import googleCalendarPlugin from '../components/Calendar'
 
+import dynamic from 'next/dynamic';
+import Layout from '../components/Layout';
 
+const FullCalendar = dynamic(() => import('../components/FullCalendar'), {
+    ssr: false
+});
 
-const AboutPage = () => (
-  <Layout title="SHPE Calendar">
-    <FullCalendar/>
-  </Layout>
-)
+const CalendarPage = () => {
+    return (
+    <Layout title="SHPE Calendar">
+      <FullCalendar />
+    </Layout>)
+}
 
-export default AboutPage
+export default CalendarPage;
