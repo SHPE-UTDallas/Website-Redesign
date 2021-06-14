@@ -50,9 +50,8 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
 
             <a
               role="button"
-              className={`navbar-burger + ${
-                mobileMenuActive ? "is-active" : null
-              } `}
+              className={`navbar-burger + ${mobileMenuActive ? "is-active" : null
+                } `}
               aria-label="menu"
               onClick={handleMobileToggle}
             >
@@ -64,9 +63,8 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
 
           <div
             id="navbarDesktop"
-            className={`navbar-menu + ${
-              mobileMenuActive ? "is-active" : null
-            } `}
+            className={`navbar-menu + ${mobileMenuActive ? "is-active" : null
+              } `}
           >
             <div className="navbar-start">
               <a className="navbar-item" href="/">
@@ -96,7 +94,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                   <a className="navbar-item">Calendar</a>
                   <hr className="navbar-divider" />
                   <a className="navbar-item">General Meetings</a>
-                  <a className="navbar-item">Conferences</a>
+                  <a className="navbar-item" href="conference">Conferences</a>
                 </div>
               </div>
 
