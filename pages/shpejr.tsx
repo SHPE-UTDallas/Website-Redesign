@@ -52,7 +52,7 @@ const SHPEJR = ({ jrName, jrEmail }: Props) => (
           className="is-size-4"
         //  style={{color:"blue",marginLeft:"45%",marginBottom:"1em"}}
         >
-          Help promote STEM in local High School!
+          Help promote STEM in local High Schools!
        </header>
        </div>
     </div>
