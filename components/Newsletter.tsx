@@ -1,11 +1,17 @@
 import React from "react";
 import { useState } from "react";
-import Layout from "../components/Layout";
 
 const Newsletter = () => {
   const [fname, updateName] = useState("");
   const [lname, updateLName] = useState("");
   const [email, updateEmail] = useState("");
+
+  const submit = () =>{
+    fname;
+    lname;
+    email;
+  }
+
   return (
         <div className="columns is-centered is-vcentered">
           <div className="column is-full">
@@ -50,7 +56,7 @@ const Newsletter = () => {
               </div>
             </div>
             <div className="control">
-              <button className="button is-primary">Submit</button>
+              <button className="button is-primary" onClick={submit}>Submit</button>
             </div>
           </div>
         </div>
