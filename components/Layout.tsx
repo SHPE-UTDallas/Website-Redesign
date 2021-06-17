@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import { signIn, signOut, useSession } from "next-auth/client";
+// import { signIn, signOut, useSession } from "next-auth/client";
 import { useState } from "react";
 
 type Props = {
@@ -10,7 +10,7 @@ type Props = {
 };
 
 const Layout = ({ children, title = "This is the default title" }: Props) => {
-  const [session, loading] = useSession();
+  // const [session, loading] = useSession();
   const [mobileMenuActive, setMobileMenuActive] = useState(false);
 
   const handleMobileToggle = () => {
@@ -119,7 +119,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                 </div>
               </div>
             </div>
-            <div className="navbar-end">
+            {/* <div className="navbar-end">
               <div className="navbar-item">
                 <div className="buttons">
                   {session && (
@@ -142,7 +142,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                   )}
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </nav>
       </header>
