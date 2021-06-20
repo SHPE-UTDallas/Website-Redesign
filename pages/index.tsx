@@ -11,7 +11,7 @@ const IndexPage = () => (
         className="columns is-mobile"
         style={{ marginLeft: "5%", marginRight: "5%" }}
       >
-        <div className="intro column">
+        <div className="intro column has-text-centered">
           <div className="welcome-text">
             <h1
               className="welcome-text"
