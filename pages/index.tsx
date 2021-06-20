@@ -1,8 +1,8 @@
 // import { relative } from "path";
 import Layout from "../components/Layout";
 import Newsletter from "../components/Newsletter";
-import Link from "next/link";
 import Calendar from "../components/Calendar";
+import InstagramFeed from "../components/InstagramFeed";
 
 const IndexPage = () => (
   <Layout title="SHPE UTD">
@@ -60,14 +60,14 @@ const IndexPage = () => (
           className="big-res-social-media-component"
           style={{ paddingRight: "7%" }}
         >
-          <Newsletter />
+          <InstagramFeed />
         </div>
       </div>
     </section>
 
     <section className="section small-res-social-media-component container">
       <div>
-        <Newsletter />
+       <InstagramFeed />
       </div>
     </section>
 
