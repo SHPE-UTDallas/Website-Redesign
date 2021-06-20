@@ -28,14 +28,9 @@ const IndexPage = () => (
                 color: "rgba(0, 0, 0, 0.61)",
               }}
             >
-              Value proposition Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum
+              Welcome to SHPE at UTD's brand new website! We are a chapter built to empower our members to pursue their passions
+              Whether you are a student looking to get involved or a company representative seeing how you may support us, we invite you 
+              to take a look around at all the exciting things we do. 
             </p>
 
             <div className="columns" style={{ marginTop: "100px" }}>
@@ -125,13 +120,10 @@ const IndexPage = () => (
       </div>
 
       <p className="is-size-4 benefits-p">
-        Benefits Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum
+      The Society of Hispanic Professional Engineers (SHPE) is the largest association in the nation for Hispanics 
+      in the STEM community. This organization offers both students and professionals mentorship, training, and programming. 
+      SHPE's mission is to change lives by empowering the Hispanic community to realize its fullest potential and to impact the world 
+      through STEM awareness, access, support, and development.
       </p>
 
       <div className="temoc-level">
