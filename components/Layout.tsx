@@ -282,7 +282,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                         </a>
                       </div>
                       <div className="column is-one-quarter">
-                        <a href="https://discord.gg/ZsY8hJHa" target="_blank">
+                        <a href="https://discord.gg/GfbmKXujE2" target="_blank">
                           <img
                             className="social-media-icon"
                             src="/imgs/social-media-logos/discord-logo.png"
