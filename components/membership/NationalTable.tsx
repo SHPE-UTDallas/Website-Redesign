@@ -28,7 +28,7 @@ const NationalTable = () => (
               <ol className="pl-4">
                 <li>
                   Go to{" "}
-                  <a href="https://www.shpe.org/join-shpe">
+                  <a href="https://www.shpe.org/join-shpe" target="_blank">
                     <span className="has-hover">shpe.org/join-shpe</span>
                   </a>
                 </li>

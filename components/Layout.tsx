@@ -90,7 +90,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
               </div>
 
               <div className="navbar-item has-dropdown is-hoverable">
-                <a className="navbar-link">Events</a>
+                {/* <a className="navbar-link">Events</a> */}
 
                 <div className="navbar-dropdown">
                   <a className="navbar-item">Calendar</a>
@@ -100,7 +100,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                 </div>
               </div>
 
-              <a className="navbar-item" href="/membership">Membership</a>
+              {/* <a className="navbar-item" href="/membership">Membership</a> */}
 
               <div className="navbar-item has-dropdown is-hoverable">
                 <a className="navbar-link" href="getInvolved">
@@ -182,14 +182,14 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                         About
                       </a>
                       <br></br>
-                      <a className="footer-link" href="/events">
+                      {/* <a className="footer-link" href="/events">
                         Events
                       </a>
-                      <br></br>
-                      <a className="footer-link" href="/membership">
+                      <br></br> */}
+                      {/* <a className="footer-link" href="/membership">
                         Membership
                       </a>
-                      <br></br>
+                      <br></br> */}
                       <a className="footer-link" href="/getInvolved">
                         Get Involved
                       </a>

@@ -39,18 +39,19 @@ const IndexPage = () => (
             </p>
 
             <div className="columns" style={{ marginTop: "100px" }}>
-              <div className="column is-half">
-                <Link href="/membership">
+              {/* <div className="column is-half"> */}
+              <div className="column is-full">
+                <a href="https://shpeutd.us20.list-manage.com/subscribe/post?u=2d719e9a41d3800f0ce0cd6cd&id=aa49373eb8" target="_blank">
                   <button className="button is-primary center">
                     Become a member
                   </button>
-                </Link>
+                </a>
               </div>
-              <div className="column is-half">
+              {/* <div className="column is-half">
                 <button className="button is-primary center">
                   Become a sponsor
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
