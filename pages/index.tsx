@@ -1,13 +1,17 @@
 // import { relative } from "path";
 import Layout from "../components/Layout";
 import Newsletter from "../components/Newsletter";
+import Link from "next/link";
 import Calendar from "../components/Calendar";
 
 const IndexPage = () => (
   <Layout title="SHPE UTD">
     <section className="section gradient-background">
-      <div className="columns is-mobile" style={{ marginLeft: "5%", marginRight: "5%" }}>
-        <div className="intro column has-text-centered">
+      <div
+        className="columns is-mobile"
+        style={{ marginLeft: "5%", marginRight: "5%" }}
+      >
+        <div className="intro column">
           <div className="welcome-text">
             <h1
               className="welcome-text"
@@ -27,16 +31,20 @@ const IndexPage = () => (
                 color: "rgba(0, 0, 0, 0.61)",
               }}
             >
-              Welcome to SHPE at UTD's brand new website! We are a chapter built to empower our members to pursue their passions
-              Whether you are a student looking to get involved or a company representative seeing how you may support us, we invite you 
-              to take a look around at all the exciting things we do. 
+              Welcome to SHPE at UTD's brand new website! We are a chapter built
+              to empower our members to pursue their passions Whether you are a
+              student looking to get involved or a company representative seeing
+              how you may support us, we invite you to take a look around at all
+              the exciting things we do.
             </p>
 
             <div className="columns" style={{ marginTop: "100px" }}>
               <div className="column is-half">
-                <button className="button is-primary center">
-                  Become a member
-                </button>
+                <Link href="/membership">
+                  <button className="button is-primary center">
+                    Become a member
+                  </button>
+                </Link>
               </div>
               <div className="column is-half">
                 <button className="button is-primary center">
@@ -49,7 +57,7 @@ const IndexPage = () => (
 
         <div
           className="big-res-social-media-component"
-          style={{paddingRight: "7%"}}
+          style={{ paddingRight: "7%" }}
         >
           <Newsletter />
         </div>
@@ -57,13 +65,12 @@ const IndexPage = () => (
     </section>
 
     <section className="section small-res-social-media-component container">
-      <div
-      >
+      <div>
         <Newsletter />
       </div>
     </section>
 
-    <section className="section" style={{paddingTop: "150px"}}>
+    <section className="section" style={{ paddingTop: "150px" }}>
       <div className="temoc-level">
         <div
           style={{
@@ -119,10 +126,13 @@ const IndexPage = () => (
       </div>
 
       <p className="is-size-4 benefits-p">
-      The Society of Hispanic Professional Engineers (SHPE) is the largest association in the nation for Hispanics 
-      in the STEM community. This organization offers both students and professionals mentorship, training, and programming. 
-      SHPE's mission is to change lives by empowering the Hispanic community to realize its fullest potential and to impact the world 
-      through STEM awareness, access, support, and development.
+        The Society of Hispanic Professional Engineers (SHPE) is the largest
+        association in the nation for Hispanics in the STEM community. This
+        organization offers both students and professionals mentorship,
+        training, and programming. SHPE's mission is to change lives by
+        empowering the Hispanic community to realize its fullest potential and
+        to impact the world through STEM awareness, access, support, and
+        development.
       </p>
 
       <div className="temoc-level">
