@@ -65,6 +65,28 @@ $column-gap: 5px;
   line-height: 56px;
   text-align: left;
 }
+.intro {
+  margin-right: 25% !important;
+
+  /* For mobile phones: */
+  @media only screen and (max-width: 768px) {
+    margin-right: 0 !important;
+  }
+}
+
+.homepage-tile {
+  width: 100%;
+  min-width: 300px;
+  overflow-x: hidden;
+
+  /* For mobile phones: */
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 150px !important;
+  }
+}
+
+.benefits-text {
+  color: #0070c0;
 
 .social-media-component {
 }
@@ -255,4 +277,5 @@ div .officer:hover span .email {
   z-index: 1;
 }
 
-/////////////////////////////////////////////
+}
+////////////////////////////////////////////
