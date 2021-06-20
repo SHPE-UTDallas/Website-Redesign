@@ -31,7 +31,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
       </Head>
       <header>
         <nav
-          className="navbar is-primary is-transparent"
+          className="navbar is-transparent"
           role="navigation"
           aria-label="main navigation"
         >
@@ -42,7 +42,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
               style={{ width: "10em", margin: "4px" }}
             >
               <Image
-                src={"/SHPE_logo_horiz_White-Wordmark-RGB.png"}
+                src={"/imgs/SHPE-Top-Nav-Logo-987-x-311-2.png"}
                 layout="fill"
                 quality="100"
               />
