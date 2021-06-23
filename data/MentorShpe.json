@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Joselyn Narvaez",
+        "position": "Mentor",
+        "image": "/imgs/officers/president.jpg",
+        "experience": "I served as a mentor and I loved it so much"
+    },
+    {
+        "name": "Lizbeth Zamora",
+        "position": "Mentee",
+        "image": "/imgs/officers/vice-president.jpg",
+        "experience": "I was a mentee and I learned so much"
+    },
+    {
+        "name": "Gabriel Flynn",
+        "position": "Mentor",
+        "image": "/imgs/officers/technology.jpg",
+        "experience": "Hi this is Gabriel and I totally said this"
+    }
+]
