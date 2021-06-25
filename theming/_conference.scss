@@ -1,0 +1,184 @@
+@use 'variables';
+
+/////////////////////////////////////////////
+// Conference Page Styles
+/////////////////////////////////////////////
+
+
+.nCwrapper {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.smallLH {
+  line-height: 100%;
+}
+
+.setBottomBorder {
+  border-bottom: 10px solid whitesmoke;
+}
+
+.NCTitle {
+    line-height: 35px;
+    width: 100%;
+
+    .title1 {
+        color: $SHPE-ORANGE;
+    }
+
+    .title2 {
+        font-size: 3rem;
+      
+        @media only screen and (max-width: 600px) {
+          font-size: 2rem;
+        }
+    }
+
+    .title1,
+    .title3 {
+        font-size: 2rem;
+
+        @media only screen and (max-width: 600px) {
+            font-size: 1.7rem;
+        }
+    }
+}
+
+
+.boxesContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  min-width: fit-content;
+  line-height: 270%;
+  align-items: stretch;
+  flex-wrap: wrap;
+
+  @media only screen and (max-width: 700px) {
+      flex-direction: column;
+    }
+}
+
+
+.flexBoxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 30%;
+  width: fit-content;
+  margin: 2% 0;
+  padding: 1rem;
+  flex-wrap: wrap;
+  text-align: center;
+
+  /* For mobile phones: */
+  @media only screen and (max-width: 700px) {
+    width: 100%;
+    margin: 3% 0;
+  }
+
+  button {
+    align-self: center;
+  }
+
+  &.NCTitle {
+      padding: 0;
+  }
+}
+
+.flexBoxes h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2160c4;
+  @media only screen and (max-width: 600px) {
+    font-size: 1.75rem;
+    line-height: 100%;
+  }
+}
+
+.flexBoxes h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: $SHPE-LIGHT-BLUE;
+  @media only screen and (max-width: 600px) {
+    font-size: 1.5rem;
+    line-height: 100%;
+  }
+}
+
+.conferenceRadius {
+  border-radius: 15px;
+  background-color: whitesmoke;
+
+}
+
+
+.paragraphFlexContainer {
+  display: flex;
+  line-height: normal;
+  justify-content: space-between;
+//   padding: 1%;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    padding: 1%;
+
+  }
+
+  .paragraph { // Each div inside of a paragraphFlexContainer is considered a paragraph
+        margin: 0 0.5rem;
+        width: 50%;
+        padding: 0.35rem;
+        text-align: left;
+    
+        @media only screen and (max-width: 600px) {
+            width: 100%;
+            margin: 0.5rem;
+
+        }
+
+        ul,
+        p {
+            font-size: 1.5rem;
+        }
+    
+        ul li {
+            list-style-type: disc;
+            text-indent: -5px;
+            margin: 8px 20px;
+            
+            &::marker {
+                color: $SHPE-ORANGE; 
+            }
+        }
+    }
+
+}
+
+
+
+.container-iframe {
+  position: relative;
+  overflow: hidden;
+  width: 80%;      
+  padding-top: 40%; /* if you want 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) use 56.25% */
+ 
+  @media only screen and (max-width: 768px) {
+        width: 100%;      
+        padding-top: 56.25%;
+    }
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
