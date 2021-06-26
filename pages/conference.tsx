@@ -12,7 +12,6 @@ export const conference = () => {
 
                     <div className="flexBoxes NCTitle">
 
-                        {/* Get rid of the style attributes in the following 2 lines */}
                         <h2 className=" title1">2021 SHPE</h2>
                         <h1 className=" title2"> National Convention</h1>
                         <h2 className=" title3">November 10 - 14</h2>
@@ -154,12 +153,9 @@ export const conference = () => {
             <div className="nCwrapper">
                 <div className="flexBoxes NCTitle">
 
-                    {/* Get rid of the style attributes in the following 2 lines */}
                     <h2 className=" title1">2020 SHPE</h2>
                     <h1 className=" title2"> National Convention</h1>
                     <h2 className=" title3">Highlights</h2>
-
-                    {/* <iframe width="904" height="480" src="https://www.youtube.com/embed/UE75ysOZEZ8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
 
                 </div>
 
