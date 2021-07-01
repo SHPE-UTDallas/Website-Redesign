@@ -115,11 +115,12 @@ export const conference = () => {
 
                                 <div className="paragraph">
 
-                                    <p  >
+                                    <p>
                                         Attending the national convention can set you back a couple hundred dollars but if you apply to get sponsored and successfully recieve a sponsorship, SHPE UTD will cover most of the expenses!
+                                        Keep in mind that not every one that applies will be sponsored.
                                     </p>
                                     <br />
-                                    <p >
+                                    <p>
                                         We're currently not accepting sponsorship applications but make sure to sign up to our newsletter to be notified as soon as sponsorship applications and registration opens up.
                                     </p>
 
@@ -130,10 +131,9 @@ export const conference = () => {
 
                                     <h2>Sponsorship Requirements</h2>
                                     <ul >
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                        <li> consectetur adipisicing elit.</li>
-                                        <li>Odit modi officia, cum earum nisi nihil beatae </li>
-                                        <li> quaerat natus nesciunt, numquam maxime sapiente,</li>
+                                        <li>Must be an active member of our chapter</li>
+                                        <li>Must be a SHPE National member (only $10/year for a membership)</li>
+                                        <li>Must attend all national preparation events hosted by our chapter if chosen to be sponsored</li>
                                     </ul>
 
                                 </div>
