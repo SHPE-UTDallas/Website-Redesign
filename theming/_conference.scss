@@ -5,7 +5,7 @@
 /////////////////////////////////////////////
 
 
-.nCwrapper {
+.nationalConventionWrapper {
   width: 85%;
   margin: auto;
   display: flex;
@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-.smallLH {
+.smallLineHeight {
   line-height: 100%;
 }
 
@@ -21,7 +21,7 @@
   border-bottom: 10px solid whitesmoke;
 }
 
-.NCTitle {
+.titleContainer {
     line-height: 35px;
     width: 100%;
 
@@ -84,7 +84,7 @@
     align-self: center;
   }
 
-  &.NCTitle {
+  &.titleContainer {
       padding: 0;
   }
 }
@@ -111,8 +111,6 @@
 
 .conferenceRadius {
   border-radius: 15px;
-  background-color: whitesmoke;
-
 }
 
 
@@ -120,7 +118,6 @@
   display: flex;
   line-height: normal;
   justify-content: space-between;
-//   padding: 1%;
 
   @media only screen and (max-width: 600px) {
     flex-direction: column;
