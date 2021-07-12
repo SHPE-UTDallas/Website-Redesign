@@ -176,8 +176,6 @@ export const conference = () => {
             {/* </section> */}
         </Layout >
     )
-
-
 }
 
 export default conference;
