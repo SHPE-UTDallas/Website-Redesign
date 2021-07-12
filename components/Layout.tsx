@@ -97,6 +97,8 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                   <hr className="navbar-divider" />
                   <a className="navbar-item">General Meetings</a>
                   <a className="navbar-item">Conferences</a>
+                  <a className="navbar-item" href="podcast"> 
+                  podcast</a>
                 </div>
               </div>
 
