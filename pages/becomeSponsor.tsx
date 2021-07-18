@@ -37,7 +37,12 @@ const BecomeSponsorPage = () => {
           marginRight: "auto",
         }}
       />
-      <div align="center">
+      <div className="container" align="center">
+        <div style={{ textAlign: "right" }}>
+          <a href="/SponsorshipPacket.pdf">
+            Download pdf
+          </a>
+        </div>
         <Document
           file="/SponsorshipPacket.pdf"
           onLoadSuccess={onDocumentLoadSuccess}
@@ -76,9 +81,6 @@ const BecomeSponsorPage = () => {
           </button>
         </div>
       </div>
-      <a className="button" href="/SponsorshipPacket.pdf">
-        Download pdf
-      </a>
     </Layout>
   );
 };
