@@ -5,7 +5,7 @@
 /////////////////////////////////////////////
 
 
-.nationalConventionWrapper {
+.national-convention-wrapper {
   width: 85%;
   margin: auto;
   display: flex;
@@ -13,15 +13,15 @@
   align-items: center;
 }
 
-.smallLineHeight {
+.small-line-height {
   line-height: 100%;
 }
 
-.setBottomBorder {
+.set-bottom-border {
   border-bottom: 10px solid whitesmoke;
 }
 
-.titleContainer {
+.title-container {
     line-height: 35px;
     width: 100%;
 
@@ -48,7 +48,7 @@
 }
 
 
-.boxesContainer {
+.boxes-container {
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -63,7 +63,7 @@
 }
 
 
-.flexBoxes {
+.flex-boxes {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,12 +84,12 @@
     align-self: center;
   }
 
-  &.titleContainer {
+  &.title-container {
       padding: 0;
   }
 }
 
-.flexBoxes h1 {
+.flex-boxes h1 {
   font-size: 2rem;
   font-weight: 700;
   color: #2160c4;
@@ -99,7 +99,7 @@
   }
 }
 
-.flexBoxes h2 {
+.flex-boxes h2 {
   font-weight: 700;
   font-size: 1.5rem;
   color: $SHPE-LIGHT-BLUE;
@@ -109,12 +109,12 @@
   }
 }
 
-.conferenceRadius {
+.conference-radius {
   border-radius: 15px;
 }
 
 
-.paragraphFlexContainer {
+.paragraph-flex-container {
   display: flex;
   line-height: normal;
   justify-content: space-between;
@@ -125,7 +125,7 @@
 
   }
 
-  .paragraph { // Each div inside of a paragraphFlexContainer is considered a paragraph
+  .paragraph { // Each div inside of a paragraph-flex-container is considered a paragraph
         margin: 0 0.5rem;
         width: 50%;
         padding: 0.35rem;

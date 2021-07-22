@@ -6,7 +6,7 @@ export const conference = () => {
 
     const nationalConventionTitle = (top: string, middle: string, bottom: string) => {
         return (
-            <div className="flexBoxes titleContainer">
+            <div className="flex-boxes title-container">
                 <h2 className=" title1">{top}</h2>
                 <h1 className=" title2">{middle}</h1>
                 <h2 className=" title3">{bottom}</h2>
@@ -20,37 +20,37 @@ export const conference = () => {
             {/* <section className="gradient-background"> */}
 
             {/* 2021 National Convention */}
-            <section className="nationalConventionWrapper" >
+            <section className="national-convention-wrapper" >
 
                 {/* 2021 Title */}
                 {nationalConventionTitle("2021 SHPE", "National Convention", "November 10 - 14")}
                 <hr style={{ width: "80%", margin: "0 auto" }}></hr>
 
                 {/* 3 Boxes Section */}
-                <section className="boxesContainer" >
+                <section className="boxes-container" >
 
-                    <div className="conferenceRadius flexBoxes gradient-background">
+                    <div className="conference-radius flex-boxes gradient-background">
 
                         <h1>Orlando, Florida</h1>
-                        <h2 className="smallLineHeight" style={{ fontWeight: "normal" }}> Orange County<br />Convention Center</h2>
+                        <h2 className="small-line-height" style={{ fontWeight: "normal" }}> Orange County<br />Convention Center</h2>
 
                     </div>
 
-                    <div className="conferenceRadius flexBoxes gradient-background">
+                    <div className="conference-radius flex-boxes gradient-background">
 
                         <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                             <iframe src="https://player.vimeo.com/video/503633431?color=ff9933&title=0&portrait=0" style={{ position: "absolute", top: "0", left: "0", width: "100%", height: "100%" }} allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
                         </div>
                         <script src="https://player.vimeo.com/api/player.js"></script>
 
-                        <span className="smallLineHeight">
+                        <span className="small-line-height">
                             <br />
                             <a href="https://vimeo.com/503633431">Orange County Convention Center Tour</a>
                         </span>
 
                     </div>
 
-                    <div className="conferenceRadius flexBoxes gradient-background">
+                    <div className="conference-radius flex-boxes gradient-background">
 
                         <a href="https://www.shpe.org/2021" target="_blank">
                             <h1>
@@ -62,18 +62,18 @@ export const conference = () => {
                                 Get Sponsored
                             </button>
                         </a>
-                        <span className="smallLineHeight">We're currently not accepting <br /> sponsorship applications</span>
+                        <span className="small-line-height">We're currently not accepting <br /> sponsorship applications</span>
 
                     </div>
 
                 </section>
 
                 {/* Benefits Section */}
-                <section className="boxesContainer">
-                    <div className="flexBoxes" style={{ padding: 0, margin: 0 }}>
+                <section className="boxes-container">
+                    <div className="flex-boxes" style={{ padding: 0, margin: 0 }}>
 
                         <h1>Benefits of Attending</h1>
-                        <div className="paragraphFlexContainer">
+                        <div className="paragraph-flex-container">
 
                             <div className="paragraph">
 
@@ -113,11 +113,11 @@ export const conference = () => {
                 </section>
 
                 {/* Sponsorship Section */}
-                <section className="boxesContainer">
-                    <div className="flexBoxes" style={{ padding: 0 }}>
+                <section className="boxes-container">
+                    <div className="flex-boxes" style={{ padding: 0 }}>
 
                         <h1>Getting Sponsored</h1>
-                        <div className="paragraphFlexContainer">
+                        <div className="paragraph-flex-container">
 
                             <div className="paragraph">
 
@@ -157,10 +157,10 @@ export const conference = () => {
             </section>
 
             {/* Separation Between the 2021 and 2020 sections  */}
-            <div className="setBottomBorder"></div>
+            <div className="set-bottom-border"></div>
 
             {/* 2020 National Convention */}
-            <section className="nationalConventionWrapper">
+            <section className="national-convention-wrapper">
 
                 {/* 2020 Title */}
                 {nationalConventionTitle("2020 SHPE", "National Convention", "Highlights")}
