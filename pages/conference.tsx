@@ -17,8 +17,6 @@ export const conference = () => {
     return (
         <Layout title="National Conventions" >
 
-            {/* <section className="gradient-background"> */}
-
             {/* 2021 National Convention */}
             <section className="national-convention-wrapper" >
 
@@ -38,9 +36,9 @@ export const conference = () => {
 
                     <div className="conference-radius flex-boxes gradient-background">
 
-                        <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
-                            <iframe src="https://player.vimeo.com/video/503633431?color=ff9933&title=0&portrait=0" style={{ position: "absolute", top: "0", left: "0", width: "100%", height: "100%" }} allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
-                        </div>
+                        <figure className="large-iframe-container">
+                            <iframe className="responsive-iframe-content" src="https://player.vimeo.com/video/503633431?color=ff9933&title=0&portrait=0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
+                        </figure>
                         <script src="https://player.vimeo.com/api/player.js"></script>
 
                         <span className="small-line-height">
@@ -149,9 +147,9 @@ export const conference = () => {
                 </section>
 
                 {/* Map */}
-                <div style={{ width: "100%" }}>
-                    <iframe allowFullScreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7017.364915375989!2d-81.46907627503198!3d28.428836965051598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77e463b79f35f%3A0x890f8122e661e214!2sOrange%20County%20Convention%20Center%20north%20concourse!5e0!3m2!1sen!2sus!4v1623904501409!5m2!1sen!2sus" style={{ width: "100%" }} loading="lazy"></iframe>
-                </div>
+                <figure className="small-iframe-container" >
+                    <iframe className="responsive-iframe-content" allowFullScreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7017.364915375989!2d-81.46907627503198!3d28.428836965051598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77e463b79f35f%3A0x890f8122e661e214!2sOrange%20County%20Convention%20Center%20north%20concourse!5e0!3m2!1sen!2sus!4v1623904501409!5m2!1sen!2sus" loading="lazy"></iframe>
+                </figure>
                 <br />
 
             </section>
@@ -166,14 +164,13 @@ export const conference = () => {
                 {nationalConventionTitle("2020 SHPE", "National Convention", "Highlights")}
 
                 {/* Video */}
-                <figure className="container-iframe">
-                    <iframe className="responsive-iframe" src="https://youtube.com/embed/UE75ysOZEZ8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <figure className="medium-iframe-container">
+                    <iframe className="responsive-iframe-content" src="https://youtube.com/embed/UE75ysOZEZ8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </figure>
                 <br />
 
             </section>
 
-            {/* </section> */}
         </Layout >
     )
 }

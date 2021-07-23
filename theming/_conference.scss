@@ -21,32 +21,6 @@
   border-bottom: 10px solid whitesmoke;
 }
 
-.title-container {
-    line-height: 35px;
-    width: 100%;
-
-    .title1 {
-        color: $SHPE-ORANGE;
-    }
-
-    .title2 {
-        font-size: 3rem;
-      
-        @media only screen and (max-width: 600px) {
-          font-size: 2rem;
-        }
-    }
-
-    .title1,
-    .title3 {
-        font-size: 2rem;
-
-        @media only screen and (max-width: 600px) {
-            font-size: 1.7rem;
-        }
-    }
-}
-
 
 .boxes-container {
   display: flex;
@@ -75,7 +49,7 @@
   text-align: center;
 
   /* For mobile phones: */
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 768px) {
     width: 100%;
     margin: 3% 0;
   }
@@ -113,6 +87,40 @@
   border-radius: 15px;
 }
 
+/////////////////////////////////////////////
+// Titles
+/////////////////////////////////////////////
+
+.title-container {
+    line-height: 35px;
+    width: 100%;
+
+    .title1 {
+        color: $SHPE-ORANGE;
+    }
+
+    .title2 {
+        font-size: 3rem;
+      
+        @media only screen and (max-width: 600px) {
+          font-size: 2rem;
+        }
+    }
+
+    .title1,
+    .title3 {
+        font-size: 2rem;
+
+        @media only screen and (max-width: 600px) {
+            font-size: 1.7rem;
+        }
+    }
+}
+
+
+/////////////////////////////////////////////
+// Text sections
+/////////////////////////////////////////////
 
 .paragraph-flex-container {
   display: flex;
@@ -156,20 +164,46 @@
 }
 
 
+/////////////////////////////////////////////
+// iframe items
+/////////////////////////////////////////////
 
-.container-iframe {
+.large-iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;      
+  padding-top: 56.25%; /* if you want 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) use 56.25% */
+}
+
+.medium-iframe-container {
   position: relative;
   overflow: hidden;
   width: 80%;      
   padding-top: 40%; /* if you want 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) use 56.25% */
  
   @media only screen and (max-width: 768px) {
-        width: 100%;      
-        padding-top: 56.25%;
-    }
+    width: 100%;      
+    padding-top: 56.25%;
+  }
+
 }
 
-.responsive-iframe {
+.small-iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;      
+  padding-top: 18%; 
+ 
+  @media only screen and (max-width: 768px) {
+    padding-top: 32%;
+  }
+
+  @media only screen and (max-width: 426px) {
+    padding-top: 56.25%;
+  }
+}
+
+.responsive-iframe-content {
   position: absolute;
   top: 0;
   left: 0;
