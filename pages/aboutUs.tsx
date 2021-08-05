@@ -2,7 +2,7 @@ import Layout from "../components/Layout";
 
 const AboutUsPage = () => (
     <Layout title="SHPE UTD">
-        <section className="section gradient-background">        
+        <section className="section gradient-background">
 
             <div className="has-text-link-dark has-text-centered is-size-1 has-text-weight-bold">
                 Who We Are
@@ -69,12 +69,11 @@ const AboutUsPage = () => (
                 </div>
             </div>
 
-            <div
-                className="columns is-mobile"
-                style={{  paddingLeft: "45%", paddingRight: "50%" }}
-            >
-                <div className="buttons">
-                    <button className="button is-large is-info">ByLaws</button>
+            <div className="columns is-mobile is-centered">
+                <div className="column is-one-third">
+                    <div className="buttons is-centered">
+                        <button className="button is-large is-info">ByLaws</button>
+                    </div>
                 </div>
             </div>
         </section>
