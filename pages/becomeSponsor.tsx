@@ -37,49 +37,43 @@ const BecomeSponsorPage = () => {
           marginRight: "auto",
         }}
       />
-      <div className="container" align="center">
+      <div className="container is-centered">
         <div style={{ textAlign: "right" }}>
           <a href="/SponsorshipPacket.pdf">
             Download pdf
           </a>
         </div>
-        <Document
+        <Document className="react-pdf__Document"
           file="/SponsorshipPacket.pdf"
           onLoadSuccess={onDocumentLoadSuccess}
         >
           <Page pageNumber={pageNumber} />
+          <div className="page-controls">
+            <button
+              disabled={pageNumber <= 1}
+              onClick={previousPage}
+              type="button"
+              aria-label="Previous page"
+            >
+              ‹
+            </button>
+            <span>
+              {pageNumber}
+              {' '}
+              of
+              {' '}
+              {numPages}
+            </span>
+            <button
+              disabled={pageNumber >= numPages}
+              onClick={nextPage}
+              type="button"
+              aria-label="Next page"
+            >
+              ›
+            </button>
+          </div>
         </Document>
-      </div>
-      <div align="center">
-        <p>
-          Page {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}
-        </p>
-        <div
-          className="container buttons is-centered"
-          style={{
-            marginTop: "20px",
-            marginBottom: "20px",
-            textAlign: "center",
-          }}
-        >
-          <button
-            className="button is-primary"
-            type="button"
-            disabled={pageNumber <= 1}
-            onClick={previousPage}
-          >
-            Previous
-          </button>
-
-          <button
-            className="button is-primary"
-            type="button"
-            disabled={pageNumber >= numPages}
-            onClick={nextPage}
-          >
-            Next
-          </button>
-        </div>
       </div>
     </Layout>
   );
