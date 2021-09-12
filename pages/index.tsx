@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import Newsletter from "../components/Newsletter";
 import Calendar from "../components/Calendar";
 import InstagramFeed from "../components/InstagramFeed";
+import Link from "next/link";
 
 const IndexPage = () => (
   <Layout title="SHPE UTD">
@@ -45,9 +46,11 @@ const IndexPage = () => (
                 </button>
               </div>
               <div className="column is-half">
-                <button className="button is-primary center">
-                  Become a sponsor
-                </button>
+                <Link href="/becomeSponsor">
+                  <button className="button is-primary center">
+                    Become a sponsor
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
