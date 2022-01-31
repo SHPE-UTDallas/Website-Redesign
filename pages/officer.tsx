@@ -46,7 +46,7 @@ const AboutPage = ({ presEmail, presName, OfficerJson }: Props) => (
           </div>
         );
       })}
-      <div className="column is-full-mobile is-two-thirds-tablet is-two-thirds-desktop is-two-quarters-widescreen is-two-fifths-fullhd">
+      <div className="column is-full">
         <div className="become-officer has-text-centered">
           <span className="has-text-link-dark has-text-weight-bold is-size-2-mobile is-size-1">
             Want to become an officer?
@@ -65,7 +65,7 @@ const AboutPage = ({ presEmail, presName, OfficerJson }: Props) => (
           <div>
             <a
               className="button is-rounded is-link"
-              style={{ marginTop: "50px" }}
+              style={{ marginTop: "50px"}}
               href={`mailto:${presEmail}`}
             >
               Contact {presName}
