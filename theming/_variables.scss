@@ -254,3 +254,60 @@ div .officer:hover span .email {
   filter: drop-shadow(-3px 11px 44px rgba(0, 0, 0, 0.3));
   z-index: 1;
 }
+
+
+.react-pdf__Document {
+  position: relative;
+
+  &:hover {
+    .page-controls {
+      opacity: 1;
+    }
+  }
+}
+
+.page-controls {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  background: white;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity ease-in-out 0.2s;
+
+  span {
+    font: inherit;
+    font-size: .8em;
+    padding: 0 .5em;
+  }
+
+  button {
+    width: 44px;
+    height: 44px;
+    background: white;
+    border: 0;
+    font: inherit;
+    font-size: .8em;
+    border-radius: 4px;
+
+    &:enabled {
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:hover, &:focus {
+        background-color: #e6e6e6;
+      }
+    }
+
+    &:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}
