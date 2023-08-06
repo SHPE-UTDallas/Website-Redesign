@@ -13,6 +13,7 @@ $SHPE-LIGHT-BLUE: #72a9be;
 $primary: #0070c0;
 $secondary: $SHPE-ORANGE;
 
+
 strong{
   color: $primary !important;
 }
@@ -20,6 +21,10 @@ strong{
 /////////////////////////////////////////////////////////
 
 $column-gap: 5px;
+
+.blue-navbar {
+  background-color: rgba(0, 112, 192, 0.07) !important;
+}
 
 .navbar-item:hover {
   color: $SHPE-ORANGE !important;
@@ -255,62 +260,137 @@ div .officer:hover span .email {
   z-index: 1;
 }
 
-.react-pdf__Document {
-  position: relative;
-
-  &:hover {
-    .page-controls {
-      opacity: 1;
-    }
-  }
-}
-
-.page-controls {
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  background: white;
-  opacity: 0;
-  transform: translateX(-50%);
-  transition: opacity ease-in-out 0.2s;
-
-  span {
-    font: inherit;
-    font-size: .8em;
-    padding: 0 .5em;
-  }
-
-  button {
-    width: 44px;
-    height: 44px;
-    background: white;
-    border: 0;
-    font: inherit;
-    font-size: .8em;
-    border-radius: 4px;
-
-    &:enabled {
-      &:hover {
-        cursor: pointer;
-      }
-
-      &:hover, &:focus {
-        background-color: #e6e6e6;
-      }
-    }
-
-    &:first-child {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-
-    &:last-child {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-    }
-  }
-}
-
-
-
 /////////////////////////////////////////////
+
+///////////////Membership page//////////////////////////////
+.add-ul-bold {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+table ul,
+table ol {
+  list-style-position: inside;
+  margin: 4px;
+}
+
+.join {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid gray;
+    letter-spacing: 15px;
+    color: $SHPE-BLUE;
+
+    span {
+      letter-spacing: 0px;
+    }
+  }
+}
+
+.membership {
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid gray;
+  color: #001f5b;
+  letter-spacing: 40px;
+}
+
+.main-container {
+  display: flex;
+  min-height: 50vh;
+  width: 100%;
+}
+
+.box {
+  .h2-utd {
+    height: 20%;
+    background: linear-gradient(to right, #72a9be, #001f5b);
+  }
+
+  .h2-local {
+    height: 20%;
+    background: linear-gradient(to left, #72a9be, #001f5b);
+  }
+
+  h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 250%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+  }
+}
+
+.box1 {
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.box2 {
+  right: 0%;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.add-ul-bold ol {
+  font-weight: none;
+}
+
+li {
+  font-weight: normal;
+}
+
+table {
+  width: 100%;
+  height: 39vh;
+}
+
+.table-border-top {
+  height: 1%;
+  text-transform: uppercase;
+  font-size: large;
+  border-bottom: 1px solid gray;
+}
+
+// .has-text-centered {
+//   color: #001f5b;
+//   border-bottom: 1px solid gray;
+// }
+
+.none {
+  padding-left: 20px;
+  list-style: none;
+}
+
+.border-right {
+  border-right: 1px solid gray;
+}
+
+// tr,
+// th,
+// td {
+//     width: 50%;
+// }
+.width-50 {
+  width: 50%;
+}
+
+.pl-4 span {
+  text-decoration: underline;
+}
+
+.has-hover:hover {
+  cursor: pointer;
+  color: #72a9be;
+}
+/////////////////////////////

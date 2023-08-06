@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import { signIn, signOut, useSession } from "next-auth/client";
+// import { signIn, signOut, useSession } from "next-auth/client";
 import { useState } from "react";
 
 type Props = {
@@ -10,7 +10,7 @@ type Props = {
 };
 
 const Layout = ({ children, title = "This is the default title" }: Props) => {
-  const [session, loading] = useSession();
+  // const [session, loading] = useSession();
   const [mobileMenuActive, setMobileMenuActive] = useState(false);
 
   const handleMobileToggle = () => {
@@ -20,7 +20,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
   return (
     <div>
       <Head>
-        <title>{title}</title>
+        <title>SHPE UTD</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <script
@@ -31,7 +31,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
       </Head>
       <header>
         <nav
-          className="navbar is-primary is-transparent"
+          className={`navbar is-transparent ${title === "home"? "blue-navbar" : ""}`}
           role="navigation"
           aria-label="main navigation"
         >
@@ -42,7 +42,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
               style={{ width: "10em", margin: "4px" }}
             >
               <Image
-                src={"/SHPE_logo_horiz_White-Wordmark-RGB.png"}
+                src={"/imgs/SHPE-Top-Nav-Logo-987-x-311-2.png"}
                 layout="fill"
                 quality="100"
               />
@@ -90,7 +90,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
               </div>
 
               <div className="navbar-item has-dropdown is-hoverable">
-                <a className="navbar-link">Events</a>
+                {/* <a className="navbar-link">Events</a> */}
 
                 <div className="navbar-dropdown">
                   <a className="navbar-item">Calendar</a>
@@ -100,7 +100,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                 </div>
               </div>
 
-              <a className="navbar-item">Membership</a>
+              {/* <a className="navbar-item" href="/membership">Membership</a> */}
 
               <div className="navbar-item has-dropdown is-hoverable">
                 <a className="navbar-link" href="getInvolved">
@@ -113,13 +113,13 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                   <a className="navbar-item" href="/tech-team">
                     Technology Team
                   </a>
-                  <a className="navbar-item" href="/newsletter">
+                  {/* <a className="navbar-item" href="/newsletter">
                     Newsletter
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
-            <div className="navbar-end">
+            {/* <div className="navbar-end">
               <div className="navbar-item">
                 <div className="buttons">
                   {session && (
@@ -142,7 +142,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                   )}
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </nav>
       </header>
@@ -182,14 +182,14 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                         About
                       </a>
                       <br></br>
-                      <a className="footer-link" href="/events">
+                      {/* <a className="footer-link" href="/events">
                         Events
                       </a>
-                      <br></br>
-                      <a className="footer-link" href="/membership">
+                      <br></br> */}
+                      {/* <a className="footer-link" href="/membership">
                         Membership
                       </a>
-                      <br></br>
+                      <br></br> */}
                       <a className="footer-link" href="/getInvolved">
                         Get Involved
                       </a>
@@ -282,7 +282,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
                         </a>
                       </div>
                       <div className="column is-one-quarter">
-                        <a href="https://discord.gg/ZsY8hJHa" target="_blank">
+                        <a href="https://discord.gg/GfbmKXujE2" target="_blank">
                           <img
                             className="social-media-icon"
                             src="/imgs/social-media-logos/discord-logo.png"

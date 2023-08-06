@@ -1,14 +1,16 @@
-import { relative } from "path";
+// import { relative } from "path";
 import Layout from "../components/Layout";
-import Newsletter from "../components/Newsletter";
-import Calendar from "../components/Calendar";
+// import Newsletter from "../components/Newsletter";
+// import Calendar from "../components/Calendar";
 import InstagramFeed from "../components/InstagramFeed";
-import Link from "next/link";
 
 const IndexPage = () => (
-  <Layout title="SHPE UTD">
+  <Layout title="home">
     <section className="section gradient-background">
-      <div className="columns is-mobile" style={{ marginLeft: "5%", marginRight: "5%" }}>
+      <div
+        className="columns is-mobile"
+        style={{ marginLeft: "5%", marginRight: "5%" }}
+      >
         <div className="intro column has-text-centered">
           <div className="welcome-text">
             <h1
@@ -29,36 +31,34 @@ const IndexPage = () => (
                 color: "rgba(0, 0, 0, 0.61)",
               }}
             >
-              Value proposition Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum
+              Welcome to SHPE at UTD's brand new website! We are a chapter built
+              to empower our members to pursue their passions. Whether you are a
+              student looking to get involved or a company representative seeing
+              how you may support us, we invite you to take a look around at all
+              the exciting things we do.
             </p>
 
             <div className="columns" style={{ marginTop: "100px" }}>
-              <div className="column is-half">
-                <button className="button is-primary center">
-                  Become a member
-                </button>
-              </div>
-              <div className="column is-half">
-                <Link href="/becomeSponsor">
+              {/* <div className="column is-half"> */}
+              <div className="column is-full">
+                <a href="https://shpeutd.us20.list-manage.com/subscribe/post?u=2d719e9a41d3800f0ce0cd6cd&id=aa49373eb8" target="_blank">
                   <button className="button is-primary center">
-                    Become a sponsor
+                    Become a member
                   </button>
-                </Link>
+                </a>
               </div>
+              {/* <div className="column is-half">
+                <button className="button is-primary center">
+                  Become a sponsor
+                </button>
+              </div> */}
             </div>
           </div>
         </div>
 
         <div
           className="big-res-social-media-component"
-          style={{paddingRight: "7%"}}
+          style={{ paddingRight: "7%" }}
         >
           <InstagramFeed />
         </div>
@@ -66,13 +66,12 @@ const IndexPage = () => (
     </section>
 
     <section className="section small-res-social-media-component container">
-      <div
-      >
-        <InstagramFeed />
+      <div>
+       <InstagramFeed />
       </div>
     </section>
 
-    <section className="section" style={{paddingTop: "150px"}}>
+    <section className="section" style={{ paddingTop: "150px" }}>
       <div className="temoc-level">
         <div
           style={{
@@ -128,13 +127,13 @@ const IndexPage = () => (
       </div>
 
       <p className="is-size-4 benefits-p">
-        Benefits Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum
+        The Society of Hispanic Professional Engineers (SHPE) is the largest
+        association in the nation for Hispanics in the STEM community. This
+        organization offers both students and professionals mentorship,
+        training, and programming. SHPE's mission is to change lives by
+        empowering the Hispanic community to realize its fullest potential and
+        to impact the world through STEM awareness, access, support, and
+        development.
       </p>
 
       <div className="temoc-level">
@@ -170,9 +169,9 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section className="section" style={{ minHeight: "2vw" }}>
+    {/* <section className="section" style={{ minHeight: "2vw" }}>
       <Calendar />
-    </section>
+    </section> */}
   </Layout>
 );
 

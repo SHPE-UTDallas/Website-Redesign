@@ -1,15 +1,15 @@
 [
     {
-        "name": "Eddie Villarreal",
+        "name": "Joselyn Narvaez",
         "position": "President",
         "image": "/imgs/officers/president.jpg",
-        "email": "Eddie.villarreal@utdallas.edu"
+        "email": "jvn170000@utdallas.edu"
     },
     {
-        "name": "Jacob Reyna",
+        "name": "Lizbeth Zamora",
         "position": "Vice-President",
         "image": "/imgs/officers/vice-president.jpg",
-        "email": "jcr170001@utdallas.edu"
+        "email": "Lizbeth.Zamora@utdallas.edu"
     },
     {
         "name": "Yuliana Hernandez",
@@ -18,69 +18,63 @@
         "email": "Yuliana.Hernandez@utdallas.edu"
     },
     {
-        "name": "Jesus Saenz",
+        "name": "Reyna Garcia",
         "position": "Treasurer",
         "image": "/imgs/officers/treasurer.jpg",
-        "email": "jas170001@utdallas.edu"
+        "email": "Reyna.Garcia@utdallas.edu"
     },
     {
-        "name": "Angelica Aguilar",
+        "name": "Jacob Reyna",
         "position": "SHPE Jr. Chair",
-        "image": "/imgs/officers/blank.png",
-        "email": "axa190116@utdallas.edu"
-    },
-    {
-        "name": "Melissa Avila",
-        "position": "Academic Chair",
-        "image": "/imgs/officers/academic.jpg",
-        "email": "mxa190036@utdallas.edu"
-    },
-    {
-        "name": "Jonathan Mondragon",
-        "position": "Corporate Liason",
-        "image": "/imgs/officers/corporate_liason.jpg",
-        "email": "jam172630@utdallas.edu"
-    },
-    {
-        "name": "Rigre Larquin",
-        "position": "Technology Chair",
-        "image": "/imgs/officers/technology.jpg",
-        "email": "rrg190004@utdallas.edu"
-    },
-    {
-        "name": "Eric Trejo Tovar",
-        "position": "Recruitment and Retention",
-        "image": "/imgs/officers/recruitment_retention.png",
-        "email": "ext170005@utdallas.edu"
-    },
-    {
-        "name": "Anabel Villarreal",
-        "position": "Community Service Chair",
-        "image": "/imgs/officers/community.jpg",
-        "email": "agv180001@utdallas.edu"
+        "image": "/imgs/officers/shpe_jr.jpg",
+        "email": "jcr170001@utdallas.edu"
     },
     {
         "name": "Maria Flores",
+        "position": "Academic Chair",
+        "image": "/imgs/officers/academic.jpg",
+        "email": "Maria.Flores@utdallas.edu"
+    },
+    {
+        "name": "Christopher Flynn",
+        "position": "Corporate Liason",
+        "image": "/imgs/officers/corporate.jpg",
+        "email": "Christopher.Flynn@utdallas.edu"
+    },
+    {
+        "name": "Gabriel Flynn",
+        "position": "Technology Chair",
+        "image": "/imgs/officers/technology.jpg",
+        "email": "Gabriel.Flynn@utdallas.edu"
+    },
+    {
+        "name": "Jesus Saenz",
+        "position": "Recruitment and Retention",
+        "image": "/imgs/officers/recruitment_retention.jpg",
+        "email": "jas170001@utdallas.edu"
+    },
+    {
+        "name": "Allen Hernandez",
+        "position": "Community Service Chair",
+        "image": "/imgs/officers/community.jpg",
+        "email": "Allen.Hernandez@utdallas.edu"
+    },
+    {
+        "name": "Mariana Lucio",
         "position": "Alumni Liason",
         "image": "/imgs/officers/alumni.jpg",
-        "email": "mlf170430@utdallas.edu"
+        "email": "Mariana.Lucio@UTDallas.edu"
     },
     {
-        "name": "Thiago Ciriaco",
+        "name": "Eddie Villarreal",
         "position": "School Affairs",
         "image": "/imgs/officers/school_affairs.jpg",
-        "email": "tac200002@utdallas.edu"
+        "email": "Eddie.Villarreal@UTDallas.edu"
     },
     {
-        "name": "Roy Miranda",
+        "name": "Connie Bardalez",
         "position": "Public Relations",
-        "image": "/imgs/officers/public_relations.jpg",
-        "email": "rxm180060@utdallas.edu"
-    },
-    {
-        "name": "Samantha Lucas",
-        "position": "SHPEtina Director",
-        "image": "/imgs/officers/shpetinas.jpg",
-        "email": "samantha.lucas@utdallas.edu"
+        "image": "/imgs/officers/public.jpg",
+        "email": "cnb170001@utdallas.edu"
     }
 ]

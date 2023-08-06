@@ -5,6 +5,13 @@ const Newsletter = () => {
   const [fname, updateName] = useState("");
   const [lname, updateLName] = useState("");
   const [email, updateEmail] = useState("");
+
+  const submit = () =>{
+    fname;
+    lname;
+    email;
+  }
+
   return (
     <Layout title="SHPE UTD">
       <section className="section mt-4">
@@ -51,7 +58,7 @@ const Newsletter = () => {
               </div>
             </div>
             <div className="control">
-              <button className="button is-primary">Submit</button>
+              <button className="button is-primary" onClick={submit}>Submit</button>
             </div>
           </div>
         </div>
